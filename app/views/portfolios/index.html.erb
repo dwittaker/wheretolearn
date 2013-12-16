@@ -1,0 +1,45 @@
+<h1>Listing portfolios</h1>
+
+<table>
+  <tr>
+    <th>Portfolioid</th>
+    <th>Subjectid</th>
+    <th>Sourceid</th>
+    <th>Pweburl</th>
+    <th>Physaddress</th>
+    <th>Cost</th>
+    <th>Currency</th>
+    <th>Costtype</th>
+    <th>Schedtype</th>
+    <th>Method</th>
+    <th>Startdate</th>
+    <th>Enddate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @portfolios.each do |portfolio| %>
+  <tr>
+    <td><%= portfolio.portfolioid %></td>
+    <td><%= portfolio.subjectid %></td>
+    <td><%= portfolio.sourceid %></td>
+    <td><%= portfolio.pweburl %></td>
+    <td><%= portfolio.physaddress %></td>
+    <td><%= portfolio.cost %></td>
+    <td><%= portfolio.currency %></td>
+    <td><%= portfolio.costtype %></td>
+    <td><%= portfolio.schedtype %></td>
+    <td><%= portfolio.method %></td>
+    <td><%= portfolio.startdate %></td>
+    <td><%= portfolio.enddate %></td>
+    <td><%= link_to 'Show', portfolio %></td>
+    <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
+    <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Portfolio', new_portfolio_path %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  portfolioid: 1
+  subjectid: 1
+  sourceid: 1
+  pweburl: MyString
+  physaddress: MyText
+  cost: 9.99
+  currency: MyString
+  costtype: 1
+  schedtype: 1
+  method: 1
+  startdate: 2013-12-16 01:59:32
+  enddate: 2013-12-16 01:59:32
+
+two:
+  portfolioid: 1
+  subjectid: 1
+  sourceid: 1
+  pweburl: MyString
+  physaddress: MyText
+  cost: 9.99
+  currency: MyString
+  costtype: 1
+  schedtype: 1
+  method: 1
+  startdate: 2013-12-16 01:59:32
+  enddate: 2013-12-16 01:59:32

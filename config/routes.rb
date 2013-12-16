@@ -1,4 +1,10 @@
 Wheretolearn::Application.routes.draw do
+  resources :portfolios
+
+
+  resources :sources
+
+
   resources :subjects
 
 

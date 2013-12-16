@@ -11,7 +11,34 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131215162844) do
+ActiveRecord::Schema.define(:version => 20131216065932) do
+
+  create_table "portfolios", :force => true do |t|
+    t.integer  "portfolioid"
+    t.integer  "subjectid"
+    t.integer  "sourceid"
+    t.string   "pweburl"
+    t.text     "physaddress"
+    t.decimal  "cost"
+    t.string   "currency"
+    t.integer  "costtype"
+    t.integer  "schedtype"
+    t.integer  "method"
+    t.datetime "startdate"
+    t.datetime "enddate"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "sources", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "weburl"
+    t.text     "physaddress"
+    t.integer  "srctype"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "subjects", :force => true do |t|
     t.string   "name"

@@ -1,0 +1,65 @@
+<%= form_for(@portfolio) do |f| %>
+  <% if @portfolio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@portfolio.errors.count, "error") %> prohibited this portfolio from being saved:</h2>
+
+      <ul>
+      <% @portfolio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :portfolioid %><br />
+    <%= f.number_field :portfolioid %>
+  </div>
+  <div class="field">
+    <%= f.label :subjectid %><br />
+    <%= f.number_field :subjectid %>
+  </div>
+  <div class="field">
+    <%= f.label :sourceid %><br />
+    <%= f.number_field :sourceid %>
+  </div>
+  <div class="field">
+    <%= f.label :pweburl %><br />
+    <%= f.text_field :pweburl %>
+  </div>
+  <div class="field">
+    <%= f.label :physaddress %><br />
+    <%= f.text_area :physaddress %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :currency %><br />
+    <%= f.text_field :currency %>
+  </div>
+  <div class="field">
+    <%= f.label :costtype %><br />
+    <%= f.number_field :costtype %>
+  </div>
+  <div class="field">
+    <%= f.label :schedtype %><br />
+    <%= f.number_field :schedtype %>
+  </div>
+  <div class="field">
+    <%= f.label :method %><br />
+    <%= f.number_field :method %>
+  </div>
+  <div class="field">
+    <%= f.label :startdate %><br />
+    <%= f.datetime_select :startdate %>
+  </div>
+  <div class="field">
+    <%= f.label :enddate %><br />
+    <%= f.datetime_select :enddate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

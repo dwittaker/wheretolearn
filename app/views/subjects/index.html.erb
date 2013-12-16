@@ -1,4 +1,32 @@
-<h1>Listing subjects</h1>
+<div class="page-header">
+  <h1>All of the Subjects</h1>
+</div>
+
+<%= link_to "Post a New Subject", new_subject_path, class: "btn btn-success" %>
+
+<% @subjects.each do |subject| %>
+    
+  <% if can_display_subject(subject) %>
+    <div class="subject">
+      <div class="row">
+        <div class="span7">
+          <strong><%= subject.name %></strong>
+          <p><%= subject.description %></p>
+          <div class="meta">
+            <%= link_to time_ago_in_words(subject.created_at) + " ago", subject %> 
+            <span class="admin">
+              | <%= link_to "Edit", edit_subject_path(subject) %> | 
+              <%= link_to "Delete", subject, method: :delete, data: { confirm: "Are you sure your want to delete this subject?"} %>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+<% end %>
+
+
+<!--<h1>Listing subjects</h1>
 
 <table>
   <tr>
@@ -23,3 +51,5 @@
 <br />
 
 <%= link_to 'New Subject', new_subject_path %>
+-->
+
