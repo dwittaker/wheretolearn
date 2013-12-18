@@ -1,31 +1,28 @@
-<h1>Listing sources</h1>
+<div class="page-header">
+<h1>Knowledge sources</h1>
+</div>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Weburl</th>
-    <th>Physaddress</th>
-    <th>Srctype</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+
+<%= link_to 'Create New Source', new_source_path, class: "btn btn-success" %>
+<br>
 
 <% @sources.each do |source| %>
-  <tr>
-    <td><%= source.name %></td>
-    <td><%= source.description %></td>
-    <td><%= source.weburl %></td>
-    <td><%= source.physaddress %></td>
-    <td><%= source.srctype %></td>
-    <td><%= link_to 'Show', source %></td>
-    <td><%= link_to 'Edit', edit_source_path(source) %></td>
-    <td><%= link_to 'Destroy', source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+  <div class="source">
+    <strong><%= source.name %></strong>
+    <p><%= source.description %></p>
+    <p><%= source.weburl %></p>
+    <p><%= source.physaddress %></p>
+    <p><%= source.srctype  %></p>
+    <div class="meta">
+        <%= link_to time_ago_in_words(source.created_at)+" ago", source %>
+        <span class="admin" >
+            | <%= link_to 'Edit', edit_source_path(source) %>
+            | <%= link_to 'Destroy', source, method: :delete, data: { confirm: 'Are you sure?' } %> |
+        </span>
+    </div>
+ </div>
 <% end %>
-</table>
 
-<br />
 
-<%= link_to 'New Source', new_source_path %>
+
+
