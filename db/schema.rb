@@ -11,11 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131221165655) do
+ActiveRecord::Schema.define(:version => 20131221211604) do
 
   create_table "portfolios", :force => true do |t|
-    t.integer  "portfolioid"
-    t.integer  "sourceid"
+    t.integer  "source_id"
     t.string   "pweburl"
     t.text     "physaddress"
     t.decimal  "cost"
@@ -25,9 +24,9 @@ ActiveRecord::Schema.define(:version => 20131221165655) do
     t.integer  "method"
     t.datetime "startdate"
     t.datetime "enddate"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-    t.integer  "moduleid"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "subjectmodule_id"
     t.integer  "learnercount"
   end
 
@@ -43,17 +42,15 @@ ActiveRecord::Schema.define(:version => 20131221165655) do
   end
 
   create_table "subject_modules", :force => true do |t|
-    t.integer  "subjectmoduleid"
-    t.integer  "moduleid"
-    t.integer  "subjectid"
+    t.integer  "subject_id"
     t.string   "name"
     t.text     "description"
     t.text     "purpose"
     t.integer  "category4"
     t.integer  "category5"
     t.integer  "order"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "subjects", :force => true do |t|
@@ -61,7 +58,6 @@ ActiveRecord::Schema.define(:version => 20131221165655) do
     t.text     "description"
     t.datetime "created_at",                                   :null => false
     t.datetime "updated_at",                                   :null => false
-    t.integer  "subjectid"
     t.string   "purpose"
     t.decimal  "complexity",     :precision => 5, :scale => 2
     t.integer  "category1"

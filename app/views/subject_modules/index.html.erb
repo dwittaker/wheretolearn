@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Subjectmoduleid</th>
-    <th>Moduleid</th>
+    
     <th>Subjectid</th>
     <th>Name</th>
     <th>Description</th>
@@ -18,9 +18,9 @@
 
 <% @subject_modules.each do |subject_module| %>
   <tr>
-    <td><%= subject_module.subjectmoduleid %></td>
-    <td><%= subject_module.moduleid %></td>
-    <td><%= subject_module.subjectid %></td>
+    <td><%= subject_module.subjectmodule_id %></td>
+    
+    <td><%= subject_module.subject_id %></td>
     <td><%= subject_module.name %></td>
     <td><%= subject_module.description %></td>
     <td><%= subject_module.purpose %></td>
