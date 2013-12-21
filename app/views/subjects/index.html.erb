@@ -1,37 +1,17 @@
-<div class="page-header">
-  <h1>All of the Subjects</h1>
-</div>
-
-<%= link_to "Post a New Subject", new_subject_path, class: "btn btn-success" %>
-
-<% @subjects.each do |subject| %>
-    
-  <% if can_display_subject(subject) %>
-    <div class="subject">
-      <div class="row">
-        <div class="span7">
-          <strong><%= subject.name %></strong>
-          <p><%= subject.description %></p>
-          <div class="meta">
-            <%= link_to time_ago_in_words(subject.created_at) + " ago", subject %> 
-            <span class="admin">
-              | <%= link_to "Edit", edit_subject_path(subject) %> | 
-              <%= link_to "Delete", subject, method: :delete, data: { confirm: "Are you sure your want to delete this subject?"} %>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <% end %>
-<% end %>
-
-
-<!--<h1>Listing subjects</h1>
+<h1>Listing subjects</h1>
 
 <table>
   <tr>
+    <th>Subjectid</th>
     <th>Name</th>
     <th>Description</th>
+    <th>Purpose</th>
+    <th>Complexity</th>
+    <th>Complexity</th>
+    <th>Category1</th>
+    <th>Category2</th>
+    <th>Category3</th>
+    <th>Avgtimetolearn</th>
     <th></th>
     <th></th>
     <th></th>
@@ -39,8 +19,16 @@
 
 <% @subjects.each do |subject| %>
   <tr>
+    <td><%= subject.subjectid %></td>
     <td><%= subject.name %></td>
     <td><%= subject.description %></td>
+    <td><%= subject.purpose %></td>
+    <td><%= subject.complexity %></td>
+    <td><%= subject.complexity %></td>
+    <td><%= subject.category1 %></td>
+    <td><%= subject.category2 %></td>
+    <td><%= subject.category3 %></td>
+    <td><%= subject.avgtimetolearn %></td>
     <td><%= link_to 'Show', subject %></td>
     <td><%= link_to 'Edit', edit_subject_path(subject) %></td>
     <td><%= link_to 'Destroy', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -51,5 +39,3 @@
 <br />
 
 <%= link_to 'New Subject', new_subject_path %>
--->
-

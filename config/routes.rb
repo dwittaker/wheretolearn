@@ -1,11 +1,11 @@
 Wheretolearn::Application.routes.draw do
+  resources :subject_modules
+
+
   resources :portfolios
 
 
   resources :sources
-
-
-  resources :subjects
 
 
   # The priority is based upon order of creation:

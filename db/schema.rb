@@ -11,11 +11,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131216065932) do
+ActiveRecord::Schema.define(:version => 20131221165655) do
 
   create_table "portfolios", :force => true do |t|
     t.integer  "portfolioid"
-    t.integer  "subjectid"
     t.integer  "sourceid"
     t.string   "pweburl"
     t.text     "physaddress"
@@ -26,8 +25,10 @@ ActiveRecord::Schema.define(:version => 20131216065932) do
     t.integer  "method"
     t.datetime "startdate"
     t.datetime "enddate"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "moduleid"
+    t.integer  "learnercount"
   end
 
   create_table "sources", :force => true do |t|
@@ -38,13 +39,35 @@ ActiveRecord::Schema.define(:version => 20131216065932) do
     t.integer  "srctype"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "membercount"
+  end
+
+  create_table "subject_modules", :force => true do |t|
+    t.integer  "subjectmoduleid"
+    t.integer  "moduleid"
+    t.integer  "subjectid"
+    t.string   "name"
+    t.text     "description"
+    t.text     "purpose"
+    t.integer  "category4"
+    t.integer  "category5"
+    t.integer  "order"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "subjects", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
+    t.integer  "subjectid"
+    t.string   "purpose"
+    t.decimal  "complexity",     :precision => 5, :scale => 2
+    t.integer  "category1"
+    t.integer  "category2"
+    t.integer  "category3"
+    t.integer  "avgtimetolearn"
   end
 
 end

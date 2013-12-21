@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subjectmoduleid: 1
+  moduleid: 1
+  subjectid: 1
+  name: MyString
+  description: MyText
+  purpose: MyText
+  category4: 1
+  category5: 1
+  order: 1
+
+two:
+  subjectmoduleid: 1
+  moduleid: 1
+  subjectid: 1
+  name: MyString
+  description: MyText
+  purpose: MyText
+  category4: 1
+  category5: 1
+  order: 1

@@ -12,12 +12,44 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :subjectid %><br />
+    <%= f.number_field :subjectid %>
+  </div>
+  <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :description %><br />
     <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :purpose %><br />
+    <%= f.text_field :purpose %>
+  </div>
+  <div class="field">
+    <%= f.label :complexity %><br />
+    <%= f.text_field :complexity %>
+  </div>
+  <div class="field">
+    <%= f.label :complexity %><br />
+    <%= f.text_field :complexity %>
+  </div>
+  <div class="field">
+    <%= f.label :category1 %><br />
+    <%= f.number_field :category1 %>
+  </div>
+  <div class="field">
+    <%= f.label :category2 %><br />
+    <%= f.number_field :category2 %>
+  </div>
+  <div class="field">
+    <%= f.label :category3 %><br />
+    <%= f.number_field :category3 %>
+  </div>
+  <div class="field">
+    <%= f.label :avgtimetolearn %><br />
+    <%= f.number_field :avgtimetolearn %>
   </div>
   <div class="actions">
     <%= f.submit %>

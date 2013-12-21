@@ -1,0 +1,39 @@
+<h1>Listing subject_modules</h1>
+
+<table>
+  <tr>
+    <th>Subjectmoduleid</th>
+    <th>Moduleid</th>
+    <th>Subjectid</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Purpose</th>
+    <th>Category4</th>
+    <th>Category5</th>
+    <th>Order</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subject_modules.each do |subject_module| %>
+  <tr>
+    <td><%= subject_module.subjectmoduleid %></td>
+    <td><%= subject_module.moduleid %></td>
+    <td><%= subject_module.subjectid %></td>
+    <td><%= subject_module.name %></td>
+    <td><%= subject_module.description %></td>
+    <td><%= subject_module.purpose %></td>
+    <td><%= subject_module.category4 %></td>
+    <td><%= subject_module.category5 %></td>
+    <td><%= subject_module.order %></td>
+    <td><%= link_to 'Show', subject_module %></td>
+    <td><%= link_to 'Edit', edit_subject_module_path(subject_module) %></td>
+    <td><%= link_to 'Destroy', subject_module, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subject module', new_subject_module_path %>

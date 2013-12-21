@@ -18,7 +18,7 @@ class PortfoliosControllerTest < ActionController::TestCase
 
   test "should create portfolio" do
     assert_difference('Portfolio.count') do
-      post :create, portfolio: { cost: @portfolio.cost, costtype: @portfolio.costtype, currency: @portfolio.currency, enddate: @portfolio.enddate, method: @portfolio.method, physaddress: @portfolio.physaddress, portfolioid: @portfolio.portfolioid, pweburl: @portfolio.pweburl, schedtype: @portfolio.schedtype, sourceid: @portfolio.sourceid, startdate: @portfolio.startdate, subjectid: @portfolio.subjectid }
+      post :create, portfolio: { cost: @portfolio.cost, costtype: @portfolio.costtype, currency: @portfolio.currency, enddate: @portfolio.enddate, method: @portfolio.method, moduleid: @portfolio.moduleid, physaddress: @portfolio.physaddress, portfolioid: @portfolio.portfolioid, pweburl: @portfolio.pweburl, schedtype: @portfolio.schedtype, sourceid: @portfolio.sourceid, startdate: @portfolio.startdate }
     end
 
     assert_redirected_to portfolio_path(assigns(:portfolio))
@@ -35,7 +35,7 @@ class PortfoliosControllerTest < ActionController::TestCase
   end
 
   test "should update portfolio" do
-    put :update, id: @portfolio, portfolio: { cost: @portfolio.cost, costtype: @portfolio.costtype, currency: @portfolio.currency, enddate: @portfolio.enddate, method: @portfolio.method, physaddress: @portfolio.physaddress, portfolioid: @portfolio.portfolioid, pweburl: @portfolio.pweburl, schedtype: @portfolio.schedtype, sourceid: @portfolio.sourceid, startdate: @portfolio.startdate, subjectid: @portfolio.subjectid }
+    put :update, id: @portfolio, portfolio: { cost: @portfolio.cost, costtype: @portfolio.costtype, currency: @portfolio.currency, enddate: @portfolio.enddate, method: @portfolio.method, moduleid: @portfolio.moduleid, physaddress: @portfolio.physaddress, portfolioid: @portfolio.portfolioid, pweburl: @portfolio.pweburl, schedtype: @portfolio.schedtype, sourceid: @portfolio.sourceid, startdate: @portfolio.startdate }
     assert_redirected_to portfolio_path(assigns(:portfolio))
   end
 
