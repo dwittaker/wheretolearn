@@ -11,7 +11,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131221211604) do
+ActiveRecord::Schema.define(:version => 20140101201431) do
+
+  create_table "category1s", :force => true do |t|
+    t.string   "cat1cod"
+    t.string   "cat1desc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "category2s", :force => true do |t|
+    t.integer  "category1_id"
+    t.string   "cat2cod"
+    t.string   "cat2desc"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "category2s", ["category1_id"], :name => "index_category2s_on_category1_id"
+
+  create_table "category3s", :force => true do |t|
+    t.integer  "category2_id"
+    t.string   "cat3cod"
+    t.string   "cat3desc"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "category3s", ["category2_id"], :name => "index_category3s_on_category2_id"
+
+  create_table "contenttags", :force => true do |t|
+    t.string   "ctagdesc"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "contenttags", ["taggable_id"], :name => "index_contenttags_on_taggable_id"
 
   create_table "portfolios", :force => true do |t|
     t.integer  "source_id"
@@ -46,8 +83,6 @@ ActiveRecord::Schema.define(:version => 20131221211604) do
     t.string   "name"
     t.text     "description"
     t.text     "purpose"
-    t.integer  "category4"
-    t.integer  "category5"
     t.integer  "order"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false

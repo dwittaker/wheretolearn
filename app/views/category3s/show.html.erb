@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category2:</b>
+  <%= @category3.category2.cat2desc %>
+</p>
+
+<p>
+  <b>Cat3cod:</b>
+  <%= @category3.cat3cod %>
+</p>
+
+<p>
+  <b>Cat3desc:</b>
+  <%= @category3.cat3desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_category1_category2_category3_path(@category1, @category2, @category3) %> |
+<%= link_to 'Back', category1_category2_category3s_path(@category1, @category2) %>

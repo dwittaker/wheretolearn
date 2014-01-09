@@ -1,14 +1,54 @@
 Wheretolearn::Application.routes.draw do
-  resources :subject_modules
+  #resources :contenttags
+
+
+  #resources :category1s
+
+#  resources :category3s
+
+
+#  resources :category2s
+
+#  resources :category2s do
+#    collection do
+#      get 'newcat3' => 'category3s#new'#, as: :newcat3
+#    end
+#  end 
+
+  resources :category1s do
+    resources :category2s do
+      resources :category3s
+    end 
+  end
+
+
+  
 
 
   resources :portfolios
 
 
-  resources :sources
+  #resources :sources
 
-  resources :subjects
+  #resources :subjects do
+  #  resources :subject_modules
+  #end 
 
+  resources :sources do
+    resources :contenttags
+    resources :portfolios
+  end
+
+  resources :subjects do
+    resources :subject_modules do
+      resources :contenttags
+      resources :portfolios
+    end
+    resources :contenttags
+
+  end
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

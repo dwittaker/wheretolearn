@@ -12,10 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :subject_id %><br />
-    <%= f.number_field :subject_id %>
-  </div>
-  <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
@@ -36,8 +32,13 @@
     <%= f.text_field :complexity %>
   </div>
   <div class="field">
-    <%= f.label :category1 %><br />
+<!--    <%= f.label :category1 %><br />
     <%= f.number_field :category1 %>
+-->
+   <%= f.label :category1 %><br />
+  
+    <%= f.select :category1, options_from_collection_for_select(Category1.all, :id, :cat1desc) %>
+    
   </div>
   <div class="field">
     <%= f.label :category2 %><br />
@@ -47,6 +48,9 @@
     <%= f.label :category3 %><br />
     <%= f.number_field :category3 %>
   </div>
+
+
+  
   <div class="field">
     <%= f.label :avgtimetolearn %><br />
     <%= f.number_field :avgtimetolearn %>

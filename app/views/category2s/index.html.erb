@@ -1,0 +1,28 @@
+<h1>Listing category2s</h1>
+
+<table>
+  <tr>
+    <th>Category1</th>
+    <th>Cat2cod</th>
+    <th>Cat2desc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @category2.each do |category2| %>
+  <tr>
+    <td><%= category2.category1.cat1desc %></td>
+    <td><%= category2.cat2cod %></td>
+    <td><%= category2.cat2desc %></td>
+    <td><%= link_to 'Show', category1_category2_path(@category1,category2) %></td>
+    <td><%= link_to 'Edit', edit_category1_category2_path(@category1,category2) %></td>
+    <td><%= link_to 'Destroy', category1_category2_path(@category1,category2), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+<%= link_to 'New Category2', new_category1_category2_path(@category1) %> |

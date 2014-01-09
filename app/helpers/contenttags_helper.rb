@@ -1,0 +1,2 @@
+module ContenttagsHelper
+end

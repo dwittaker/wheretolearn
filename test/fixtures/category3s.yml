@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  category2: 
+  cat3cod: MyString
+  cat3desc: MyString
+
+two:
+  category2: 
+  cat3cod: MyString
+  cat3desc: MyString
