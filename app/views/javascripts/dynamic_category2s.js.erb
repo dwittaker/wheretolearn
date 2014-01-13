@@ -1,0 +1,77 @@
+
+
+var category2s = new Array();
+<% for category2 in @category2s -%>
+  category2s.push(new Array(<%= category2.category1_id %>, '<%=h category2.cat2desc %>', <%= category2.id %>));
+<% end -%>
+
+var category3s = new Array();
+<% for category3 in @category3s -%>
+  category3s.push(new Array(<%= category3.category2_id %>, '<%=h category3.cat3desc %>', <%= category3.id %>));
+<% end -%>
+
+
+
+function category1Selected() {
+  subject_category1 = $('#subject_category1_id').val();
+  //options = $('#subject_category2').options;
+  var options = $('#subject_category2_id')[0].options;
+  options.length = 1;
+  $.each(category2s,function(key,category2) {
+    
+    if (category2[0] == subject_category1) {
+      options[options.length] = new Option(category2[1], category2[2]);
+    }
+  });
+  //if (options.length == 1) {
+  //  $('#category2_field').hide();
+  //} else {
+  //  $('#category2_field').show();
+  //}
+
+  category2Selected();
+}
+
+
+function category2Selected() {
+  subject_category2 = $('#subject_category2_id').val();
+  //options = $('#subject_category2').options;
+  var options = $('#subject_category3_id')[0].options;
+  options.length = 1;
+  $.each(category3s,function(key,category3) {
+    
+    if (category3[0] == subject_category2) {
+      options[options.length] = new Option(category3[1], category3[2]);
+    }
+  });
+//  if (options.length == 1) {
+//    $('#category3_field').hide();
+//  } else {
+//    $('#category3_field').show();
+//  }
+}
+
+
+
+$(document).ready(function(){ 
+  category1Selected();
+  $("#subject_category1_id").change(function(){ 
+    // Function actions here
+    category1Selected();
+  }); 
+
+  category2Selected();
+  $("#subject_category2_id").change(function(){ 
+    // Function actions here
+    category2Selected();
+  }); 
+}); 
+
+
+
+/*
+document.observe('dom:loaded', function() {
+console.log('hello');
+  category1Selected();
+  $('subject_category1').observe('change', category1Selected);
+});*/

@@ -3,6 +3,7 @@ class Portfolio < ActiveRecord::Base
   :portfolioid, :pweburl, :schedtype, :sourceid, :startdate, :subjectmodule_id
 
   belongs_to :source
-  
   belongs_to :subjectmodule
+  
+  has_many :usedmethods, :as => :deliverable
 end

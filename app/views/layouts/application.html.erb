@@ -4,7 +4,9 @@
   <title>Wheretolearn</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  
   <%= csrf_meta_tags %>
+  <%= yield(:head) %>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -23,7 +25,7 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li ><%= link_to "Subjects", subjects_path %></li>
-      <li ><%= link_to "Modules", subject_modules_path %></li>
+      
       <li ><%= link_to "Sources", sources_path %></li>
       <li><%= link_to "Categories", category1s_path %></li>
       <li class="dropdown">

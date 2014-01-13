@@ -1,4 +1,13 @@
 Wheretolearn::Application.routes.draw do
+  resources :usedmethods
+
+
+  resources :deliverymethods
+
+
+  resources :sourcetypes
+
+
   #resources :contenttags
 
 
@@ -48,7 +57,7 @@ Wheretolearn::Application.routes.draw do
 
   end
 
-  
+match  ':controller/:action.:format'  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

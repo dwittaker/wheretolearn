@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140101201431) do
+ActiveRecord::Schema.define(:version => 20140113055824) do
 
   create_table "category1s", :force => true do |t|
     t.string   "cat1cod"
@@ -50,6 +50,17 @@ ActiveRecord::Schema.define(:version => 20140101201431) do
 
   add_index "contenttags", ["taggable_id"], :name => "index_contenttags_on_taggable_id"
 
+  create_table "deliverymethods", :force => true do |t|
+    t.string   "dmcod"
+    t.string   "dmdesc"
+    t.string   "dmimgurl"
+    t.string   "dmimgtype"
+    t.integer  "dmimgw"
+    t.integer  "dmimgh"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "portfolios", :force => true do |t|
     t.integer  "source_id"
     t.string   "pweburl"
@@ -72,10 +83,17 @@ ActiveRecord::Schema.define(:version => 20140101201431) do
     t.text     "description"
     t.string   "weburl"
     t.text     "physaddress"
-    t.integer  "srctype"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.integer  "membercount"
+    t.integer  "sourcetype_id"
+  end
+
+  create_table "sourcetypes", :force => true do |t|
+    t.string   "stcod"
+    t.text     "stdesc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "subject_modules", :force => true do |t|
@@ -95,10 +113,21 @@ ActiveRecord::Schema.define(:version => 20140101201431) do
     t.datetime "updated_at",                                   :null => false
     t.string   "purpose"
     t.decimal  "complexity",     :precision => 5, :scale => 2
-    t.integer  "category1"
-    t.integer  "category2"
-    t.integer  "category3"
     t.integer  "avgtimetolearn"
+    t.integer  "category1_id"
+    t.integer  "category2_id"
+    t.integer  "category3_id"
   end
+
+  create_table "usedmethods", :force => true do |t|
+    t.integer  "deliverymethod_id"
+    t.integer  "deliverable_id"
+    t.string   "deliverable_type"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "usedmethods", ["deliverable_id"], :name => "index_usedmethods_on_deliverable_id"
+  add_index "usedmethods", ["deliverymethod_id"], :name => "index_usedmethods_on_deliverymethod_id"
 
 end

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  stcod: MyString
+  stdesc: MyText
+
+two:
+  stcod: MyString
+  stdesc: MyText

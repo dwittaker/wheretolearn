@@ -28,8 +28,10 @@
     <%= f.text_area :physaddress %>
   </div>
   <div class="field">
-    <%= f.label :srctype %><br />
-    <%= f.number_field :srctype %>
+    <%= f.label :sourcetype %><br />
+    
+    <%= f.collection_select :sourcetype_id, Sourcetype.find(:all), :id, :stdesc, :prompt => "Select a Source Type" %>
+ 
   </div>
   <div class="actions">
     <%= f.submit %>

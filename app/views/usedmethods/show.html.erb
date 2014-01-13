@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Deliverymethod:</b>
+  <%= @usedmethod.deliverymethod %>
+</p>
+
+<p>
+  <b>Deliverable:</b>
+  <%= @usedmethod.deliverable %>
+</p>
+
+
+<%= link_to 'Edit', edit_usedmethod_path(@usedmethod) %> |
+<%= link_to 'Back', usedmethods_path %>

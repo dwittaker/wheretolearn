@@ -1,0 +1,25 @@
+<h1>Listing sourcetypes</h1>
+
+<table>
+  <tr>
+    <th>Stcod</th>
+    <th>Stdesc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sourcetypes.each do |sourcetype| %>
+  <tr>
+    <td><%= sourcetype.stcod %></td>
+    <td><%= sourcetype.stdesc %></td>
+    <td><%= link_to 'Show', sourcetype %></td>
+    <td><%= link_to 'Edit', edit_sourcetype_path(sourcetype) %></td>
+    <td><%= link_to 'Destroy', sourcetype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sourcetype', new_sourcetype_path %>

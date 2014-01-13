@@ -18,6 +18,7 @@
   </tr>
 
 <% @subjects.each do |subject| %>
+
   <tr>
     
     <td><%= subject.name %></td>
@@ -25,9 +26,9 @@
     <td><%= subject.purpose %></td>
     <td><%= subject.complexity %></td>
     
-    <td><%= subject.category1 %></td>
-    <td><%= subject.category2 %></td>
-    <td><%= subject.category3 %></td>
+    <td><%= subject.category1.cat1desc %></td>
+    <td><%= subject.category2.cat2desc %></td>
+    <td><%= subject.category3.cat3desc %></td>
     <td><%= subject.avgtimetolearn %></td>
     <td><%= link_to 'Show', subject %></td>
     <td><%= link_to 'Edit', edit_subject_path(subject) %></td>

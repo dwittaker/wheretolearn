@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dmcod: MyString
+  dmdesc: MyString
+  dmimgurl: MyString
+  dmimgtype: MyString
+  dmimgw: 1
+  dmimgh: 1
+
+two:
+  dmcod: MyString
+  dmdesc: MyString
+  dmimgurl: MyString
+  dmimgtype: MyString
+  dmimgw: 1
+  dmimgh: 1

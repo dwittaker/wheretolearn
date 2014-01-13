@@ -1,3 +1,4 @@
+
 <%= form_for(@subject) do |f| %>
   <% if @subject.errors.any? %>
     <div id="error_explanation">
@@ -27,26 +28,20 @@
     <%= f.label :complexity %><br />
     <%= f.text_field :complexity %>
   </div>
-  <div class="field">
-    <%= f.label :complexity %><br />
-    <%= f.text_field :complexity %>
+
+  <div class="field">   
+    <%= f.label :category1 %><br />
+    <%= f.collection_select :category1_id, Category1.find(:all), :id, :cat1desc, :prompt => "Select a Category 1" %>
   </div>
-  <div class="field">
-<!--    <%= f.label :category1 %><br />
-    <%= f.number_field :category1 %>
--->
-   <%= f.label :category1 %><br />
-  
-    <%= f.select :category1, options_from_collection_for_select(Category1.all, :id, :cat1desc) %>
-    
-  </div>
-  <div class="field">
+  <div class="field" id="category2_field">
     <%= f.label :category2 %><br />
-    <%= f.number_field :category2 %>
+    
+    <%= f.collection_select :category2_id, Category2.find(:all), :id, :cat2desc, :prompt => "Select a Category 2" %>
   </div>
-  <div class="field">
+  <div class="field" id="category3_field">
     <%= f.label :category3 %><br />
-    <%= f.number_field :category3 %>
+    
+    <%= f.collection_select :category3_id, Category3.find(:all), :id, :cat3desc, :prompt => "Select a Category 3" %>
   </div>
 
 

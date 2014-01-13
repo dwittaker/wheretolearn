@@ -1,0 +1,25 @@
+<%= form_for(@usedmethod) do |f| %>
+  <% if @usedmethod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@usedmethod.errors.count, "error") %> prohibited this usedmethod from being saved:</h2>
+
+      <ul>
+      <% @usedmethod.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :deliverymethod %><br />
+    <%= f.text_field :deliverymethod %>
+  </div>
+  <div class="field">
+    <%= f.label :deliverable %><br />
+    <%= f.text_field :deliverable %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

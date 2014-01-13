@@ -1,0 +1,25 @@
+<%= form_for(@sourcetype) do |f| %>
+  <% if @sourcetype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sourcetype.errors.count, "error") %> prohibited this sourcetype from being saved:</h2>
+
+      <ul>
+      <% @sourcetype.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :stcod %><br />
+    <%= f.text_field :stcod %>
+  </div>
+  <div class="field">
+    <%= f.label :stdesc %><br />
+    <%= f.text_area :stdesc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
