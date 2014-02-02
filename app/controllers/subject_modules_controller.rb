@@ -56,7 +56,8 @@ class SubjectModulesController < ApplicationController
   # PUT /subject_modules/1
   # PUT /subject_modules/1.json
   def update
-    @subject_module = SubjectModule.find(params[:id])
+    #@subject_module = SubjectModule.find(params[:id])
+@subject_module = SubjectModule.find(params[@subject])
 
     respond_to do |format|
       if @subject_module.update_attributes(params[:subject_module])
@@ -80,4 +81,7 @@ class SubjectModulesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+def subject_module_fields
+end 
 end

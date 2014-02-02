@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140113055824) do
+ActiveRecord::Schema.define(:version => 20140129034422) do
 
   create_table "category1s", :force => true do |t|
     t.string   "cat1cod"
@@ -98,12 +98,12 @@ ActiveRecord::Schema.define(:version => 20140113055824) do
 
   create_table "subject_modules", :force => true do |t|
     t.integer  "subject_id"
-    t.string   "name"
-    t.text     "description"
-    t.text     "purpose"
+    t.string   "smname"
+    t.text     "smdescription"
+    t.text     "smpurpose"
     t.integer  "order"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "subjects", :force => true do |t|

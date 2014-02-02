@@ -5,4 +5,6 @@ class Source < ActiveRecord::Base
   has_many :contenttags, :as => :taggable
   belongs_to :sourcetype
   has_many :usedmethods, :as => :deliverable
+
+
 end

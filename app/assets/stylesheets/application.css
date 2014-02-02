@@ -12,10 +12,19 @@
  *= require_tree .
  */
 
+
 body {
 	padding-top: 70px;
 }
 
 .alert,.notice {
 	margin-top: 40px;
+}
+
+/*@import "bootstrap";
+*/
+.jquery_form_error_message{
+  display: block;
+  margin-top: 3px;
+  color: #f00;
 }

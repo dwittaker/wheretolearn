@@ -1,9 +1,17 @@
-// Place all the styles related to the subjects controller here.
+// Place all the styles related to the SubjectModules controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.subject {
-	border-bottom: solid 1px #CCC;
-	padding: 5px 0;
+body .modal {
+    /* new custom width */
+    width: 470px;
+    height: 450px;
+    /* must be half of the width, minus scrollbar on the left (30px) */
+    margin-left: 30px;
+    opacity: 0.9;
+background-color: #ffffff;
 }
 
+#subject_modules-table{
+	
+	width: 700px;
+}
