@@ -2,10 +2,11 @@ class SubjectModule < ActiveRecord::Base
   attr_accessible :smdescription, :smname, 
   :order, :smpurpose, :subject_id
 
-  belongs_to :subject
+  belongs_to :subject, :inverse_of => :subject_modules
   has_many :contenttags, :as => :taggable
   has_many :portfolios
   has_many :sources, through: :portfolios
+
 
   validates :smname,             
   			:presence => true,
@@ -20,6 +21,7 @@ class SubjectModule < ActiveRecord::Base
             
             :length => { :maximum => 300, :minimum => 3 }
 
+  validates_presence_of :subject
   #def new_record
   #	(self).new
   #end

@@ -40,6 +40,10 @@
   <b>Avgtimetolearn:</b>
   <%= @subject.avgtimetolearn %>
 </p>
+<div id="subject_module_display">
+  <%= render('subject_module_display') %>
+  <p></p>
+</div>
 
 
 <%= link_to 'Edit', edit_subject_path(@subject) %> |

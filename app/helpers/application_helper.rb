@@ -28,9 +28,9 @@ end
   end
 
 def add_subject_module_link(name)
-  link_to_function name do |page|
+  #link_to_function name do |page|
   page.insert_html :bottom, :tasks, :partial => 'subject_module', :object => Task.new
-  end
 end
+
 
 end

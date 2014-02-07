@@ -1,14 +1,22 @@
-
-
-<div class="subject_module">
-<% 'x'#new_or_existing = @subject.subject_module.new_record? ? 'new' : 'existing' %>
-<% new_or_existing = 'existing' %>
-<% prefix = "subject[#{new_or_existing}_subject_module_attributes][]" %>
-<% fields_for prefix, @subject_modules do |subject_module_form| -%>
-<p>
-
-subject_module: <%= subject_module_form.text_field :smname %>
-<%= link_to_function "remove", "$(this).up('.subject_module').remove()" %>
-</p>
-<% end -%>
-</div>
+<table id="subject_modules-table" class="table table-hover table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Purpose</th>
+  <th></th>
+  </thead>
+  <tbody>
+    <%= f.fields_for(:subject_modules) do |subject_modules_form| %>
+      <tr class="fields">
+        <td><%= subject_modules_form.text_field(:smname, :size => 35) %></td>
+        <td><%= subject_modules_form.text_area(:smdescription, :rows => 3) %></td>
+        <td><%= subject_modules_form.text_area(:smpurpose, :rows => 3) %></td>
+        <% if current_page?(new_subject_path) || current_page?(edit_subject_path) %>
+            <td>
+              <%= link_to_remove_fields('<b class="icon-remove">x</b>'.html_safe, subject_modules_form, :title => "Delete this Module.") %>
+            </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

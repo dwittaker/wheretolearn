@@ -25,7 +25,7 @@ gem 'jquery-rails'
 
 
 group :development do
-gem 'debugger'
+
   gem 'meta_request'
 end
 

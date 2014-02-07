@@ -27,6 +27,8 @@ class SubjectsController < ApplicationController
   def new
     @subject = Subject.new
     @subject.subject_modules.build
+    #@subject.build_subject_modules
+
     #1.times { @subject.subject_modules.build }
 
     respond_to do |format|
@@ -39,6 +41,7 @@ class SubjectsController < ApplicationController
   def edit
     @subject = Subject.find(params[:id])
     @subject_modules = @subject.subject_modules
+   # 4.times {@subject_modules.build}
   end
 
   # POST /subjects
@@ -60,19 +63,28 @@ class SubjectsController < ApplicationController
   # PUT /subjects/1
   # PUT /subjects/1.json
   def update
-    params[:subject][:existing_subject_module_attributes] ||= {}
     #params[:subject][:existing_subject_module_attributes] ||= {}
-    @subject = Subject.find(params[:id])
+    #params[:subject][:existing_subject_module_attributes] ||= {}
+
     #@subject.subject_modules = Subjectmodule.find(params[:subject_module])
     #@subject.subject_modules = SubjectModule.find(params[:subject_id])
+    @subject = Subject.find(params[:id])
+    #@subject.update_attributes({:subject_modules_attributes => params[:subject][:subject_modules_attributes]})
 
-
+    #@subject_modules = SubjectModule.find(params[:subject][:subject_modules_attributes][:id])
+    #@subject.subject_modules = SubjectModule.find(params[:subject][:subject_modules_attributes])
     respond_to do |format|
       if @subject.update_attributes(params[:subject])
-        if @subject.save_subject_modules  
+        #@subject_modules = SubjectModule.new(params[:subject][:subject_modules_attributes])
+
+        #@subject.subject_modules = @subject_modules
+        #@subject_modules.save
+        #@subject.subject_modules.update_attributes(params[:subject][:subject_modules_attributes])
+        if @subject.save
           format.html { redirect_to @subject, notice: 'Subject and Module(s) successfully updated.' }
           format.json { head :no_content }
         end
+
       else
         format.html { render action: "edit" }
         format.json { render json: @subject.errors, status: :unprocessable_entity }

@@ -1,0 +1,15 @@
+
+
+<div class="subject_module">
+
+<% fields_for @subject_modules do |subject_module_form| -%>
+<% new_or_existing = subject_module_form.new_record? ? 'new' : 'existing' %>
+
+<% prefix = "subject[#{new_or_existing}_subject_module_attributes][]" %>
+      <p>
+
+subject_module: <%= subject_module_form.text_field :smname %>
+<%= link_to_function "remove", "$(this).up('.subject_module').remove()" %>
+</p>
+<% end -%>
+</div>

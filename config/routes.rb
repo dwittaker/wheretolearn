@@ -1,4 +1,6 @@
 Wheretolearn::Application.routes.draw do
+
+
   resources :usedmethods
 
 
@@ -109,6 +111,8 @@ match  ':controller/:action.:format'
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
+
+  root :to => 'subjects#index'
 
   # See how all your routes lay out with "rake routes"
 
