@@ -1,6 +1,8 @@
 Wheretolearn::Application.routes.draw do
 
 
+  devise_for :users
+
   resources :usedmethods
 
 
@@ -59,7 +61,9 @@ Wheretolearn::Application.routes.draw do
 
   end
 
-match  ':controller/:action.:format'  
+match  ':controller/:action.:format'
+
+mount Blogit::Engine => '/blog'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
