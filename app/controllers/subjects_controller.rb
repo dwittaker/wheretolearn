@@ -1,4 +1,5 @@
 class SubjectsController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   # GET /subjects
   # GET /subjects.json
   def index
@@ -51,6 +52,9 @@ class SubjectsController < ApplicationController
 
     respond_to do |format|
       if @subject.save
+        if @subject.subject_modules.count == 0
+          savegeneralmodule(@subject)
+        end
         format.html { redirect_to @subject, notice: 'Subject was successfully created.' }
         format.json { render json: @subject, status: :created, location: @subject }
       else
@@ -60,26 +64,28 @@ class SubjectsController < ApplicationController
     end
   end
 
+  def savegeneralmodule(newsub)
+    @genmod = newsub.subject_modules.new
+
+    @genmod.smname = 'General'
+    @genmod.smdescription = 'Basic description of the subject'
+    @genmod.order = 1
+    @genmod.smpurpose = 'This is the main item related to the subject'
+
+
+    @genmod.save!
+  end
+
+
   # PUT /subjects/1
   # PUT /subjects/1.json
   def update
-    #params[:subject][:existing_subject_module_attributes] ||= {}
-    #params[:subject][:existing_subject_module_attributes] ||= {}
 
-    #@subject.subject_modules = Subjectmodule.find(params[:subject_module])
-    #@subject.subject_modules = SubjectModule.find(params[:subject_id])
     @subject = Subject.find(params[:id])
-    #@subject.update_attributes({:subject_modules_attributes => params[:subject][:subject_modules_attributes]})
 
-    #@subject_modules = SubjectModule.find(params[:subject][:subject_modules_attributes][:id])
-    #@subject.subject_modules = SubjectModule.find(params[:subject][:subject_modules_attributes])
     respond_to do |format|
       if @subject.update_attributes(params[:subject])
-        #@subject_modules = SubjectModule.new(params[:subject][:subject_modules_attributes])
 
-        #@subject.subject_modules = @subject_modules
-        #@subject_modules.save
-        #@subject.subject_modules.update_attributes(params[:subject][:subject_modules_attributes])
         if @subject.save
           format.html { redirect_to @subject, notice: 'Subject and Module(s) successfully updated.' }
           format.json { head :no_content }

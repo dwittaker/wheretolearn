@@ -1,9 +1,10 @@
 class Portfolio < ActiveRecord::Base
-  attr_accessible :cost, :costtype, :currency, :enddate, :method, :physaddress, 
-  :portfolioid, :pweburl, :schedtype, :sourceid, :startdate, :subjectmodule_id
+  attr_accessible :cost, :costtype, :currency, :enddate, :method, :physaddress,
+                  :pweburl, :schedtype, :source_id, :startdate, :subjectmodule_id
 
   belongs_to :source
   belongs_to :subjectmodule
   
   has_many :usedmethods, :as => :deliverable
+
 end

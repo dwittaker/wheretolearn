@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+
 //= require_tree .
 //
 
@@ -42,3 +43,16 @@ function add_fields(link, association, content) {
     before: content.replace(regexp, new_id)
   });
 }*/
+
+$(document).ready(function () {
+    //$('.dropdown-toggle').dropdown();
+    $('.navbar .dropdown').hover(function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(0).slideDown();
+    }, function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).delay(0).slideUp()
+    });
+
+    $(function() {
+        $('.datepicker').datepicker({dateFormat: 'yy-mm-dd'});
+    });
+});

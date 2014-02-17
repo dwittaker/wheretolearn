@@ -1,4 +1,5 @@
 class Category1sController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   # GET /category1s
   # GET /category1s.json
   def index

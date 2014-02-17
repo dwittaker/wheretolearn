@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   # GET /portfolios
   # GET /portfolios.json
   def index
@@ -25,7 +26,9 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/new.json
   def new
     @portfolio = Portfolio.new
-
+    @subjects = Subject.find(:all,:order => "name")
+    @selected_subject = @subjects[0]
+    @currlist = view_context.currencylist
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @portfolio }

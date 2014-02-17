@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <th>Portfolioid</th>
-    <th>Moduleid</th>
-    <th>Sourceid</th>
+
+    <th>SubjectModule_id</th>
+    <th>Source_id</th>
     <th>Pweburl</th>
     <th>Physaddress</th>
     <th>Cost</th>
@@ -21,9 +21,9 @@
 
 <% @portfolios.each do |portfolio| %>
   <tr>
-    <td><%= portfolio.portfolioid %></td>
-    <td><%= portfolio.moduleid %></td>
-    <td><%= portfolio.sourceid %></td>
+
+    <td><%= portfolio.subjectmodule_id %></td>
+    <td><%= portfolio.source_id %></td>
     <td><%= portfolio.pweburl %></td>
     <td><%= portfolio.physaddress %></td>
     <td><%= portfolio.cost %></td>

@@ -1,4 +1,5 @@
 class ContenttagsController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   # GET /contenttags
   # GET /contenttags.json
   def index

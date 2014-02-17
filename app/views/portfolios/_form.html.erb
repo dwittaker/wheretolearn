@@ -11,18 +11,24 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= f.label :portfolioid %><br />
-    <%= f.number_field :portfolioid %>
+    <%= f.label :source %><br />
+    <%= f.collection_select :source_id, Source.find(:all), :id, :name, :prompt => "Select a Source" %>
   </div>
-  <div class="field">
-    <%= f.label :moduleid %><br />
-    <%= f.number_field :moduleid %>
-  </div>
-  <div class="field">
-    <%= f.label :sourceid %><br />
-    <%= f.number_field :sourceid %>
-  </div>
+    <div class="field">
+      <%= f.label 'Subject' %><br />
+
+      <%= collection_select(:subject, :id, @subjects, :id, :name, options ={:prompt => "Select a Subject"}, :class =>"subject") %>
+
+    </div>
+
+    <div class="field">
+      <%= f.label :subjectmodule %><br />
+      <%= f.collection_select :subjectmodule_id, SubjectModule.find(:all), :id, :smname, :prompt => "Select a Module" %>
+    </div>
+
+
   <div class="field">
     <%= f.label :pweburl %><br />
     <%= f.text_field :pweburl %>
@@ -33,12 +39,10 @@
   </div>
   <div class="field">
     <%= f.label :cost %><br />
-    <%= f.text_field :cost %>
+    <%= f.text_field :cost, size: 15 %>
+    <%= select_tag("currency", options_for_select(@currlist), :prompt => "Select a Currency") %>
   </div>
-  <div class="field">
-    <%= f.label :currency %><br />
-    <%= f.text_field :currency %>
-  </div>
+
   <div class="field">
     <%= f.label :costtype %><br />
     <%= f.number_field :costtype %>
@@ -53,11 +57,11 @@
   </div>
   <div class="field">
     <%= f.label :startdate %><br />
-    <%= f.datetime_select :startdate %>
+    <%= f.text_field :startdate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
   </div>
   <div class="field">
     <%= f.label :enddate %><br />
-    <%= f.datetime_select :enddate %>
+    <%= f.text_field :enddate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
   </div>
   <div class="actions">
     <%= f.submit %>

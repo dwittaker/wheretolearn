@@ -1,4 +1,5 @@
 class DeliverymethodsController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   # GET /deliverymethods
   # GET /deliverymethods.json
   def index
