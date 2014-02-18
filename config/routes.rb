@@ -1,6 +1,9 @@
 Wheretolearn::Application.routes.draw do
 
 
+  resources :costtypes
+
+
 #  devise_for :users
 ##====== this block added from Treebook project to replace the basic devise_for :users
   as :user do

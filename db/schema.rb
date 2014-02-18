@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140209200201) do
+ActiveRecord::Schema.define(:version => 20140218012241) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -74,6 +74,13 @@ ActiveRecord::Schema.define(:version => 20140209200201) do
   end
 
   add_index "contenttags", ["taggable_id"], :name => "index_contenttags_on_taggable_id"
+
+  create_table "costtypes", :force => true do |t|
+    t.string   "costname"
+    t.string   "costdesc"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "deliverymethods", :force => true do |t|
     t.string   "dmcod"

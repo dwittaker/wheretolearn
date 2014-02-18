@@ -46,6 +46,7 @@
   <div class="field">
     <%= f.label :costtype %><br />
     <%= f.number_field :costtype %>
+    <%= f.collection_select :costtype_id, Costtype.find(:all), :id, :costname, :prompt => "Select a Type" %>
   </div>
   <div class="field">
     <%= f.label :schedtype %><br />

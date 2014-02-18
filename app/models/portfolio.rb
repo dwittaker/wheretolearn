@@ -4,7 +4,7 @@ class Portfolio < ActiveRecord::Base
 
   belongs_to :source
   belongs_to :subjectmodule
-  
+  belongs_to :costtype
   has_many :usedmethods, :as => :deliverable
 
 end

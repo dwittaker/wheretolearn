@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Costname:</b>
+  <%= @costtype.costname %>
+</p>
+
+<p>
+  <b>Costdesc:</b>
+  <%= @costtype.costdesc %>
+</p>
+
+
+<%= link_to 'Edit', edit_costtype_path(@costtype) %> |
+<%= link_to 'Back', costtypes_path %>
