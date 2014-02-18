@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140218012241) do
+ActiveRecord::Schema.define(:version => 20140218114323) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -99,7 +99,6 @@ ActiveRecord::Schema.define(:version => 20140218012241) do
     t.text     "physaddress"
     t.decimal  "cost"
     t.string   "currency"
-    t.integer  "costtype"
     t.integer  "schedtype"
     t.integer  "method"
     t.datetime "startdate"
@@ -108,6 +107,7 @@ ActiveRecord::Schema.define(:version => 20140218012241) do
     t.datetime "updated_at",       :null => false
     t.integer  "subjectmodule_id"
     t.integer  "learnercount"
+    t.integer  "costtype_id"
   end
 
   create_table "sources", :force => true do |t|
