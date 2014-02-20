@@ -1,0 +1,25 @@
+<h1>Listing schedtypes</h1>
+
+<table>
+  <tr>
+    <th>Schedname</th>
+    <th>Scheddesc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @schedtypes.each do |schedtype| %>
+  <tr>
+    <td><%= schedtype.schedname %></td>
+    <td><%= schedtype.scheddesc %></td>
+    <td><%= link_to 'Show', schedtype %></td>
+    <td><%= link_to 'Edit', edit_schedtype_path(schedtype) %></td>
+    <td><%= link_to 'Destroy', schedtype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Schedtype', new_schedtype_path %>

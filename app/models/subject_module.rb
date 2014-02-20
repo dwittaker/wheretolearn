@@ -25,4 +25,9 @@ class SubjectModule < ActiveRecord::Base
   #def new_record
   #	(self).new
   #end
+
+  def subjtitle
+    #smname + ' ' + smdescription
+    self.subject.name + ':' + smname
+  end
 end

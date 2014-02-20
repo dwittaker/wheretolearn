@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Schedname:</b>
+  <%= @schedtype.schedname %>
+</p>
+
+<p>
+  <b>Scheddesc:</b>
+  <%= @schedtype.scheddesc %>
+</p>
+
+
+<%= link_to 'Edit', edit_schedtype_path(@schedtype) %> |
+<%= link_to 'Back', schedtypes_path %>

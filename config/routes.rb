@@ -1,6 +1,9 @@
 Wheretolearn::Application.routes.draw do
 
 
+  resources :schedtypes
+
+
   resources :costtypes
 
 

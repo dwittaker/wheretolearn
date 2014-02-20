@@ -1,0 +1,25 @@
+<%= form_for(@schedtype) do |f| %>
+  <% if @schedtype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@schedtype.errors.count, "error") %> prohibited this schedtype from being saved:</h2>
+
+      <ul>
+      <% @schedtype.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :schedname %><br />
+    <%= f.text_field :schedname %>
+  </div>
+  <div class="field">
+    <%= f.label :scheddesc %><br />
+    <%= f.text_field :scheddesc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

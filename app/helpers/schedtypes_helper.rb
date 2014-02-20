@@ -1,0 +1,2 @@
+module SchedtypesHelper
+end
