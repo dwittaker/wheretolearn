@@ -2,13 +2,13 @@
 
 
 <p>
-  <b>SubjectModule_id:</b>
-  <%= @portfolio.subjectmodule_id %>
+  <b>SubjectModule:</b>
+  <%= @portfolio.subject_module.subjtitle %>
 </p>
 
 <p>
-  <b>Source_id:</b>
-  <%= @portfolio.source_id %>
+  <b>Source:</b>
+  <%= @portfolio.source.name %>
 </p>
 
 <p>
@@ -33,29 +33,27 @@
 
 <p>
   <b>Costtype:</b>
-  <%= @portfolio.costtype_id %>
+  <%= @portfolio.costtype.costname %>
 </p>
 
 <p>
   <b>Schedtype:</b>
-  <%= @portfolio.schedtype %>
-</p>
-
-<p>
-  <b>Method:</b>
-  <%= @portfolio.method %>
+  <%= @portfolio.schedtype.schedname %>
 </p>
 
 <p>
   <b>Startdate:</b>
-  <%= @portfolio.startdate %>
+  <%= @portfolio.startdate.to_formatted_s(:long) %>
 </p>
 
 <p>
   <b>Enddate:</b>
-  <%= @portfolio.enddate %>
+  <%= @portfolio.enddate.to_formatted_s(:long) %>
 </p>
-
+<div id="usedmethod_display">
+  <%= render('usedmethod_display') %>
+  <p></p>
+</div>
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>

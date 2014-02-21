@@ -3,15 +3,15 @@
 <table>
   <tr>
 
-    <th>SubjectModule_id</th>
-    <th>Source_id</th>
+    <th>SubjectModule</th>
+    <th>Source</th>
     <th>Pweburl</th>
     <th>Physaddress</th>
     <th>Cost</th>
     <th>Currency</th>
     <th>Costtype</th>
     <th>Schedtype</th>
-    <th>Method</th>
+
     <th>Startdate</th>
     <th>Enddate</th>
     <th></th>
@@ -22,17 +22,17 @@
 <% @portfolios.each do |portfolio| %>
   <tr>
 
-    <td><%= portfolio.subjectmodule_id %></td>
-    <td><%= portfolio.source_id %></td>
+    <td><%= portfolio.subject_module.subjtitle %></td>
+    <td><%= portfolio.source.name %></td>
     <td><%= portfolio.pweburl %></td>
     <td><%= portfolio.physaddress %></td>
     <td><%= portfolio.cost %></td>
     <td><%= portfolio.currency %></td>
-    <td><%= portfolio.costtype_id %></td>
-    <td><%= portfolio.schedtype %></td>
-    <td><%= portfolio.method %></td>
-    <td><%= portfolio.startdate %></td>
-    <td><%= portfolio.enddate %></td>
+    <td><%= portfolio.costtype.costname %></td>
+    <td><%= portfolio.schedtype.schedname %></td>
+
+    <td><%= portfolio.startdate.to_formatted_s(:long) %></td>
+    <td><%= portfolio.enddate.to_formatted_s(:long) %></td>
     <td><%= link_to 'Show', portfolio %></td>
     <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
     <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>

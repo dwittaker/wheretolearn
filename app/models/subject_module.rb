@@ -4,7 +4,7 @@ class SubjectModule < ActiveRecord::Base
 
   belongs_to :subject, :inverse_of => :subject_modules
   has_many :contenttags, :as => :taggable
-  has_many :portfolios
+  has_many :portfolios, :inverse_of => :subject_module
   has_many :sources, through: :portfolios
 
 
@@ -28,6 +28,6 @@ class SubjectModule < ActiveRecord::Base
 
   def subjtitle
     #smname + ' ' + smdescription
-    self.subject.name + ':' + smname
+    self.subject.name + ' : ' + smname
   end
 end

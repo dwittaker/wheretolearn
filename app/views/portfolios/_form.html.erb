@@ -25,7 +25,7 @@
 
     <div class="field">
       <%= f.label :subjectmodule %><br />
-      <%= f.collection_select :subjectmodule_id, SubjectModule.find(:all), :id, :smname, :prompt => "Select a Module" %>
+      <%= f.collection_select :subject_module_id, SubjectModule.find(:all), :id, :smname, :prompt => "Select a Module" %>
     </div>
 
 
@@ -51,10 +51,7 @@
     <%= f.label :schedtype %><br />
     <%= f.number_field :schedtype %>
   </div>
-  <div class="field">
-    <%= f.label :method %><br />
-    <%= f.number_field :method %>
-  </div>
+
   <div class="field">
     <%= f.label :startdate %><br />
     <%= f.text_field :startdate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
@@ -63,6 +60,17 @@
     <%= f.label :enddate %><br />
     <%= f.text_field :enddate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
   </div>
+
+    <fieldset>
+      <legend>Delivery Methods for <%= " #{ @portfolio.source.name - @portfolio.subject_module.subjtitle }" unless @portfolio.source.name.blank? %></legend>
+      <div id="usedmethods">
+        <%= render('usedmethod_table', :f => f) %>
+        <p></p>
+        <%= link_to_add_fields("Add a Method", f, :subject_modules, :class => "btn btn-primary", :title => "Add a new Method for this Portfolio.") %>
+        <p></p>
+      </div>
+    </fieldset>
+
   <div class="actions">
     <%= f.submit %>
   </div>

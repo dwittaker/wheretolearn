@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140220033316) do
+ActiveRecord::Schema.define(:version => 20140221124701) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -99,15 +99,14 @@ ActiveRecord::Schema.define(:version => 20140220033316) do
     t.text     "physaddress"
     t.decimal  "cost"
     t.string   "currency"
-    t.integer  "schedtype"
-    t.integer  "method"
     t.datetime "startdate"
     t.datetime "enddate"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-    t.integer  "subjectmodule_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "subject_module_id"
     t.integer  "learnercount"
     t.integer  "costtype_id"
+    t.integer  "schedtype_id"
   end
 
   create_table "schedtypes", :force => true do |t|

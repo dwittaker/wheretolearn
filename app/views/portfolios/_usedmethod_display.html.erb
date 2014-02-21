@@ -2,15 +2,15 @@
   <thead>
       <th>Name</th>
       <th>Description</th>
-      <th>Purpose</th>
+
   </thead>
   <tbody>
 
-      <% @subject.subject_modules.each do |subject_modules| %>
+      <% @portfolio.usedmethods.each do |usedmethods| %>
           <tr class="fields">
-            <td><%= subject_modules.smname %></td>
-            <td><%= subject_modules.smdescription %></td>
-            <td><%= subject_modules.smpurpose %></td>
+            <td><%= usedmethods.deliverymethod.dmcod %></td>
+            <td><%= usedmethods.deliverymethod.dmdesc %></td>
+
           </tr>
       <% end %>
   </tbody>
