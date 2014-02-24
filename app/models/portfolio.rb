@@ -8,6 +8,7 @@ class Portfolio < ActiveRecord::Base
   belongs_to :costtype, :inverse_of => :portfolios
   belongs_to :schedtype, :inverse_of => :portfolios
   has_many :usedmethods, :as => :deliverable
+  has_many :deliverymethods, :through => :usedmethods
 
   accepts_nested_attributes_for :usedmethods #, :reject_if => lambda { |a| a[:smname].blank? }, :allow_destroy => true
 

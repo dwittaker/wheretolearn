@@ -62,11 +62,11 @@
   </div>
 
     <fieldset>
-      <legend>Delivery Methods for <%= " #{ @portfolio.source.name - @portfolio.subject_module.subjtitle }" unless @portfolio.source.name.blank? %></legend>
+      <legend>Delivery Methods for <%= " #{ @portfolio.source.name - @portfolio.subject_module.subjtitle }" unless @portfolio.source.blank? %></legend>
       <div id="usedmethods">
         <%= render('usedmethod_table', :f => f) %>
         <p></p>
-        <%= link_to_add_fields("Add a Method", f, :subject_modules, :class => "btn btn-primary", :title => "Add a new Method for this Portfolio.") %>
+        <%= link_to_add_fields("Add a Method", f, :usedmethods, :class => "btn btn-primary", :title => "Add a new Method for this Portfolio.") %>
         <p></p>
       </div>
     </fieldset>

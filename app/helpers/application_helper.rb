@@ -42,4 +42,12 @@ def flash_class(type)
       ""
   end
 end
+
+def listdt(dt)
+  dt.strftime('%b %d, %Y')
+end
+
+def listdttm(dt)
+  dt.strftime('%b %d, %y %H:%M %p' )
+end
 end

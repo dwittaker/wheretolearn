@@ -31,8 +31,8 @@
     <td><%= portfolio.costtype.costname %></td>
     <td><%= portfolio.schedtype.schedname %></td>
 
-    <td><%= portfolio.startdate.to_formatted_s(:long) %></td>
-    <td><%= portfolio.enddate.to_formatted_s(:long) %></td>
+    <td><%=  listdt(portfolio.startdate) %></td>
+    <td><%=  listdt(portfolio.enddate) %></td>
     <td><%= link_to 'Show', portfolio %></td>
     <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
     <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>

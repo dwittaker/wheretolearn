@@ -26,7 +26,10 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/new.json
   def new
     @portfolio = Portfolio.new
+    @portfolio.usedmethods.build
+    #@portfolio.usedmethods.deliverymethods.build
     @subjects = Subject.find(:all,:order => "name")
+    @deliverymethods = Deliverymethod.find(:all,:order => "dmcod")
     @selected_subject = @subjects[0]
     @currlist = view_context.currencylist
     respond_to do |format|
