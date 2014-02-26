@@ -61,12 +61,21 @@
     <%= f.text_field :enddate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
   </div>
 
+
+
     <fieldset>
       <legend>Delivery Methods for <%= " #{ @portfolio.source.name - @portfolio.subject_module.subjtitle }" unless @portfolio.source.blank? %></legend>
-      <div id="usedmethods">
-        <%= render('usedmethod_table', :f => f) %>
-        <p></p>
-        <%= link_to_add_fields("Add a Method", f, :usedmethods, :class => "btn btn-primary", :title => "Add a new Method for this Portfolio.") %>
+      <div  id="usedmethods">
+    <table width="200" id="usedmethods-table" class="table table-hover table-striped" >
+          <thead>
+          <th></th>
+
+          <th></th>
+          </thead>
+          <tbody>
+        <tr><td><p><%= link_to_add_fields2( "Add Method", f, :usedmethods,:class => "btn btn-primary") %></p></td><td></td></tr>
+          </tbody>
+    </table>
         <p></p>
       </div>
     </fieldset>

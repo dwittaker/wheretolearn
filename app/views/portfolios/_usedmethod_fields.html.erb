@@ -1,31 +1,18 @@
+<tr class="fields">
+  <td>
+        <%= collection_select(:deliverymethod, :id, @deliverymethods, :id, :dmcod, options ={:prompt => "Select a Method"}, :class =>"deliverymethod") %>
 
-<div id="new-usedmethod-fields" class="modal fade" data-backdrop="static">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3>Add a Method<%= " to the #{ @portfolio.source.name } Portfolio" unless @portfolio.source.nil? %></h3>
-  </div>
-  <div class="modal-body">
-    <fieldset>
+    <%= f.hidden_field(:_destroy, :class => "field") %>
 
-      <div class="control-group">
-        <%= f.label(:dmcod, :class => "control-label") %>
-        <div class="controls">
-          <%= collection_select(:deliverymethod, :id, @deliverymethods, :id, :dmcod, options ={:prompt => "Select a Method"}, :class =>"deliverymethod") %>
+</td>
 
-        </div>
-      </div>
+  <% if current_page?(new_portfolio_path) || current_page?(edit_portfolio_path) %>
+      <td>
+
+        <%= link_to_remove_fields('<b class="icon-remove">x</b>'.html_safe, f, :title => "Delete this Method.") %>
+      </td>
+  <% end %>
 
 
 
-      <%= f.hidden_field(:_destroy, :class => "field") %>
-    </fieldset>
-  </div>
-  <div class="modal-footer">
-    <button id="addButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" title="Add this method to the list of methods that are assigned to this portfolio.">Add</button>
-    <button id="cancelButton" type="button" class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" title="Close this screen without adding the method to the list.">Cancel</button>
-  </div>
-</div>
-
-<script type="text/javascript">
-  usedmethodFieldsUI.init();
-</script>
+</tr>

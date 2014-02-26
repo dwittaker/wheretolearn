@@ -23,12 +23,20 @@ function remove_fields(link) {
     $(link).closest(".fields").hide();
 }
 
-function add_fields(link, association, content) {
+/*function add_fields(link, association, content) {
     var new_id = new Date().getTime();
     var regex = new RegExp("new_" + association, "g");
     $(link).parent().after(content.replace(regex, new_id));
     $('#new-subject_module-fields').modal('show');
-}
+}*/
+/*
+function add_fields2(link, association, content) {
+    var new_id = new Date().getTime();
+    var regexp = new RegExp("new_" + association, "g")
+    $(link).up().insert({
+        before: content.replace(regexp, new_id)
+    });
+}*/
 
 /*
 function remove_fields(link) {
