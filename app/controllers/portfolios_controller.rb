@@ -41,6 +41,12 @@ class PortfoliosController < ApplicationController
   # GET /portfolios/1/edit
   def edit
     @portfolio = Portfolio.find(params[:id])
+    @portfolio.usedmethods.build
+    @subjects = Subject.find(:all,:order => "name")
+    @deliverymethods = Deliverymethod.find(:all,:order => "dmcod")
+    @selected_subject = @portfolio.subject_module.subject
+    @currlist = view_context.currencylist
+    @usedmethods = @portfolio.usedmethods
   end
 
   # POST /portfolios
@@ -66,8 +72,15 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio.update_attributes(params[:portfolio])
-        format.html { redirect_to @portfolio, notice: 'Portfolio was successfully updated.' }
-        format.json { head :no_content }
+
+        if @portfolio.save
+          format.html { redirect_to @portfolio, notice: 'Portfolio was successfully updated.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @portfolio.errors, status: :unprocessable_entity }
+
+        end
       else
         format.html { render action: "edit" }
         format.json { render json: @portfolio.errors, status: :unprocessable_entity }

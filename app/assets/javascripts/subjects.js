@@ -15,7 +15,7 @@
 //  3.  Hide the modal form when the user is done entering data.
 //
 // If any other events need to be wired up, the init function would be the place to put them.
-var subject_moduleFieldsUI = {
+var yysubject_moduleFieldsUI = {
     init: function() {
         // Configuration for the jQuery validator plugin:
         // Set the error messages to appear under the element that has the error.  By default, the

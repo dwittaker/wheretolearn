@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140221124701) do
+ActiveRecord::Schema.define(:version => 20140306034020) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -107,6 +107,7 @@ ActiveRecord::Schema.define(:version => 20140221124701) do
     t.integer  "learnercount"
     t.integer  "costtype_id"
     t.integer  "schedtype_id"
+    t.integer  "subject_id"
   end
 
   create_table "schedtypes", :force => true do |t|

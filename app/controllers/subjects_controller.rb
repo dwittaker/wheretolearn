@@ -89,6 +89,9 @@ class SubjectsController < ApplicationController
         if @subject.save
           format.html { redirect_to @subject, notice: 'Subject and Module(s) successfully updated.' }
           format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @subject.errors, status: :unprocessable_entity }
         end
 
       else

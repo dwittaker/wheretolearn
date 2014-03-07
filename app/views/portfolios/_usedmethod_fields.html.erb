@@ -1,18 +1,21 @@
+<%= f.fields_for(:usedmethods) do |usedmethods_form| %>
 <tr class="fields">
   <td>
-        <%= collection_select(:deliverymethod, :id, @deliverymethods, :id, :dmcod, options ={:prompt => "Select a Method"}, :class =>"deliverymethod") %>
+        <%= usedmethods_form.collection_select( :deliverymethod_id, @deliverymethods, :id, :dmcod, options ={:prompt => "Select a Method"}) %>
 
-    <%= f.hidden_field(:_destroy, :class => "field") %>
+    <%= usedmethods_form.hidden_field(:_destroy, :class => "field") %>
 
-</td>
+  </td>
 
   <% if current_page?(new_portfolio_path) || current_page?(edit_portfolio_path) %>
       <td>
 
-        <%= link_to_remove_fields('<b class="icon-remove">x</b>'.html_safe, f, :title => "Delete this Method.") %>
+        <%= link_to_remove_fields('<b class="icon-remove">x</b>'.html_safe, usedmethods_form, :title => "Delete this Method.") %>
       </td>
   <% end %>
 
 
 
 </tr>
+
+<% end %>

@@ -2,6 +2,7 @@ class Subject < ActiveRecord::Base
   attr_accessible :subject_id, :name, :description, :purpose, :complexity, 
   :category1_id, :category2_id, :category3_id, :avgtimetolearn
   has_many :subject_modules, :inverse_of => :subject
+  has_many :portfolios
   has_many :sources, through: :portfolios
   belongs_to :category1
   	delegate :cat1cod, :cat1desc, :to => :category1
@@ -11,6 +12,8 @@ class Subject < ActiveRecord::Base
 	delegate :cat3cod, :cat3desc, :to => :category3
   has_many :contenttags, :as => :taggable
   attr_accessible :subject_modules_attributes
+
+  has_many :portfolios, :through => :subject_modules, :inverse_of => :subject
   
   accepts_nested_attributes_for :subject_modules, :reject_if => lambda { |a| a[:smname].blank? }, :allow_destroy => true
 
