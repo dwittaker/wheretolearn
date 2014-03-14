@@ -31,7 +31,7 @@ class SubjectsController < ApplicationController
     #@subject.build_subject_modules
 
     #1.times { @subject.subject_modules.build }
-
+    @subject_modules = @subject.subject_modules
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @subject }
@@ -41,6 +41,8 @@ class SubjectsController < ApplicationController
   # GET /subjects/1/edit
   def edit
     @subject = Subject.find(params[:id])
+    @subject.subject_modules.build
+
     @subject_modules = @subject.subject_modules
    # 4.times {@subject_modules.build}
   end

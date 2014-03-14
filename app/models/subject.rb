@@ -14,7 +14,9 @@ class Subject < ActiveRecord::Base
   attr_accessible :subject_modules_attributes
 
   has_many :portfolios, :through => :subject_modules, :inverse_of => :subject
-  
+
+  attr_accessible :subject_modules_attributes
+
   accepts_nested_attributes_for :subject_modules, :reject_if => lambda { |a| a[:smname].blank? }, :allow_destroy => true
 
 

@@ -20,13 +20,9 @@
       <%= f.label :subject %><br />
 
       <%= f.collection_select( :subject_id, @subjects, :id, :name, options ={:prompt => "Select a Subject"}) %>
-
-    </div>
-
-    <div class="field">
-      <%= f.label :subjectmodule %><br />
       <%= f.collection_select :subject_module_id, SubjectModule.find(:all), :id, :smname, :prompt => "Select a Module" %>
     </div>
+
 
 
   <div class="field">
@@ -60,7 +56,7 @@
     <%= f.label :enddate %><br />
     <%= f.text_field :enddate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
   </div>
-
+    <p></p><p></p>
 
 
     <fieldset>

@@ -17,6 +17,6 @@ class Portfolio < ActiveRecord::Base
 
   accepts_nested_attributes_for :usedmethods , :reject_if => lambda { |a| a[:deliverymethod_id].blank? }, :allow_destroy => true
 
-
+  validates_associated :usedmethods
 
 end

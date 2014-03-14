@@ -43,6 +43,7 @@ class PortfoliosController < ApplicationController
     @portfolio = Portfolio.find(params[:id])
     @portfolio.usedmethods.build
     @subjects = Subject.find(:all,:order => "name")
+
     @deliverymethods = Deliverymethod.find(:all,:order => "dmcod")
     @selected_subject = @portfolio.subject_module.subject
     @currlist = view_context.currencylist

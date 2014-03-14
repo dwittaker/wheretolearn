@@ -1,0 +1,59 @@
+
+
+var subject_modules = new Array();
+<% for subject_module in @subject_modules -%>
+subject_modules.push(new Array(<%= subject_module.subject_id %>, '<%=h subject_module.smname %>', <%= subject_module.id %>));
+<% end -%>
+
+
+
+
+
+function subjectSelected(start) {
+  selsubject = $('#portfolio_subject_id').val();
+  selsubject_module = $('#portfolio_subject_module_id').val();
+  found = false;
+
+  //options = $('#subject_category2').options;
+  var options = $('#portfolio_subject_module_id')[0].options;
+  options.length = 1;
+  //if (start == false)
+  //{
+      options[0] = new Option("Select a Module","");
+  //}
+
+
+  $.each(subject_modules,function(key,subject_module) {
+    
+    if (subject_module[0] == selsubject && options[0].value != subject_module[2]) {
+      options[options.length] = new Option(subject_module[1], subject_module[2]);
+        if (subject_module[2] == selsubject_module)
+        {
+            found = true;
+        }
+    }
+  });
+
+  if(found==true)
+  {
+  $('#portfolio_subject_module_id').val(selsubject_module);
+  }
+
+
+
+
+}
+
+
+
+
+
+$(document).ready(function(){ 
+  subjectSelected(false);
+  $("#portfolio_subject_id").change(function(){
+    // Function actions here
+    subjectSelected(false);
+  }); 
+
+
+}); 

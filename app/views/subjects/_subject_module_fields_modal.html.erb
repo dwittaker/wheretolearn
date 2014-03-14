@@ -1,0 +1,42 @@
+
+<div id="new-subject_module-fields" class="modal fade" data-backdrop="static">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>Add a Module<%= " to the #{ @subject.name } Subject" unless @subject.name.nil? %></h3>
+  </div>
+  <div class="modal-body">
+    <fieldset>
+
+      <div class="control-group">
+        <%= f.label(:smname, :class => "control-label") %>
+        <div class="controls">
+          
+          <%= f.text_field(:smname, :class => "input-xlarge field", :size => 35, :data => { :validation => "required validate_max_length length50", "validation-error-msg" => "A Name is required and cannot be longer than 50 characters." }) %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label(:smdescription, :class => "control-label") %>
+        <div class="controls">
+          <%= f.text_area(:smdescription, :class => "input-xlarge field", :rows => 3) %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label(:smpurpose, :class => "control-label") %>
+        <div class="controls">
+          <%= f.text_area(:smpurpose, :class => "input-xlarge field", :rows => 3) %>
+        </div>
+      </div>
+      <%= f.hidden_field(:_destroy, :class => "field") %>
+    </fieldset>
+  </div>
+  <div class="modal-footer">
+    <button id="addButton" type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true" title="Add this subject_module to the list of subject modules that are assigned to this subject.">Add</button>
+    <button id="cancelButton" type="button" class="btn btn-inverse" data-dismiss="modal" aria-hidden="true" title="Close this screen without adding the subject_module to the list.">Cancel</button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  subject_moduleFieldsUI.init();
+</script>
