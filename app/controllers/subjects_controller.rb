@@ -3,7 +3,13 @@ class SubjectsController < ApplicationController
   # GET /subjects
   # GET /subjects.json
   def index
-    @subjects = Subject.all
+
+    if params[:tag]
+      @subjects = Subject.tagged_with(params[:tag])
+    else
+      @subjects = Subject.all
+    end
+
     
 
     respond_to do |format|

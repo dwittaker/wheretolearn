@@ -3,7 +3,15 @@ class SourcesController < ApplicationController
   # GET /sources
   # GET /sources.json
   def index
-    @sources = Source.all
+
+    if params[:tag]
+      @sources = Source.tagged_with(params[:tag])
+    else
+      @sources = Source.all
+    end
+
+
+
 
     respond_to do |format|
       format.html # index.html.erb

@@ -1,5 +1,6 @@
 class Subject < ActiveRecord::Base
 
+
   require "acts-as-taggable-on"
   acts_as_taggable
 

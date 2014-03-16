@@ -149,4 +149,8 @@ match  ':controller/:action.:format'
   #######=========================
   #######HAS TO REMAIN AS LAST
   mount Blogit::Engine => '/blog'
+
+
+  get 'subject_tags/:tag', to: 'subjects#index', as: :subject_tag
+  get 'source_tags/:tag', to: 'sources#index', as: :source_tag
 end

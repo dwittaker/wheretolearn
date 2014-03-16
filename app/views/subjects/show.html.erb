@@ -43,7 +43,7 @@
 
 <p>
   <b>Tags:</b>
-  <%= @subject.tag_list %>
+  <%= raw @subject.tag_list.map{ |t| link_to t, subject_tag_path(t) }.join(' | ') %>
 </p>
 
 <div id="subject_module_display">

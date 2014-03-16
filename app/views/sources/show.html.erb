@@ -27,7 +27,7 @@
 
 <p>
   <b>Tags:</b>
-  <%= @source.tag_list %>
+  <%= raw @source.tag_list.map{ |t| link_to t, source_tag_path(t) }.join(' | ') %>
 </p>
 
 <div class="well well-sm">
