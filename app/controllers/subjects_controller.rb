@@ -52,6 +52,7 @@ class SubjectsController < ApplicationController
   def create
     @subject = Subject.new(params[:subject])
 
+
     respond_to do |format|
       if @subject.save
         if @subject.subject_modules.count == 0
@@ -86,6 +87,10 @@ class SubjectsController < ApplicationController
     @subject = Subject.find(params[:id])
 
     respond_to do |format|
+
+      #@arrlen = params[:subject]['subject_modules_attributes'].length
+      #@arrlen.times {@subject.subject_modules.build}
+
       if @subject.update_attributes(params[:subject])
 
         if @subject.save
