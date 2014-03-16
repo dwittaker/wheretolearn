@@ -60,11 +60,16 @@
     <%= f.label :avgtimetolearn %><br />
     <%= f.number_field :avgtimetolearn %>
   </div>
-  </fieldset>
+
+  <div class="field" id="new_subject_tag_field" >
+      <%= f.label :tag_list,  t(:tags, scope: 'subjects') %><br />
+      <%= f.text_field :tag_list %>
+  </div>
+</fieldset>
   <p> </p>
 
     <fieldset>
-      <legend>Modules for <%= " #{ @subject.name }" unless @subject.name.blank? %></legend>
+      <legend>Modules <%= "for #{ @subject.name }" unless @subject.name.blank? %></legend>
       <div  id="subject_modules">
         <table width="200" id="subject_modules-table" class="table table-hover table-striped" >
           <thead>

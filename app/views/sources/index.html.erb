@@ -13,11 +13,13 @@
     <p><%= source.weburl %></p>
     <p><%= source.physaddress %></p>
     <p><%= source.sourcetype.stdesc  %></p>
+    <% if (source.usedmethods.length > 0) %>
     <div class="well well-sm">
-        <% source.usedmethods.each do |deliv| %>
-            <span class="label label-default">Default</span>
-        <% end %>
+      <% source.usedmethods.each do |sm| %>
+          <span class="label label-default"><%= sm.deliverymethod.dmdesc %></span>
+      <% end %>
     </div>
+    <% end %>
     <div class="meta">
         <%= link_to time_ago_in_words(source.created_at)+" ago", source %>
         <span class="admin" >

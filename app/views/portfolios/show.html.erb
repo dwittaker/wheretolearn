@@ -50,10 +50,13 @@
   <b>Enddate:</b>
   <%= @portfolio.enddate.to_formatted_s(:long) %>
 </p>
-<div id="usedmethod_display">
-  <%= render('usedmethod_display') %>
-  <p></p>
+<div class="well well-sm">
+  <% @portfolio.usedmethods.each do |um| %>
+      <span class="label label-default"><%= um.deliverymethod.dmdesc %></span>
+  <% end %>
 </div>
+
+
 
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>

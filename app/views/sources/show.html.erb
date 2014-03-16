@@ -25,6 +25,17 @@
   <%= @source.sourcetype.stdesc %>
 </p>
 
+<p>
+  <b>Tags:</b>
+  <%= @source.tag_list %>
+</p>
+
+<div class="well well-sm">
+  <% @source.usedmethods.each do |sm| %>
+      <span class="label label-default"><%= sm.deliverymethod.dmdesc %></span>
+  <% end %>
+</div>
+
 
 <%= link_to 'Edit', edit_source_path(@source) %> |
 <%= link_to 'Back', sources_path %>

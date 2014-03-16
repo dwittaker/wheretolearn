@@ -27,6 +27,9 @@ class SourcesController < ApplicationController
   def new
     @source = Source.new
 
+    @source.usedmethods.build
+    @deliverymethods = Deliverymethod.find(:all,:order => "dmcod")
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @source }
@@ -36,6 +39,10 @@ class SourcesController < ApplicationController
   # GET /sources/1/edit
   def edit
     @source = Source.find(params[:id])
+
+    @source.usedmethods.build
+    @deliverymethods = Deliverymethod.find(:all,:order => "dmcod")
+    @usedmethods = @source.usedmethods
   end
 
   # POST /sources
@@ -61,8 +68,15 @@ class SourcesController < ApplicationController
 
     respond_to do |format|
       if @source.update_attributes(params[:source])
-        format.html { redirect_to @source, notice: 'Source was successfully updated.' }
-        format.json { head :no_content }
+        if @source.save
+          format.html { redirect_to @source, notice: 'Source was successfully updated.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @source.errors, status: :unprocessable_entity }
+
+        end
+
       else
         format.html { render action: "edit" }
         format.json { render json: @source.errors, status: :unprocessable_entity }

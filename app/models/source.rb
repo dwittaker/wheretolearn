@@ -6,5 +6,16 @@ class Source < ActiveRecord::Base
   belongs_to :sourcetype, :inverse_of => :sources
   has_many :usedmethods, :as => :deliverable
 
+  attr_accessible :usedmethods_attributes
+
+  accepts_nested_attributes_for :usedmethods , :reject_if => lambda { |a| a[:deliverymethod_id].blank? }, :allow_destroy => true
+
+  validates_associated :usedmethods
+
+  require "acts-as-taggable-on"
+  acts_as_taggable
+
+  attr_accessible :tag_list
+
 
 end

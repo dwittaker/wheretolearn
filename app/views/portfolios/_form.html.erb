@@ -60,7 +60,7 @@
 
 
     <fieldset>
-      <legend>Delivery Methods for <%= " #{ @portfolio.source.name + @portfolio.subject_module.subjtitle }" unless @portfolio.source.blank? %></legend>
+      <legend>Delivery Methods <%= "for #{ @portfolio.source.name + @portfolio.subject_module.subjtitle }" unless @portfolio.source.blank? %></legend>
       <div  id="usedmethods">
     <table width="200" id="usedmethods-table" class="table table-hover table-striped" >
           <thead>

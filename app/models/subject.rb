@@ -1,6 +1,13 @@
 class Subject < ActiveRecord::Base
+
+  require "acts-as-taggable-on"
+  acts_as_taggable
+
   attr_accessible :subject_id, :name, :description, :purpose, :complexity, 
-  :category1_id, :category2_id, :category3_id, :avgtimetolearn
+  :category1_id, :category2_id, :category3_id, :avgtimetolearn, :tag_list
+  #tag_list added along with require at top to link with acts-as-taggable-on
+
+
   has_many :subject_modules, :inverse_of => :subject
   has_many :portfolios
   has_many :sources, through: :portfolios
@@ -15,7 +22,7 @@ class Subject < ActiveRecord::Base
 
   has_many :portfolios, :through => :subject_modules, :inverse_of => :subject
 
-  attr_accessible :subject_modules_attributes
+  attr_accessible :subject_modules_attributes # not sure why I have this twice but will leave for now
 
   accepts_nested_attributes_for :subject_modules, :reject_if => lambda { |a| a[:smname].blank? }, :allow_destroy => true
 
