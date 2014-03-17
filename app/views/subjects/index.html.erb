@@ -42,3 +42,11 @@
 <br />
 
 <%= link_to 'New Subject', new_subject_path %>
+<p>
+Testing Tag Cloud....
+<div id="tag_cloud">
+  <% tag_cloud Subject.tag_counts, %w[s m l] do |tag, css_class| %>
+      <%= link_to tag.name, subject_tag_path(tag.name), class: css_class %>
+  <% end %>
+</div>
+</p>

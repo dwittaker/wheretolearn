@@ -1,6 +1,9 @@
 Wheretolearn::Application.routes.draw do
 
 
+  resources :opinions
+
+
   resources :schedtypes
 
 

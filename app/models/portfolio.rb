@@ -10,6 +10,7 @@ class Portfolio < ActiveRecord::Base
   belongs_to :schedtype, :inverse_of => :portfolios
   has_many :usedmethods, :as => :deliverable
   has_many :deliverymethods, :through => :usedmethods
+  has_many :opinions, :as => :opinionable
 
   #belongs_to :subject, :through => :subject_module
   #, :inverse_of => :portfolios

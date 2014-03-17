@@ -5,7 +5,7 @@ class Source < ActiveRecord::Base
   has_many :contenttags, :as => :taggable
   belongs_to :sourcetype, :inverse_of => :sources
   has_many :usedmethods, :as => :deliverable
-
+  has_many :opinions, :as => :opinionable
   attr_accessible :usedmethods_attributes
 
   accepts_nested_attributes_for :usedmethods , :reject_if => lambda { |a| a[:deliverymethod_id].blank? }, :allow_destroy => true

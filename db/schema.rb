@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140306034020) do
+ActiveRecord::Schema.define(:version => 20140317055757) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -92,6 +92,19 @@ ActiveRecord::Schema.define(:version => 20140306034020) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "opinions", :force => true do |t|
+    t.integer  "opinionable_id"
+    t.string   "opinionable_type"
+    t.decimal  "rating"
+    t.string   "comment"
+    t.integer  "user_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "opinions", ["opinionable_id"], :name => "index_opinions_on_opinionable_id"
+  add_index "opinions", ["user_id"], :name => "index_opinions_on_user_id"
 
   create_table "portfolios", :force => true do |t|
     t.integer  "source_id"
