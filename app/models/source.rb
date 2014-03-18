@@ -1,5 +1,5 @@
 class Source < ActiveRecord::Base
-  attr_accessible :description, :name, :physaddress, :weburl, :sourcetype_id
+  attr_accessible :description, :name, :physaddress, :weburl, :sourcetype_id, :slug
   has_many :portfolios, :inverse_of => :source
   has_many :subjects, through: :portfolios
   has_many :contenttags, :as => :taggable
@@ -17,5 +17,11 @@ class Source < ActiveRecord::Base
 
   attr_accessible :tag_list
 
+  extend FriendlyId
+  friendly_id :name, use: :slugged
 
+  def should_generate_new_friendly_id?
+    true
+    #new_record?
+  end
 end

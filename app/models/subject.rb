@@ -5,7 +5,7 @@ class Subject < ActiveRecord::Base
   acts_as_taggable
 
   attr_accessible :subject_id, :name, :description, :purpose, :complexity, 
-  :category1_id, :category2_id, :category3_id, :avgtimetolearn, :tag_list
+  :category1_id, :category2_id, :category3_id, :avgtimetolearn, :tag_list, :slug
   #tag_list added along with require at top to link with acts-as-taggable-on
 
 
@@ -82,7 +82,12 @@ class Subject < ActiveRecord::Base
 #after_update :save_subject_modules
 validates_associated :subject_modules
 
-  
+  extend FriendlyId
+  friendly_id :name, use: :slugged
 
+  def should_generate_new_friendly_id?
+    true
+    #new_record?
+  end
 
 end

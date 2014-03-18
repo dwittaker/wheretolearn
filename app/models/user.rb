@@ -23,4 +23,7 @@ class User < ActiveRecord::Base
 
 
   end
+
+  extend FriendlyId
+  friendly_id :profile_name
 end

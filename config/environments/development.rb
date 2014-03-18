@@ -37,4 +37,7 @@ Wheretolearn::Application.configure do
 
   #as suggested by devise install
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #Added 2014-03-18 to allow use of friendlyid for permalinks and sef
+  config.gem "friendly_id"
 end
