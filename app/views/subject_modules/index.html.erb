@@ -1,4 +1,4 @@
-<h1>Listing subject_modules</h1>
+<h1>Listing <%= @subject.name %> modules</h1>
 
 <table>
   <tr>
@@ -23,13 +23,13 @@
     <td><%= subject_module.smdescription %></td>
     <td><%= subject_module.smpurpose %></td>
     <td><%= subject_module.order %></td>
-    <td><%= link_to 'Show', subject_module %></td>
-    <td><%= link_to 'Edit', edit_subject_module_path(subject_module) %></td>
-    <td><%= link_to 'Destroy', subject_module, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Show', subject_subject_module_path(subject_module.subject, subject_module) %></td>
+    <td><%= link_to 'Edit', edit_subject_subject_module_path(subject_module.subject, subject_module) %></td>
+
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Subject module', new_subject_module_path %>
+

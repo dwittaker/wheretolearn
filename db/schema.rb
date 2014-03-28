@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140318065819) do
+ActiveRecord::Schema.define(:version => 20140328031323) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -132,7 +132,12 @@ ActiveRecord::Schema.define(:version => 20140318065819) do
     t.integer  "costtype_id"
     t.integer  "schedtype_id"
     t.integer  "subject_id"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
   end
+
+  add_index "portfolios", ["created_by_id"], :name => "index_portfolios_on_created_by_id"
+  add_index "portfolios", ["updated_by_id"], :name => "index_portfolios_on_updated_by_id"
 
   create_table "schedtypes", :force => true do |t|
     t.string   "schedname"
@@ -151,9 +156,13 @@ ActiveRecord::Schema.define(:version => 20140318065819) do
     t.integer  "membercount"
     t.integer  "sourcetype_id"
     t.string   "slug"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
   end
 
+  add_index "sources", ["created_by_id"], :name => "index_sources_on_created_by_id"
   add_index "sources", ["slug"], :name => "index_sources_on_slug"
+  add_index "sources", ["updated_by_id"], :name => "index_sources_on_updated_by_id"
 
   create_table "sourcetypes", :force => true do |t|
     t.string   "stcod"
@@ -170,7 +179,14 @@ ActiveRecord::Schema.define(:version => 20140318065819) do
     t.integer  "order"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.string   "slug"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
   end
+
+  add_index "subject_modules", ["created_by_id"], :name => "index_subject_modules_on_created_by_id"
+  add_index "subject_modules", ["slug"], :name => "index_subject_modules_on_slug"
+  add_index "subject_modules", ["updated_by_id"], :name => "index_subject_modules_on_updated_by_id"
 
   create_table "subjects", :force => true do |t|
     t.string   "name"
@@ -184,9 +200,13 @@ ActiveRecord::Schema.define(:version => 20140318065819) do
     t.integer  "category2_id"
     t.integer  "category3_id"
     t.string   "slug"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
   end
 
+  add_index "subjects", ["created_by_id"], :name => "index_subjects_on_created_by_id"
   add_index "subjects", ["slug"], :name => "index_subjects_on_slug"
+  add_index "subjects", ["updated_by_id"], :name => "index_subjects_on_updated_by_id"
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140323022212_add_slug_to_subject_modules.rb" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140328031323_add_userreference_to_portfolio.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/sitemap.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/sitemaps/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opinions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subject_modules/index.html.erb" afterPath="$PROJECT_DIR$/app/views/subject_modules/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/portfolio.rb" afterPath="$PROJECT_DIR$/app/models/portfolio.rb" />
@@ -17,7 +13,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject_module.rb" afterPath="$PROJECT_DIR$/app/models/subject_module.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/subject_modules_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/subject_modules_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -1258,7 +1253,15 @@
       <created>1395380378817</created>
       <updated>1395380378817</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Completed configuration of sitemap for both main app + blog.">
+      <created>1395981855549</created>
+      <updated>1395981855549</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Slug to Subject_modules to allow Friendly_id for SEF. Still need to work out a suitable page for the modules&#10;">
+      <created>1395981906581</created>
+      <updated>1395981906581</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1349,7 +1352,9 @@
     <MESSAGE value="Have just added Opinions scaffold and table to system, adding source and portfolio as potential items for opinions using polymorpic." />
     <MESSAGE value="Have added friendly_id system for permalink slugs to Subject, Sources and Users. Need to sort out for Blog&#10;" />
     <MESSAGE value="Installed sitemap generator gem - not configured yet&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Installed sitemap generator gem - not configured yet&#10;" />
+    <MESSAGE value="Completed configuration of sitemap for both main app + blog." />
+    <MESSAGE value="Added Slug to Subject_modules to allow Friendly_id for SEF. Still need to work out a suitable page for the modules&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Slug to Subject_modules to allow Friendly_id for SEF. Still need to work out a suitable page for the modules&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

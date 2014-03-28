@@ -12,6 +12,9 @@ class Portfolio < ActiveRecord::Base
   has_many :deliverymethods, :through => :usedmethods
   has_many :opinions, :as => :opinionable
 
+  belongs_to :created_by, class_name: 'User', :inverse_of => :portfolios
+  belongs_to :updated_by, class_name: 'User', :inverse_of => :portfolios
+
   #belongs_to :subject, :through => :subject_module
   #, :inverse_of => :portfolios
   attr_accessible :usedmethods_attributes

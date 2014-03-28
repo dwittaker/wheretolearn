@@ -7,6 +7,8 @@ class SubjectModule < ActiveRecord::Base
   has_many :portfolios, :inverse_of => :subject_module
   has_many :sources, through: :portfolios
 
+  belongs_to :created_by, class_name: 'User', :inverse_of => :subject_modules
+  belongs_to :updated_by, class_name: 'User', :inverse_of => :subject_modules
 
   validates :smname,             
   			:presence => true,
@@ -29,5 +31,13 @@ class SubjectModule < ActiveRecord::Base
   def subjtitle
     #smname + ' ' + smdescription
     self.subject.name + ' : ' + smname
+  end
+
+  extend FriendlyId
+  friendly_id :smname, use: :slugged
+
+  def should_generate_new_friendly_id?
+    true
+    #new_record?
   end
 end

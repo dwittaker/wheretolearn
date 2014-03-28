@@ -3,17 +3,21 @@ class SubjectModulesController < ApplicationController
   # GET /subject_modules
   # GET /subject_modules.json
   def index
-    @subject_modules = SubjectModule.all
+    @subject = Subject.find(params[:subject_id])
+    @subject_modules = @subject.subject_modules
+    #SubjectModule.find(params[:subject_id])
+
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @subject_modules }
+      format.json { render json: @subject }
     end
   end
 
   # GET /subject_modules/1
   # GET /subject_modules/1.json
   def show
+    @subject = Subject.find(params[:subject_id])
     @subject_module = SubjectModule.find(params[:id])
 
 

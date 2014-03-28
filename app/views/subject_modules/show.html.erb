@@ -1,10 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Subjectmoduleid:</b>
-  <%= @subject_module.subjectmodule_id %>
-</p>
-
 
 <p>
   <b>Subjectid:</b>
@@ -33,5 +28,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_subject_module_path(@subject_module) %> |
-<%= link_to 'Back', subject_modules_path %>
+<%= link_to 'Edit', edit_subject_subject_module_path(@subject,@subject_module) %> |
+<%= link_to 'Back', subject_subject_modules_path(@subject) %>
