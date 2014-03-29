@@ -1,7 +1,7 @@
 Wheretolearn::Application.routes.draw do
 
 
-  resources :opinions
+
 
 
   resources :schedtypes
@@ -63,7 +63,11 @@ Wheretolearn::Application.routes.draw do
   
 
 
-  resources :portfolios
+  resources :portfolios do
+    resources :opinions
+  end
+
+
 
 
   #resources :sources
@@ -75,6 +79,7 @@ Wheretolearn::Application.routes.draw do
   resources :sources do
     resources :contenttags
     resources :portfolios
+    resources :opinions
   end
 
   resources :subjects do

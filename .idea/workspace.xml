@@ -8,16 +8,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opinions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/opinion.rb" afterPath="$PROJECT_DIR$/app/models/opinion.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/opinions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/portfolio.rb" afterPath="$PROJECT_DIR$/app/models/portfolio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opinions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/source.rb" afterPath="$PROJECT_DIR$/app/models/source.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sources_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sources_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject.rb" afterPath="$PROJECT_DIR$/app/models/subject.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -67,7 +60,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="45" selection-start="317" selection-end="317" vertical-scroll-proportion="0.7480315" vertical-offset="0" max-vertical-offset="390">
+            <state line="19" column="45" selection-start="317" selection-end="317" vertical-scroll-proportion="0.7519789" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -1394,7 +1387,11 @@
       <created>1395982035640</created>
       <updated>1395982035640</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Completed modifications to models and controllers for assignment of items based on current user - subject, portfolio, source. created_by and updated_by fields in each table. Opinions table still deemed unnecessary">
+      <created>1396079418380</created>
+      <updated>1396079418380</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1421,7 +1418,8 @@
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36312848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36414567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1436,7 +1434,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1467,7 +1464,8 @@
     <MESSAGE value="Completed configuration of sitemap for both main app + blog." />
     <MESSAGE value="Added Slug to Subject_modules to allow Friendly_id for SEF. Still need to work out a suitable page for the modules&#10;" />
     <MESSAGE value="Started modifications to store created by and updated by id for various models including portfolio, subject, source, subject_module. All tying back to User model. Opinion already has a user id reference that may be sufficient since an opinion should only be creatable and modifiable by one person.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started modifications to store created by and updated by id for various models including portfolio, subject, source, subject_module. All tying back to User model. Opinion already has a user id reference that may be sufficient since an opinion should only be creatable and modifiable by one person.&#10;" />
+    <MESSAGE value="Completed modifications to models and controllers for assignment of items based on current user - subject, portfolio, source. created_by and updated_by fields in each table. Opinions table still deemed unnecessary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed modifications to models and controllers for assignment of items based on current user - subject, portfolio, source. created_by and updated_by fields in each table. Opinions table still deemed unnecessary" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1833,7 +1831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="317" selection-end="317" vertical-scroll-proportion="0.7480315" vertical-offset="0" max-vertical-offset="390">
+        <state line="19" column="45" selection-start="317" selection-end="317" vertical-scroll-proportion="0.7519789" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
       </provider>

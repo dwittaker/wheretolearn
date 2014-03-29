@@ -2,7 +2,11 @@ class OpinionsController < ApplicationController
   # GET /opinions
   # GET /opinions.json
   def index
-    @opinions = Opinion.all
+    @portfolio = Portfolio.find(params[:portfolio_id])
+
+
+    @opinion = @portfolio.opinions.all
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +17,13 @@ class OpinionsController < ApplicationController
   # GET /opinions/1
   # GET /opinions/1.json
   def show
-    @opinion = Opinion.find(params[:id])
+
+
+
+    @portfolio = Portfolio.find(params[:portfolio_id])
+
+    @opinion = @portfolio.opinions.find(params[:id])
+
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,7 +34,11 @@ class OpinionsController < ApplicationController
   # GET /opinions/new
   # GET /opinions/new.json
   def new
-    @opinion = Opinion.new
+
+    @portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @portfolio.opinions.new
+
+    #@opinion = Opinion.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,18 +48,25 @@ class OpinionsController < ApplicationController
 
   # GET /opinions/1/edit
   def edit
-    @opinion = Opinion.find(params[:id])
+    @portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @portfolio.opinions.find(params[:id])
+
   end
 
   # POST /opinions
   # POST /opinions.json
   def create
-    @opinion = Opinion.new(params[:opinion])
+    @portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @portfolio.opinions.build(params[:opinion])
+
+    @opinion.user = current_user
+
+#    @opinion = Opinion.new(params[:opinion])
 
     respond_to do |format|
       if @opinion.save
-        format.html { redirect_to @opinion, notice: 'Opinion was successfully created.' }
-        format.json { render json: @opinion, status: :created, location: @opinion }
+        format.html { redirect_to [@portfolio,@opinion], notice: 'Opinion was successfully created.' }
+        format.json { render json: @opinion, status: :created, location: [@portfolio,@opinion] }
       else
         format.html { render action: "new" }
         format.json { render json: @opinion.errors, status: :unprocessable_entity }
