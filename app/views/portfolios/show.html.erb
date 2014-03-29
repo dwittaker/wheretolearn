@@ -61,6 +61,24 @@
 <%= link_to 'Edit', edit_portfolio_path(@portfolio) %> |
 <%= link_to 'Back', portfolios_path %>
 
+<h1>Opinions</h1>
 
+<table>
+  <tr>
+    <th>Rating</th>
+    <th>Comment</th>
+    <th>User</th>
+
+  </tr>
+
+  <% @portfolio.opinions.each do |opinion| %>
+      <tr>
+        <td><%= opinion.rating %></td>
+        <td><%= opinion.comment %></td>
+        <td><%= opinion.user.username %></td>
+
+      </tr>
+  <% end %>
+</table>
 
 
