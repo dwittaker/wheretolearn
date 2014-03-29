@@ -10,8 +10,13 @@ class Source < ActiveRecord::Base
 
   accepts_nested_attributes_for :usedmethods , :reject_if => lambda { |a| a[:deliverymethod_id].blank? }, :allow_destroy => true
 
-  belongs_to :created_by, class_name: 'User', :inverse_of => :sources
-  belongs_to :updated_by, class_name: 'User', :inverse_of => :sources
+  belongs_to :created_by, class_name: "User" #, :inverse_of => :sources
+  belongs_to :updated_by, class_name: "user" #, :inverse_of => :sources
+
+  def updater(user)
+    self.updated_by_id = user.id
+    self.save
+  end
 
   validates_associated :usedmethods
 

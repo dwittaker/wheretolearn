@@ -56,7 +56,7 @@ class SubjectsController < ApplicationController
   # POST /subjects
   # POST /subjects.json
   def create
-    @subject = Subject.new(params[:subject])
+    @subject = current_user.subjects.new(params[:subject])
 
 
     respond_to do |format|
@@ -99,7 +99,8 @@ class SubjectsController < ApplicationController
 
       if @subject.update_attributes(params[:subject])
 
-        if @subject.save
+        #if @subject.save
+        if  @subject.updater current_user
           format.html { redirect_to @subject, notice: 'Subject and Module(s) successfully updated.' }
           format.json { head :no_content }
         else

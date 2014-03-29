@@ -27,11 +27,16 @@ class Subject < ActiveRecord::Base
 
   accepts_nested_attributes_for :subject_modules, :reject_if => lambda { |a| a[:smname].blank? }, :allow_destroy => true
 
-  belongs_to :created_by, class_name: 'User', :inverse_of => :subjects
-  belongs_to :updated_by, class_name: 'User', :inverse_of => :subjects
+  belongs_to :created_by, class_name: 'User' #, :inverse_of => :subjects
+  belongs_to :updated_by, class_name: 'User' #, :inverse_of => :subjects
+
+  def updater(user)
+    self.updated_by_id = user.id
+    self.save
+  end
 
 
-    validates :name,
+  validates :name,
             :presence => true,
             :uniqueness => { :case_sensitive => false },
             :length => { :maximum => 50, :minimum => 3 }

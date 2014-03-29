@@ -53,7 +53,7 @@ class PortfoliosController < ApplicationController
   # POST /portfolios
   # POST /portfolios.json
   def create
-    @portfolio = Portfolio.new(params[:portfolio])
+    @portfolio = current_user.portfolios.new(params[:portfolio])
 
     respond_to do |format|
       if @portfolio.save
@@ -74,7 +74,8 @@ class PortfoliosController < ApplicationController
     respond_to do |format|
       if @portfolio.update_attributes(params[:portfolio])
 
-        if @portfolio.save
+        #if @portfolio.save
+        if  @portfolio.updater current_user
           format.html { redirect_to @portfolio, notice: 'Portfolio was successfully updated.' }
           format.json { head :no_content }
         else

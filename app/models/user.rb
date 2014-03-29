@@ -10,17 +10,22 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   has_many :opinions
 
-  has_many :created_portfolios, foreign_key => 'created_by_id', :inverse_of => :user
-  has_many :updated_portfolios, foreign_key => 'updated_by_id', :inverse_of => :user
 
-  has_many :created_sources, foreign_key => 'created_by_id', :inverse_of => :user
-  has_many :updated_sources, foreign_key => 'updated_by_id', :inverse_of => :user
+  has_many :portfolios, foreign_key: 'created_by_id' #, :inverse_of => :user
+  has_many :updated_portfolios, foreign_key: 'updated_by_id' #, :inverse_of => :user
 
-  has_many :created_subjects, foreign_key => 'created_by_id', :inverse_of => :user
-  has_many :updated_subjects, foreign_key => 'updated_by_id', :inverse_of => :user
 
-  has_many :created_subject_modules, foreign_key => 'created_by_id', :inverse_of => :user
-  has_many :updated_subject_modules, foreign_key => 'updated_by_id', :inverse_of => :user
+  has_many :sources, foreign_key: "created_by_id"#, :inverse_of => :user
+  has_many :updated_sources, foreign_key: "updated_by_id"
+
+
+  has_many :subjects, foreign_key: 'created_by_id' #, :inverse_of => :user
+  has_many :updated_subjects, foreign_key: 'updated_by_id' #, :inverse_of => :user
+
+=begin
+  has_many :created_subject_modules, :foreign_key => 'created_by_id', :inverse_of => :user
+  has_many :updated_subject_modules, :foreign_key => 'updated_by_id', :inverse_of => :user
+=end
 
 
 

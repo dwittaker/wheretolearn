@@ -56,7 +56,9 @@ class SourcesController < ApplicationController
   # POST /sources
   # POST /sources.json
   def create
-    @source = Source.new(params[:source])
+#    current_user.created_source = Source.new
+    @source = current_user.sources.new(params[:source])
+    #@source = Source.new(params[:source])
 
     respond_to do |format|
       if @source.save
@@ -72,11 +74,15 @@ class SourcesController < ApplicationController
   # PUT /sources/1
   # PUT /sources/1.json
   def update
-    @source = Source.find(params[:id])
+    @source = current_user.sources.find(params[:id])
+
+    #@source = Source.find(params[:id])
 
     respond_to do |format|
       if @source.update_attributes(params[:source])
-        if @source.save
+        #if @source.save
+        if  @source.updater current_user
+
           format.html { redirect_to @source, notice: 'Source was successfully updated.' }
           format.json { head :no_content }
         else
