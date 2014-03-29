@@ -3,6 +3,7 @@ class Portfolio < ActiveRecord::Base
                   :pweburl, :schedtype_id, :source_id, :startdate, :subject_id, :subject_module_id, :costtype_id
 
   belongs_to :source, :inverse_of => :portfolios
+
   belongs_to :subject_module, :inverse_of => :portfolios
     delegate :smname, :smdesc, :to => :subject_module
   belongs_to :subject, :inverse_of => :portfolios
@@ -20,6 +21,10 @@ class Portfolio < ActiveRecord::Base
     self.save
   end
 
+  def folioname
+    self.source.name + " - " + self.subject.name + " : " + self.smname
+  end
+
 
   #belongs_to :subject, :through => :subject_module
   #, :inverse_of => :portfolios
@@ -29,4 +34,6 @@ class Portfolio < ActiveRecord::Base
 
   validates_associated :usedmethods
 
+  extend FriendlyId
+  friendly_id self.source.name + " - " + self.subject.name + " : " + self.smname, use: :slugged
 end

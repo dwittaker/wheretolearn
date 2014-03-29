@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140328031323) do
+ActiveRecord::Schema.define(:version => 20140329082316) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -134,9 +134,11 @@ ActiveRecord::Schema.define(:version => 20140328031323) do
     t.integer  "subject_id"
     t.integer  "created_by_id"
     t.integer  "updated_by_id"
+    t.string   "slug"
   end
 
   add_index "portfolios", ["created_by_id"], :name => "index_portfolios_on_created_by_id"
+  add_index "portfolios", ["slug"], :name => "index_portfolios_on_slug"
   add_index "portfolios", ["updated_by_id"], :name => "index_portfolios_on_updated_by_id"
 
   create_table "schedtypes", :force => true do |t|
