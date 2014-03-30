@@ -1,12 +1,14 @@
 class Portfolio < ActiveRecord::Base
   attr_accessible :cost, :currency, :enddate, :physaddress,
-                  :pweburl, :schedtype_id, :source_id, :startdate, :subject_id, :subject_module_id, :costtype_id
+                  :pweburl, :schedtype_id, :source_id, :startdate, :subject_id, :subject_module_id, :costtype_id, :slug,
+                  :prttitle, :prtdesc
 
   belongs_to :source, :inverse_of => :portfolios
-
+    delegate :srcname, :to => :source
   belongs_to :subject_module, :inverse_of => :portfolios
     delegate :smname, :smdesc, :to => :subject_module
   belongs_to :subject, :inverse_of => :portfolios
+    delegate :subname, :to => :subject
   belongs_to :costtype, :inverse_of => :portfolios
   belongs_to :schedtype, :inverse_of => :portfolios
   has_many :usedmethods, :as => :deliverable
@@ -21,9 +23,9 @@ class Portfolio < ActiveRecord::Base
     self.save
   end
 
-  def folioname
-    self.source.name + " - " + self.subject.name + " : " + self.smname
-  end
+def folioname
+  srcname.to_s + " - " + subname.to_s + " : " + smname.to_s
+end
 
 
   #belongs_to :subject, :through => :subject_module
@@ -35,5 +37,5 @@ class Portfolio < ActiveRecord::Base
   validates_associated :usedmethods
 
   extend FriendlyId
-  friendly_id self.source.name + " - " + self.subject.name + " : " + self.smname, use: :slugged
+  friendly_id :folioname, use: :slugged
 end

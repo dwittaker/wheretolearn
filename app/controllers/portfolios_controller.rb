@@ -55,6 +55,7 @@ class PortfoliosController < ApplicationController
   def create
     @portfolio = current_user.portfolios.new(params[:portfolio])
 
+
     respond_to do |format|
       if @portfolio.save
         format.html { redirect_to @portfolio, notice: 'Portfolio was successfully created.' }
@@ -66,10 +67,13 @@ class PortfoliosController < ApplicationController
     end
   end
 
+
+
   # PUT /portfolios/1
   # PUT /portfolios/1.json
   def update
     @portfolio = Portfolio.find(params[:id])
+
 
     respond_to do |format|
       if @portfolio.update_attributes(params[:portfolio])

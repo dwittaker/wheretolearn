@@ -18,6 +18,10 @@ class Source < ActiveRecord::Base
     self.save
   end
 
+  def srcname
+    name
+  end
+
   validates_associated :usedmethods
 
   require "acts-as-taggable-on"

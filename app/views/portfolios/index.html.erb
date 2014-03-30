@@ -2,7 +2,8 @@
 
 <table>
   <tr>
-
+    <th>Title</th>
+    <th>Desc</th>
     <th>SubjectModule</th>
     <th>Source</th>
     <th>Pweburl</th>
@@ -22,8 +23,12 @@
 <% @portfolios.each do |portfolio| %>
   <tr>
 
+    <td><%= portfolio.prttitle %></td>
+    <td><%= portfolio.prtdesc %></td>
+
     <td><%= portfolio.subject_module.subjtitle %></td>
     <td><%= portfolio.source.name %></td>
+
     <td><%= portfolio.pweburl %></td>
     <td><%= portfolio.physaddress %></td>
     <td><%= portfolio.cost %></td>

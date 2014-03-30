@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Opinion</th>
     <th>Rating</th>
     <th>Comment</th>
     <th>User</th>
@@ -12,6 +13,7 @@
 
 <% @opinion.each do |opinion| %>
   <tr>
+    <td><%= opinion.optitle %></td>
     <td><%= opinion.rating %></td>
     <td><%= opinion.comment %></td>
     <td><%= opinion.user.username %></td>

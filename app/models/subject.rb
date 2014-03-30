@@ -35,6 +35,10 @@ class Subject < ActiveRecord::Base
     self.save
   end
 
+  def subname
+    name
+  end
+
 
   validates :name,
             :presence => true,

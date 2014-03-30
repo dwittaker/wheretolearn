@@ -1,6 +1,6 @@
 class SubjectModule < ActiveRecord::Base
   attr_accessible :smdescription, :smname, 
-  :order, :smpurpose, :subject_id
+  :order, :smpurpose, :subject_id, :slug
 
   belongs_to :subject, :inverse_of => :subject_modules
   has_many :contenttags, :as => :taggable

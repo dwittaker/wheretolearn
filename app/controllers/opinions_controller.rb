@@ -77,11 +77,14 @@ class OpinionsController < ApplicationController
   # PUT /opinions/1
   # PUT /opinions/1.json
   def update
-    @opinion = Opinion.find(params[:id])
+    @portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @portfolio.opinions.find(params[:id])
+
+
 
     respond_to do |format|
       if @opinion.update_attributes(params[:opinion])
-        format.html { redirect_to @opinion, notice: 'Opinion was successfully updated.' }
+        format.html { redirect_to [@portfolio,@opinion], notice: 'Opinion was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -93,11 +96,12 @@ class OpinionsController < ApplicationController
   # DELETE /opinions/1
   # DELETE /opinions/1.json
   def destroy
-    @opinion = Opinion.find(params[:id])
+    @portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @portfolio.opinions.find(params[:id])
     @opinion.destroy
 
     respond_to do |format|
-      format.html { redirect_to opinions_url }
+      format.html { redirect_to portfolio_opinions_path [@portfolio] }
       format.json { head :no_content }
     end
   end

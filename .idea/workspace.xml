@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140329082316_add_slug_to_portfolios.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140329191358_add_desc_columns_to_portfolios.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140329200746_remove_prtslug_column_from_portfolios.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140330005529_add_title_column_to_opinions.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140330011109_add_slug_column_to_opinions.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opinions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opinions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/opinion.rb" afterPath="$PROJECT_DIR$/app/models/opinion.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/opinions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/portfolio.rb" afterPath="$PROJECT_DIR$/app/models/portfolio.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/sitemap.rb" afterPath="$PROJECT_DIR$/config/sitemap.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemaps/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemaps/sitemap.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/source.rb" afterPath="$PROJECT_DIR$/app/models/source.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject.rb" afterPath="$PROJECT_DIR$/app/models/subject.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject_module.rb" afterPath="$PROJECT_DIR$/app/models/subject_module.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -18,7 +34,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wheretolearn@Rails_console__wheretolearn.coverage" NAME="Rails console: wheretolearn Coverage Results" MODIFIED="1395528350226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
-    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1396076452182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
+    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1396122527163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@IRB_console__wheretolearn.coverage" NAME="IRB console: wheretolearn Coverage Results" MODIFIED="1395450505247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -33,10 +49,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
+      <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/source.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="28" selection-start="448" selection-end="448" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="480">
+            <state line="31" column="0" selection-start="927" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -45,52 +61,34 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="10" selection-start="1195" selection-end="1195" vertical-scroll-proportion="-7.375" vertical-offset="933" max-vertical-offset="1350">
+            <state line="73" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-9.125" vertical-offset="876" max-vertical-offset="1515">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="4" selection-start="195" selection-end="195" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="opinion.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="22" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/portfolios/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/opinions/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="365" selection-end="365" vertical-scroll-proportion="-5.7083335" vertical-offset="223" max-vertical-offset="765">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subject.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="19" selection-start="2765" selection-end="2819" vertical-scroll-proportion="0.0" vertical-offset="1187" max-vertical-offset="1590">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140318065819_add_slug_to_sources.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140318065819_add_slug_to_sources.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="49" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140329082316_add_slug_to_portfolios.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140329082316_add_slug_to_portfolios.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfolio.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="12" selection-start="1313" selection-end="1313" vertical-scroll-proportion="1.3684211" vertical-offset="35" max-vertical-offset="675">
+            <state line="4" column="4" selection-start="46" selection-end="62" vertical-scroll-proportion="3.5833333" vertical-offset="146" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -105,19 +103,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_subject_module_fields.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/subjects/_subject_module_fields.html.erb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/opinions/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="438" selection-end="438" vertical-scroll-proportion="-3.125" vertical-offset="135" max-vertical-offset="795">
+            <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_subject_module_table.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/subjects/_subject_module_table.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="793" selection-end="793" vertical-scroll-proportion="-8.583333" vertical-offset="49" max-vertical-offset="405">
+            <state line="14" column="25" selection-start="412" selection-end="412" vertical-scroll-proportion="-2.0416667" vertical-offset="161" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="opinions_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/opinions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="108" column="0" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.8560794" vertical-offset="1275" max-vertical-offset="1710">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category2s_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/category2s_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="10" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
@@ -136,8 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/portfolios/_usedmethod_fields.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/usedmethod.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140306034020_add_subject_reference_column_to_portfolios.rb" />
         <option value="$PROJECT_DIR$/app/views/portfolios/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/portfolios/edit.html.erb" />
@@ -147,7 +161,6 @@
         <option value="$PROJECT_DIR$/app/views/javascripts/dynamic_category2s.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application_jquery.js" />
         <option value="$PROJECT_DIR$/app/views/sources/_usedmethod_fields.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/_form.html.erb" />
@@ -166,27 +179,30 @@
         <option value="$PROJECT_DIR$/app/views/subject_modules/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subject_modules/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140323022212_add_slug_to_subject_modules.rb" />
-        <option value="$PROJECT_DIR$/config/sitemap.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140220033709_add_column_referenceto_portfolio2.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140328031323_add_userreference_to_portfolio.rb" />
-        <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sources_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/source.rb" />
-        <option value="$PROJECT_DIR$/app/models/subject.rb" />
         <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/opinion.rb" />
         <option value="$PROJECT_DIR$/app/views/opinions/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/opinions/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/opinions/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/opinions/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/opinions/new.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140329082316_add_slug_to_portfolios.rb" />
+        <option value="$PROJECT_DIR$/config/sitemap.rb" />
+        <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
+        <option value="$PROJECT_DIR$/app/models/source.rb" />
+        <option value="$PROJECT_DIR$/app/models/subject.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140330005529_add_title_column_to_opinions.rb" />
+        <option value="$PROJECT_DIR$/app/models/opinion.rb" />
+        <option value="$PROJECT_DIR$/app/views/opinions/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/opinions/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
       </list>
     </option>
   </component>
@@ -759,7 +775,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -774,6 +790,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -966,6 +986,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1415,7 +1453,11 @@
       <created>1396081078234</created>
       <updated>1396081078234</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Started addition of portfolio to friendly id slugs. Need to figure out how to add other class fields to name definition inside class object">
+      <created>1396082188700</created>
+      <updated>1396082188700</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1440,10 +1482,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36414567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36414567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1491,70 +1533,18 @@
     <MESSAGE value="Completed modifications to models and controllers for assignment of items based on current user - subject, portfolio, source. created_by and updated_by fields in each table. Opinions table still deemed unnecessary" />
     <MESSAGE value="Made modifications to Opinions model, views (basic) and controller to tie portfolio to opinions. Views are very limited and will have to be redesigned to improve usability" />
     <MESSAGE value="Just some basic view changes for Opinions&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just some basic view changes for Opinions&#10;" />
+    <MESSAGE value="Started addition of portfolio to friendly id slugs. Need to figure out how to add other class fields to name definition inside class object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started addition of portfolio to friendly id slugs. Need to figure out how to add other class fields to name definition inside class object" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="153" />
+      <option name="time" value="159" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1350" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="21" selection-start="6043" selection-end="6043" vertical-scroll-proportion="2.0186336" vertical-offset="1605" max-vertical-offset="3735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140323022212_add_slug_to_subject_modules.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="460" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140220033709_add_column_referenceto_portfolio2.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="63" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140317055757_create_opinions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="255" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="272" selection-end="272" vertical-scroll-proportion="0.42391303" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140328031323_add_userreference_to_portfolio.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="77" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.12/lib/active_record/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="640" column="0" selection-start="27028" selection-end="27028" vertical-scroll-proportion="0.33333334" vertical-offset="9439" max-vertical-offset="10890">
@@ -1646,13 +1636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="8" selection-start="1991" selection-end="2023" vertical-scroll-proportion="0.0" vertical-offset="964" max-vertical-offset="1770">
@@ -1706,20 +1689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/portfolios_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1574" selection-end="1574" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="1650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/category2s/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="461">
@@ -1727,44 +1696,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/opinions/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/category2s/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="137" selection-end="137" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/category2s_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="519" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/opinions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="50" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1650">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="195" selection-end="195" vertical-scroll-proportion="0.59366757" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/opinions/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="629" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="495">
           <folding />
         </state>
       </provider>
@@ -1818,16 +1752,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
+    <entry file="file://$PROJECT_DIR$/public/sitemaps/sitemap.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="19" selection-start="2765" selection-end="2819" vertical-scroll-proportion="0.0" vertical-offset="1187" max-vertical-offset="1590">
+        <state line="0" column="143" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="401">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/sitemap.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="448" selection-end="448" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="480">
+        <state line="63" column="0" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0" vertical-offset="786" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="40" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140329191358_add_desc_columns_to_portfolios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="5" selection-start="216" selection-end="216" vertical-scroll-proportion="0.16304348" vertical-offset="0" max-vertical-offset="460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/portfolios_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/portfolios_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="7" selection-start="1969" selection-end="1969" vertical-scroll-proportion="0.0" vertical-offset="987" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140329200746_remove_prtslug_column_from_portfolios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="438" selection-end="439" vertical-scroll-proportion="-12.5" vertical-offset="75" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140330011109_add_slug_column_to_opinions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.17162472" vertical-offset="0" max-vertical-offset="437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140330005529_add_title_column_to_opinions.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.16304348" vertical-offset="0" max-vertical-offset="460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="10" selection-start="587" selection-end="587" vertical-scroll-proportion="-10.0" vertical-offset="75" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="927" selection-end="982" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="22" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="1168" selection-end="1168" vertical-scroll-proportion="-9.125" vertical-offset="876" max-vertical-offset="1515">
           <folding />
         </state>
       </provider>
@@ -1839,23 +1871,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="10" selection-start="1195" selection-end="1195" vertical-scroll-proportion="-7.375" vertical-offset="933" max-vertical-offset="1350">
+        <state line="14" column="25" selection-start="412" selection-end="412" vertical-scroll-proportion="-2.0416667" vertical-offset="161" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/category2s_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="365" selection-end="365" vertical-scroll-proportion="-5.7083335" vertical-offset="223" max-vertical-offset="765">
+        <state line="18" column="10" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1920">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="12" selection-start="1313" selection-end="1313" vertical-scroll-proportion="1.3684211" vertical-offset="35" max-vertical-offset="675">
+        <state line="15" column="4" selection-start="195" selection-end="195" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/opinions/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/opinions/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="46" selection-end="62" vertical-scroll-proportion="3.5833333" vertical-offset="146" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/opinions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="0" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.8560794" vertical-offset="1275" max-vertical-offset="1710">
           <folding />
         </state>
       </provider>

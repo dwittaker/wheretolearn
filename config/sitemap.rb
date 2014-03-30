@@ -56,15 +56,21 @@ SitemapGenerator::Sitemap.create do
 
     Portfolio.find_each do |prt|
       add portfolio_path(prt), :lastmod => prt.updated_at
+
+      prt.opinions.each do |opn|
+        add portfolio_opinion_path(prt,opn), :lastmod => opn.updated_at
+      end
     end
 
   # Add all Opinions
 
+=begin
   add opinions_path, :priority => 0.8, :changefreq => 'daily'
 
     Opinion.find_each do |opn|
       add opinion_path(opn), :lastmod => opn.updated_at
     end
+=end
 
   # Add all Blogs
 
