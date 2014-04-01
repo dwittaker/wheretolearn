@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="510771730">
+  <component name="DataSourceManagerImpl" format="xml" hash="3634978174">
     <data-source source="LOCAL" name="Rails wheretolearn: development" uuid="d8dd1d39-b643-4bc5-b3ec-02a8412b724b">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:wheretolearn_dev</jdbc-url>
+      <user-name>duanewittaker</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails wheretolearn: test" uuid="f96e11fb-d97d-49b8-81dc-7ba452089c06">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:wheretolearn_test</jdbc-url>
+      <user-name>duanewittaker</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails wheretolearn: production" uuid="dc1f2cf7-bf22-4798-a87e-23225ee4350a">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:wheretolearn</jdbc-url>
+      <user-name>duanewittaker</user-name>
       <libraries />
     </data-source>
   </component>
