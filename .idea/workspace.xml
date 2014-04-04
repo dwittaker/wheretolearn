@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140402020632_create_pg_search_documents.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140404051257_add_pg_search_associated_against_support_functions.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/search/_searchmodel.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__wheretolearn.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__wheretolearn.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/index.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/opinion.rb" afterPath="$PROJECT_DIR$/app/models/opinion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/portfolio.rb" afterPath="$PROJECT_DIR$/app/models/portfolio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/source.rb" afterPath="$PROJECT_DIR$/app/models/source.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sources_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sources_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject.rb" afterPath="$PROJECT_DIR$/app/models/subject.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject_module.rb" afterPath="$PROJECT_DIR$/app/models/subject_module.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -61,7 +44,13 @@
         <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="2" column="6" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="930">
-              <folding />
+              <folding>
+                <marker date="1396490062000" expanded="true" signature="16:108" placeholder="..." />
+                <marker date="1396490062000" expanded="true" signature="153:1024" placeholder="..." />
+                <marker date="1396490062000" expanded="true" signature="160:405" placeholder="..." />
+                <marker date="1396490062000" expanded="true" signature="448:1005" placeholder="..." />
+                <marker date="1396490062000" expanded="true" signature="1112:1275" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subject.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="subject.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="40" selection-start="3057" selection-end="3058" vertical-scroll-proportion="1.1975309" vertical-offset="1105" max-vertical-offset="1770">
+            <state line="107" column="2" selection-start="3114" selection-end="3241" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1770">
               <folding />
             </state>
           </provider>
@@ -114,16 +103,25 @@
       <file leaf-file-name="sources_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="179" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1800">
+            <state line="8" column="0" selection-start="179" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="source.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/source.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+            <state line="12" column="52" selection-start="524" selection-end="524" vertical-scroll-proportion="-0.48883376" vertical-offset="377" max-vertical-offset="780">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="opinion.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="58" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -188,11 +186,11 @@
         <option value="$PROJECT_DIR$/app/views/search/_searchmodel.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sources_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/source.rb" />
         <option value="$PROJECT_DIR$/app/views/portfolios/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
         <option value="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/subject.rb" />
+        <option value="$PROJECT_DIR$/app/models/source.rb" />
       </list>
     </option>
   </component>
@@ -855,7 +853,11 @@
       <created>1396391059627</created>
       <updated>1396391059627</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="INstalled PG Search on Postgres, added support for 'against associated' records to be able to find a record thru searches on its children's contents. Setup Portfolio, subject">
+      <created>1396589763232</created>
+      <updated>1396589763232</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -880,9 +882,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36312848" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36414567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33240223" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325419" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -897,7 +900,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -956,7 +958,8 @@
     <MESSAGE value="Modified opinions to include slugs, added title field, modified views accordingly. &#10;" />
     <MESSAGE value="Last commit after installing PostGreSql. Added to gems and converted database.yaml to point to PG DB. Had to dump from SQLite3 to a sql file, change out a number of field types to ensure compatibility, then run it on the PG database, Let's hope it works." />
     <MESSAGE value="Last, Last commit after installing PostGreSql. This is the dump file that was used" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last, Last commit after installing PostGreSql. This is the dump file that was used" />
+    <MESSAGE value="INstalled PG Search on Postgres, added support for 'against associated' records to be able to find a record thru searches on its children's contents. Setup Portfolio, subject" />
+    <option name="LAST_COMMIT_MESSAGE" value="INstalled PG Search on Postgres, added support for 'against associated' records to be able to find a record thru searches on its children's contents. Setup Portfolio, subject" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1127,11 +1130,6 @@
         <state line="18" column="10" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1920" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="58" selection-start="326" selection-end="326" vertical-scroll-proportion="0.37220845" vertical-offset="0" max-vertical-offset="403" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/category2.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403" />
@@ -1173,20 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="179" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140404051257_add_pg_search_associated_against_support_functions.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.32467532" vertical-offset="0" max-vertical-offset="495">
@@ -1204,7 +1188,13 @@
     <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="6" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="930">
-          <folding />
+          <folding>
+            <marker date="1396490062000" expanded="true" signature="16:108" placeholder="..." />
+            <marker date="1396490062000" expanded="true" signature="153:1024" placeholder="..." />
+            <marker date="1396490062000" expanded="true" signature="160:405" placeholder="..." />
+            <marker date="1396490062000" expanded="true" signature="448:1005" placeholder="..." />
+            <marker date="1396490062000" expanded="true" signature="1112:1275" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,9 +1233,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="58" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="40" selection-start="3057" selection-end="3058" vertical-scroll-proportion="1.1975309" vertical-offset="1105" max-vertical-offset="1770">
+        <state line="107" column="2" selection-start="3114" selection-end="3241" vertical-scroll-proportion="0.0" vertical-offset="1367" max-vertical-offset="1770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="179" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="52" selection-start="524" selection-end="524" vertical-scroll-proportion="-0.48883376" vertical-offset="377" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
