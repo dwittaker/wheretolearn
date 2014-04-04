@@ -86,8 +86,8 @@
         <td><%= opinion.optitle %></td>
         <td><%= opinion.rating %></td>
         <td><%= opinion.comment %></td>
-        <td><%= opinion.user.username %></td>
-        <td><% if opinion.user.username == current_user.username then %>
+        <td><%= opinion.username %></td>
+        <td><% if current_user && (opinion.username == current_user.username) then %>
               <%= link_to 'Edit', edit_portfolio_opinion_path(@portfolio,opinion) %>
           <% end %>
         </td>
