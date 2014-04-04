@@ -2,8 +2,20 @@ class PortfoliosController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   # GET /portfolios
   # GET /portfolios.json
+
   def index
-    @portfolios = Portfolio.all
+
+
+    #if params[:tag]
+    #  #@sources = Source.tagged_with(params[:tag])
+    #  @portfolios = Portfolio.all
+    if params[:srchquery]
+      @portfolios = Portfolio.search_by_basic(params[:srchquery])
+      #@portfolios = Portfolio.search_by_link(params[:srchquery])
+    else
+      @portfolios = Portfolio.all
+    end
+
 
     respond_to do |format|
       format.html # index.html.erb

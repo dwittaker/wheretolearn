@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140330011109) do
+ActiveRecord::Schema.define(:version => 20140404051257) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -118,6 +118,14 @@ ActiveRecord::Schema.define(:version => 20140330011109) do
 
   add_index "opinions", ["opinionable_id"], :name => "index_opinions_on_opinionable_id"
   add_index "opinions", ["user_id"], :name => "index_opinions_on_user_id"
+
+  create_table "pg_search_documents", :force => true do |t|
+    t.text     "content"
+    t.integer  "searchable_id"
+    t.string   "searchable_type"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "portfolios", :force => true do |t|
     t.integer  "source_id"

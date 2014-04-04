@@ -7,4 +7,7 @@ class Opinion < ActiveRecord::Base
   extend FriendlyId
   friendly_id :optitle, use: :slugged
 
+  include PgSearch
+  multisearchable :against => [:comment, :rating, :optitle]
+
 end

@@ -1,5 +1,7 @@
 class Source < ActiveRecord::Base
   attr_accessible :description, :name, :physaddress, :weburl, :sourcetype_id, :slug
+
+    delegate :stdesc, :to => :sourcetype
   has_many :portfolios, :inverse_of => :source
   has_many :subjects, through: :portfolios
   has_many :contenttags, :as => :taggable
@@ -31,6 +33,10 @@ class Source < ActiveRecord::Base
 
   extend FriendlyId
   friendly_id :name, use: :slugged
+
+  include PgSearch
+  multisearchable :against => [:description, :name, :physaddress, :weburl]
+  pg_search_scope :search_by_basic, :against => [:description, :name, :physaddress, :weburl]
 
   def should_generate_new_friendly_id?
     true

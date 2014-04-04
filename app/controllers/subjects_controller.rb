@@ -6,6 +6,9 @@ class SubjectsController < ApplicationController
 
     if params[:tag]
       @subjects = Subject.tagged_with(params[:tag])
+
+    elsif params[:srchquery]
+      @subjects = Subject.search_by_basic(params[:srchquery])
     else
       @subjects = Subject.all
     end
@@ -129,4 +132,6 @@ class SubjectsController < ApplicationController
 
   def subject_module_fields 
   end
+
+
 end

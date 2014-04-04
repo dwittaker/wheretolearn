@@ -6,6 +6,8 @@ class SourcesController < ApplicationController
 
     if params[:tag]
       @sources = Source.tagged_with(params[:tag])
+    elsif params[:srchquery]
+      @sources = Source.search_by_basic(params[:srchquery])
     else
       @sources = Source.all
     end

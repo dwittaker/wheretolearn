@@ -10,10 +10,14 @@ class Portfolio < ActiveRecord::Base
   belongs_to :subject, :inverse_of => :portfolios
     delegate :subname, :to => :subject
   belongs_to :costtype, :inverse_of => :portfolios
+    delegate :costname, :to => :costtype
   belongs_to :schedtype, :inverse_of => :portfolios
+    delegate :schedname, :to => :schedtype
   has_many :usedmethods, :as => :deliverable
   has_many :deliverymethods, :through => :usedmethods
+    delegate :dmdesc, :to => :deliverymethods
   has_many :opinions, :as => :opinionable
+
 
   belongs_to :created_by, class_name: 'User' #, :inverse_of => :portfolios
   belongs_to :updated_by, class_name: 'User' #, :inverse_of => :portfolios
@@ -38,4 +42,10 @@ end
 
   extend FriendlyId
   friendly_id :folioname, use: :slugged
+
+  include PgSearch
+  multisearchable :against => [:cost, :currency, :enddate, :physaddress, :pweburl, :startdate, :prttitle, :prtdesc]
+  pg_search_scope :search_by_basic, :against => [:cost, :currency, :enddate, :physaddress,:pweburl, :startdate, :prttitle, :prtdesc],
+                  :associated_against => {:source => :name, :subject => :name, :subject_module => :smname}
+
 end

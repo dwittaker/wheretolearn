@@ -36,6 +36,9 @@ class SubjectModule < ActiveRecord::Base
   extend FriendlyId
   friendly_id :smname, use: :slugged
 
+  include PgSearch
+  multisearchable :against => [:smdescription, :smname, :smpurpose]
+
   def should_generate_new_friendly_id?
     true
     #new_record?

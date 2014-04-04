@@ -1,3 +1,8 @@
+<div id="search">
+  <%= render partial: 'search/searchmodel', locals: {:clearpath => subjects_path} %>
+</div>
+
+<br><br>
 <h1>Listing subjects</h1>
 
 <table>
@@ -43,7 +48,7 @@
 
 <%= link_to 'New Subject', new_subject_path %>
 <p>
-Testing Tag Cloud....
+
 <div id="tag_cloud">
   <% tag_cloud Subject.tag_counts, %w[s m l] do |tag, css_class| %>
       <%= link_to tag.name, subject_tag_path(tag.name), class: css_class %>

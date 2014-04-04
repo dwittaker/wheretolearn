@@ -1,0 +1,5 @@
+<form class="navbar-search pull-left">
+  <%= text_field_tag(:srchquery, params[:srchquery], :class => "search-query") %>
+  <%= submit_tag("Search", :class => "btn btn-mini btn-primary", :title => "Looking for something in particular? Let's go then!") %>
+  <%= link_to("Clear",clearpath , :class => "btn")%>
+</form>
