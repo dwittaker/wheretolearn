@@ -1,11 +1,24 @@
 class OpinionsController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
   # GET /opinions
   # GET /opinions.json
+
+  def find_opinionable
+    params.each do |name, value|
+      if name =~ /(.+)_id$/
+        return $1.classify.constantize.find(value)
+      end
+    end
+    nil
+  end
+#TODO: NEED TO IMPLEMENT POLYMORPHIC CONTROLLERS
+
   def index
-    @portfolio = Portfolio.find(params[:portfolio_id])
+    #@portfolio = Portfolio.find(params[:portfolio_id])
 
+    @opinionable = find_opinionable
 
-    @opinion = @portfolio.opinions.all
+    @opinion = @opinionable.opinions.all
 
 
     respond_to do |format|
@@ -21,6 +34,7 @@ class OpinionsController < ApplicationController
 
 
     @portfolio = Portfolio.find(params[:portfolio_id])
+
 
     @opinion = @portfolio.opinions.find(params[:id])
 

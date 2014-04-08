@@ -16,7 +16,7 @@
     <td><%= opinion.optitle %></td>
     <td><%= opinion.rating %></td>
     <td><%= opinion.comment %></td>
-    <td><%= opinion.user.username %></td>
+    <td><%= opinion.username %></td>
     <td><%= link_to 'Show', portfolio_opinion_path(@portfolio,opinion) %></td>
     <td><%= link_to 'Edit', edit_portfolio_opinion_path(@portfolio,opinion) %></td>
     <td><%= link_to 'Destroy', portfolio_opinion_path(@portfolio,opinion), method: :delete, data: { confirm: 'Are you sure?' } %></td>

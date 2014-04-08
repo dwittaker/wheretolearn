@@ -37,7 +37,7 @@ class Source < ActiveRecord::Base
   include PgSearch
   multisearchable :against => [:description, :name, :physaddress, :weburl]
   pg_search_scope :search_by_basic, :against => [:description, :name, :physaddress, :weburl],
-                  :associated_against => {:sourcetype => :stdesc, :opinions => :optitle, :opinions => :comment}
+                  :associated_against => {:sourcetype => :stdesc, :opinions => :optitle}
 
   def should_generate_new_friendly_id?
     true

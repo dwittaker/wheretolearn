@@ -36,6 +36,33 @@
   <% end %>
 </div>
 
-
+<%= link_to 'New Opinion', new_source_opinion_path(@source) %> |
 <%= link_to 'Edit', edit_source_path(@source) %> |
 <%= link_to 'Back', sources_path %>
+
+<h1>Opinions</h1>
+
+<table>
+  <tr>
+    <th>Opinion</th>
+    <th>Rating</th>
+    <th>Comment</th>
+    <th>User</th>
+    <th></th>
+  </tr>
+
+  <% @source.opinions.each do |opinion| %>
+      <tr>
+        <td><%= opinion.optitle %></td>
+        <td><%= opinion.rating %></td>
+        <td><%= opinion.comment %></td>
+        <td><%= opinion.username %></td>
+        <td><% if current_user && (opinion.username == current_user.username) then %>
+              <%= link_to 'Edit', edit_source_opinion_path(@source,opinion) %>
+          <% end %>
+        </td>
+
+      </tr>
+  <% end %>
+</table>
+

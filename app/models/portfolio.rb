@@ -19,6 +19,7 @@ class Portfolio < ActiveRecord::Base
   has_many :opinions, :as => :opinionable
 
 
+
   belongs_to :created_by, class_name: 'User' #, :inverse_of => :portfolios
   belongs_to :updated_by, class_name: 'User' #, :inverse_of => :portfolios
 
@@ -46,6 +47,7 @@ end
   include PgSearch
   multisearchable :against => [:cost, :currency, :enddate, :physaddress, :pweburl, :startdate, :prttitle, :prtdesc]
   pg_search_scope :search_by_basic, :against => [:cost, :currency, :enddate, :physaddress,:pweburl, :startdate, :prttitle, :prtdesc],
-                  :associated_against => {:source => :name, :subject => :name, :subject_module => :smname}
-
+                  :associated_against => {:source => :name, :subject => :name, :subject_module => :smname, :opinions => [:optitle,:comment,:rating]
+                  }
+  #TODO: Configure rating to not require decimals
 end
