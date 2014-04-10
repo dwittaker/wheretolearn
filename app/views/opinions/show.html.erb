@@ -15,6 +15,6 @@
   <%= @opinion.username %>
 </p>
 
-<%= link_to 'Edit', edit_portfolio_opinion_path(@portfolio,@opinion) %> |
+<%= link_to 'Edit', edit_polymorphic_path([@opinionable,@opinion]) %> |
 
-<%= link_to 'Back', portfolio_path(@portfolio) %>
+<%= link_to 'Back', polymorphic_path(@opinionable) %>

@@ -32,11 +32,14 @@ class OpinionsController < ApplicationController
   def show
 
 
+    @opinionable = find_opinionable
 
-    @portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @opinionable.opinions.find(params[:id])
+
+    #@portfolio = Portfolio.find(params[:portfolio_id])
 
 
-    @opinion = @portfolio.opinions.find(params[:id])
+    #@opinion = @portfolio.opinions.find(params[:id])
 
 
     respond_to do |format|
@@ -49,8 +52,9 @@ class OpinionsController < ApplicationController
   # GET /opinions/new.json
   def new
 
-    @portfolio = Portfolio.find(params[:portfolio_id])
-    @opinion = @portfolio.opinions.new
+    @opinionable = find_opinionable
+    #@portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @opinionable.opinions.new
 
     #@opinion = Opinion.new
 
@@ -62,16 +66,18 @@ class OpinionsController < ApplicationController
 
   # GET /opinions/1/edit
   def edit
-    @portfolio = Portfolio.find(params[:portfolio_id])
-    @opinion = @portfolio.opinions.find(params[:id])
+    @opinionable = find_opinionable
+    #@portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @opinionable.opinions.find(params[:id])
 
   end
 
   # POST /opinions
   # POST /opinions.json
   def create
-    @portfolio = Portfolio.find(params[:portfolio_id])
-    @opinion = @portfolio.opinions.build(params[:opinion])
+    @opinionable = find_opinionable
+    #@portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @opinionable.opinions.build(params[:opinion])
 
     @opinion.user = current_user
 
@@ -79,8 +85,8 @@ class OpinionsController < ApplicationController
 
     respond_to do |format|
       if @opinion.save
-        format.html { redirect_to [@portfolio,@opinion], notice: 'Opinion was successfully created.' }
-        format.json { render json: @opinion, status: :created, location: [@portfolio,@opinion] }
+        format.html { redirect_to [@opinionable,@opinion], notice: 'Opinion was successfully created.' }
+        format.json { render json: @opinion, status: :created, location: [@opinionable,@opinion] }
       else
         format.html { render action: "new" }
         format.json { render json: @opinion.errors, status: :unprocessable_entity }
@@ -91,14 +97,15 @@ class OpinionsController < ApplicationController
   # PUT /opinions/1
   # PUT /opinions/1.json
   def update
-    @portfolio = Portfolio.find(params[:portfolio_id])
-    @opinion = @portfolio.opinions.find(params[:id])
+    @opinionable = find_opinionable
+    #@portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @opinionable.opinions.find(params[:id])
 
 
 
     respond_to do |format|
       if @opinion.update_attributes(params[:opinion])
-        format.html { redirect_to [@portfolio,@opinion], notice: 'Opinion was successfully updated.' }
+        format.html { redirect_to [@opinionable,@opinion], notice: 'Opinion was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -110,12 +117,13 @@ class OpinionsController < ApplicationController
   # DELETE /opinions/1
   # DELETE /opinions/1.json
   def destroy
-    @portfolio = Portfolio.find(params[:portfolio_id])
-    @opinion = @portfolio.opinions.find(params[:id])
+    @opinionable = find_opinionable
+    #@portfolio = Portfolio.find(params[:portfolio_id])
+    @opinion = @opinionable.opinions.find(params[:id])
     @opinion.destroy
 
     respond_to do |format|
-      format.html { redirect_to portfolio_opinions_path [@portfolio] }
+      format.html { redirect_to polymorphic_path([@opinionable,Opinion]) }
       format.json { head :no_content }
     end
   end

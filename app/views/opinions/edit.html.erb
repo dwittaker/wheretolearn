@@ -2,5 +2,6 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', portfolio_opinion_path(@portfolio,@opinion) %> |
-<%= link_to 'Back', portfolio_opinions_path %>
+<%= link_to 'Show', polymorphic_path([@opinionable, @opinion]) %> |
+<%= link_to 'Back', polymorphic_path([@opinionable]) %>
+
