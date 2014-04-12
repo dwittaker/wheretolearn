@@ -12,7 +12,7 @@
 
 <% @sources.each do |source| %>
   <div class="source">
-    <strong><%= source.name %></strong>
+    <h1><%= link_to source.name, source, :class => 'title' %></h1>
     <p><%= source.description %></p>
     <p><%= source.weburl %></p>
     <p><%= source.physaddress %></p>

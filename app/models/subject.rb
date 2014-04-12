@@ -39,6 +39,18 @@ class Subject < ActiveRecord::Base
     name
   end
 
+  def srchtitle
+    name
+  end
+
+  def clstype
+    "Subject"
+  end
+
+  def srchtext
+    description
+  end
+
 
   validates :name,
             :presence => true,
@@ -105,7 +117,7 @@ validates_associated :subject_modules
   include PgSearch
   multisearchable :against => [:name, :description, :purpose, :complexity]
   pg_search_scope :search_by_basic, :against => [:name, :description, :purpose, :complexity],
-  :associated_against => {:subject_modules => :smname, :category1 => :cat1desc, :category2 => :cat2desc, :category3 => :cat3desc}
+  :associated_against => {:subject_modules => [:smname, :smdescription, :smpurpose], :category1 => :cat1desc, :category2 => :cat2desc, :category3 => :cat3desc}
 
 
 

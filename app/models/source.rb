@@ -24,6 +24,24 @@ class Source < ActiveRecord::Base
     name
   end
 
+  def ttlname
+    name
+  end
+
+  def srchtitle
+    name
+  end
+
+  def srchtext
+    description
+  end
+
+  def clstype
+    "Source"
+  end
+
+
+
   validates_associated :usedmethods
 
   require "acts-as-taggable-on"

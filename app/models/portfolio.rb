@@ -32,6 +32,26 @@ def folioname
   srcname.to_s + " - " + subname.to_s + " : " + smname.to_s
 end
 
+def ttlname
+  srcname.to_s + " - " + subname.to_s
+end
+
+  def srchtitle
+    folioname
+  end
+
+  def clstype
+    "Portfolio"
+  end
+
+  def srchparent
+    self.source
+  end
+
+  def srchtext
+    prtdesc
+  end
+
 
   #belongs_to :subject, :through => :subject_module
   #, :inverse_of => :portfolios
@@ -43,6 +63,7 @@ end
 
   extend FriendlyId
   friendly_id :folioname, use: :slugged
+  #TODO: Need to decide whether to keep folioname based on source - subject : module or use title and desc
 
   include PgSearch
   multisearchable :against => [:cost, :currency, :enddate, :physaddress, :pweburl, :startdate, :prttitle, :prtdesc]

@@ -11,4 +11,21 @@ class Opinion < ActiveRecord::Base
   include PgSearch
   multisearchable :against => [:comment, :rating, :optitle]
 
+  def srchtitle
+    optitle
+  end
+
+  def clstype
+    "Opinion"
+  end
+
+  def srchparent
+    self.opinionable
+  end
+
+  def srchtext
+    comment
+  end
+
+
 end

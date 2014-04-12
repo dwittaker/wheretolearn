@@ -1,0 +1,35 @@
+<form class="navbar-search pull-left">
+
+
+  <div class="input-group">
+    <%= text_field_tag(:srchquery, params[:srchquery], :class => "form-control span9") %>
+      <span class="input-group-btn">
+  <%= submit_tag("Search", :class => "btn btn-default", :title => "Looking for something in particular? Let's go then!") %>
+      </span>
+  </div><!-- /input-group -->
+</form>
+<br>
+<p>
+    <div class="page-header">
+      <h1>What would you like to learn?</h1>
+    </div>
+</p>
+
+
+<%   if @searchables != nil %>
+<%    @searchables.each do |rslt| %>
+    <div class="search">
+
+      <h3>
+
+        <%= link_to rslt.searchable.clstype + ': ' + rslt.searchable.srchtitle, rslt.searchable.respond_to?(:srchparent)? polymorphic_path([rslt.searchable.srchparent,rslt.searchable]) : (rslt.searchable.class.to_s=="Blogit::Post"? polymorphic_path([blogit,rslt.searchable]) : polymorphic_path(rslt.searchable))
+        %>
+      </h3>
+      <p><%= rslt.searchable.srchtext %></p>
+    </div>
+<%      end %>
+<%   end%>
+
+
+
+

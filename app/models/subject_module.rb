@@ -33,6 +33,24 @@ class SubjectModule < ActiveRecord::Base
     self.subject.name + ' : ' + smname
   end
 
+  def srchtitle
+    subjtitle
+  end
+
+  def clstype
+    "Subject Module"
+  end
+
+  def srchparent
+    self.subject
+  end
+
+  def srchtext
+    smdescription
+  end
+
+
+
   extend FriendlyId
   friendly_id :smname, use: :slugged
 

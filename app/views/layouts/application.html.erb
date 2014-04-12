@@ -26,6 +26,7 @@
 
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
+      <li ><%= link_to "Search", search_search_path %></li>
       <li ><%= link_to "Subjects", subjects_path %></li>
       
       <li ><%= link_to "Sources", sources_path %></li>
@@ -48,7 +49,7 @@
       </li>
     </ul>
 
-    <ul class="nav pull-right">
+    <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
           <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
           <li><%= link_to "Log Out", logout_path %></li>
@@ -56,7 +57,7 @@
           <li><%= link_to "Register", register_path %></li>
           <li><%= link_to "Log in", login_path %></li>
       <% end %>
-
+      <li>&nbsp;&nbsp;</li>
     </ul>
 
 
