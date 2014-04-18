@@ -61,4 +61,6 @@ class SubjectModule < ActiveRecord::Base
     true
     #new_record?
   end
+
+  resourcify
 end

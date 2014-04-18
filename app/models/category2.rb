@@ -3,4 +3,6 @@ class Category2 < ActiveRecord::Base
   attr_accessible :cat2cod, :cat2desc, :category1_id
   has_many :category3s
   has_many :subjects
+
+  resourcify
 end

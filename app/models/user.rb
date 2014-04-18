@@ -1,4 +1,10 @@
 class User < ActiveRecord::Base
+  rolify
+
+  roles_attribute :roles_mask
+
+  roles :admin, :guest, :member, :sourcemgr, :subjectmgr
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable

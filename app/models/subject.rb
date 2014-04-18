@@ -54,7 +54,8 @@ class Subject < ActiveRecord::Base
 
   validates :name,
             :presence => true,
-            :uniqueness => { :case_sensitive => false },
+            :uniqueness => true,
+            :case_sensitive => false,
             :length => { :maximum => 50, :minimum => 3 }
 
     validates :description,
@@ -120,5 +121,6 @@ validates_associated :subject_modules
   :associated_against => {:subject_modules => [:smname, :smdescription, :smpurpose], :category1 => :cat1desc, :category2 => :cat2desc, :category3 => :cat3desc}
 
 
+  resourcify
 
 end

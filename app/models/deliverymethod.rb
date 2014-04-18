@@ -3,4 +3,6 @@ class Deliverymethod < ActiveRecord::Base
 
   has_many :usedmethods, :inverse_of => :deliverymethod
   has_many :portfolios, :through => :usedmethods
+
+  resourcify
 end

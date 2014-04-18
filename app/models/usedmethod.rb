@@ -5,4 +5,6 @@ class Usedmethod < ActiveRecord::Base
    attr_accessible :deliverymethod_id
 
   validates_uniqueness_of :deliverymethod_id, scope: [:deliverable_id, :deliverable_type]
+
+  resourcify
 end

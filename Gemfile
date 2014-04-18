@@ -37,6 +37,8 @@ end
 gem 'blogit'
 
 gem 'devise'
+gem 'cancan'
+gem 'rolify'
 
 gem 'friendly_id'
 

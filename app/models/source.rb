@@ -44,6 +44,17 @@ class Source < ActiveRecord::Base
 
   validates_associated :usedmethods
 
+  validates :name,
+            :presence => true,
+            :uniqueness => true,
+            :case_sensitive => false,
+            :length => { :maximum => 50, :minimum => 3 }
+
+  validates :description,
+            :presence => true,
+
+            :length => { :maximum => 300, :minimum => 3 }
+
   require "acts-as-taggable-on"
   acts_as_taggable
 
@@ -61,4 +72,6 @@ class Source < ActiveRecord::Base
     true
     #new_record?
   end
+
+  resourcify
 end

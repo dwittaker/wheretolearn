@@ -2,24 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140412033134_add_slug_column_to_blogs.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/search.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/search/search.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/search.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/search_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/search_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/search_helper_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/WTL_Logo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/WTL_Logo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/WTL_Logo3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/WTL_Logo4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/WTL_LogoSmall1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140417040016_rolify_create_roles.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/role.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/role_test.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/roles.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/rolify.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/index.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/opinions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/opinions/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category1.rb" afterPath="$PROJECT_DIR$/app/models/category1.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category2.rb" afterPath="$PROJECT_DIR$/app/models/category2.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category3.rb" afterPath="$PROJECT_DIR$/app/models/category3.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/contenttag.rb" afterPath="$PROJECT_DIR$/app/models/contenttag.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/costtype.rb" afterPath="$PROJECT_DIR$/app/models/costtype.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/deliverymethod.rb" afterPath="$PROJECT_DIR$/app/models/deliverymethod.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/opinion.rb" afterPath="$PROJECT_DIR$/app/models/opinion.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/portfolio.rb" afterPath="$PROJECT_DIR$/app/models/portfolio.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/schedtype.rb" afterPath="$PROJECT_DIR$/app/models/schedtype.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/source.rb" afterPath="$PROJECT_DIR$/app/models/source.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/sourcetype.rb" afterPath="$PROJECT_DIR$/app/models/sourcetype.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject.rb" afterPath="$PROJECT_DIR$/app/models/subject.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject_module.rb" afterPath="$PROJECT_DIR$/app/models/subject_module.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/usedmethod.rb" afterPath="$PROJECT_DIR$/app/models/usedmethod.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -33,7 +46,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wheretolearn@Rails_console__wheretolearn.coverage" NAME="Rails console: wheretolearn Coverage Results" MODIFIED="1395528350226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
-    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1397283110815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
+    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1397524301550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@IRB_console__wheretolearn.coverage" NAME="IRB console: wheretolearn Coverage Results" MODIFIED="1395450505247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -51,25 +64,16 @@
       <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/source.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="18" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0" vertical-offset="566" max-vertical-offset="1050">
+            <state line="6" column="41" selection-start="283" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subject.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
+      <file leaf-file-name="ability.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="5" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.0" vertical-offset="1489" max-vertical-offset="1950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subject_module.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="981" selection-end="1140" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1050">
+            <state line="24" column="0" selection-start="705" selection-end="705" vertical-scroll-proportion="0.74882627" vertical-offset="41" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -78,16 +82,16 @@
       <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="108" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.0" vertical-offset="1084" max-vertical-offset="1770">
+            <state line="110" column="14" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0" vertical-offset="1299" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
+      <file leaf-file-name="comment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/comment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="998" selection-end="998" vertical-scroll-proportion="1.2339332" vertical-offset="0" max-vertical-offset="615">
+            <state line="43" column="21" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
@@ -96,7 +100,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="15" selection-start="1213" selection-end="1222" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1005">
+            <state line="5" column="24" selection-start="97" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
@@ -115,20 +119,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/subjects.css.scss" />
-        <option value="$PROJECT_DIR$/db/migrate/20140317055757_create_opinions.rb" />
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140318053149_friendly_id.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140318061938_remove_slugs_table.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140318065700_add_slug_to_subjects.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140318065819_add_slug_to_sources.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/subject_modules_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/subject_modules/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/subject_modules/index.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140323022212_add_slug_to_subject_modules.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140220033709_add_column_referenceto_portfolio2.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140328031323_add_userreference_to_portfolio.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140329082316_add_slug_to_portfolios.rb" />
         <option value="$PROJECT_DIR$/config/sitemap.rb" />
@@ -137,7 +128,6 @@
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/taps-0.3.24/lib/taps/cli.rb" />
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/taps-0.3.24/lib/taps/config.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/Search/_searchmodel.html" />
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
@@ -154,18 +144,32 @@
         <option value="$PROJECT_DIR$/app/views/opinions/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/opinions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/search.css.scss" />
-        <option value="$PROJECT_DIR$/app/models/source.rb" />
-        <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
-        <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
-        <option value="$PROJECT_DIR$/app/models/opinion.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140412033134_add_slug_column_to_blogs.rb" />
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/acts-as-taggable-on-3.0.1/lib/acts_as_taggable_on/tag.rb" />
-        <option value="$PROJECT_DIR$/app/models/subject.rb" />
-        <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb" />
         <option value="$PROJECT_DIR$/app/views/search/search.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/source.rb" />
+        <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
+        <option value="$PROJECT_DIR$/app/models/subject.rb" />
+        <option value="$PROJECT_DIR$/app/models/category1.rb" />
+        <option value="$PROJECT_DIR$/app/models/category2.rb" />
+        <option value="$PROJECT_DIR$/app/models/category3.rb" />
+        <option value="$PROJECT_DIR$/app/models/contenttag.rb" />
+        <option value="$PROJECT_DIR$/app/models/costtype.rb" />
+        <option value="$PROJECT_DIR$/app/models/deliverymethod.rb" />
+        <option value="$PROJECT_DIR$/app/models/opinion.rb" />
+        <option value="$PROJECT_DIR$/app/models/schedtype.rb" />
+        <option value="$PROJECT_DIR$/app/models/sourcetype.rb" />
+        <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
+        <option value="$PROJECT_DIR$/app/models/usedmethod.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb" />
+        <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/comment.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
       </list>
     </option>
   </component>
@@ -394,7 +398,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -413,50 +417,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,6 +507,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1088,7 +1070,11 @@
       <created>1397089411104</created>
       <updated>1397089411104</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added search functionality for all aspects of site content including blogit engine. Need to determine how the changes to the blogit content would be moved to production.">
+      <created>1397285947196</created>
+      <updated>1397285947196</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1169,7 +1155,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added SchedType structure, added a couple of records." />
     <MESSAGE value="Added more code for add used method modal, but errors" />
     <MESSAGE value="Added other version of nested form for used methods. Need to ensure the old method still works for subject module addition and then fix the edit view for portfolio" />
     <MESSAGE value="Fixed currency list on portfolio" />
@@ -1194,7 +1179,8 @@
     <MESSAGE value="Added source to against associated search with opinion and source type&#10;" />
     <MESSAGE value="fixed search associated against with multiple table fields for opinions. Need to modify opinions controller to be polymorphic&#10;" />
     <MESSAGE value="Converted portfolio - opinion related paths to polymorphic_path. Mainly done inside opinion controller, pages etc. Now moving to Sources&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Converted portfolio - opinion related paths to polymorphic_path. Mainly done inside opinion controller, pages etc. Now moving to Sources&#10;" />
+    <MESSAGE value="Added search functionality for all aspects of site content including blogit engine. Need to determine how the changes to the blogit content would be moved to production." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added search functionality for all aspects of site content including blogit engine. Need to determine how the changes to the blogit content would be moved to production." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1205,103 +1191,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="186" selection-end="186" vertical-scroll-proportion="0.35211268" vertical-offset="0" max-vertical-offset="945" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="592" selection-end="592" vertical-scroll-proportion="0.21830986" vertical-offset="327" max-vertical-offset="915" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/subjects/_subject_module_fields.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="438" selection-end="438" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="795" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/subjects/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="39" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="1770">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140404051257_add_pg_search_associated_against_support_functions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="379" selection-end="379" vertical-scroll-proportion="0.32467532" vertical-offset="0" max-vertical-offset="495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="930" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2145">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="41" selection-start="802" selection-end="802" vertical-scroll-proportion="-18.75" vertical-offset="120" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category3.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_view/buffers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-3.2.12/lib/active_support/core_ext/string/output_safety.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="0" selection-start="3129" selection-end="3129" vertical-scroll-proportion="0.0" vertical-offset="1546" max-vertical-offset="2880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/abstract_controller/helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="2595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.12/lib/active_record/associations/builder/association.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.4739454" vertical-offset="454" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="3" selection-start="8928" selection-end="8928" vertical-scroll-proportion="0.40136054" vertical-offset="4458" max-vertical-offset="225165">
-          <folding>
-            <marker date="1392620932000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1392620932000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1392620932000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1392620932000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1392620932000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_controller/metal.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="4448" selection-end="4448" vertical-scroll-proportion="0.0" vertical-offset="1992" max-vertical-offset="3840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/activesupport-3.2.12/lib/active_support/hash_with_indifferent_access.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="750" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="2760">
@@ -1408,13 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sources/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="31" selection-start="0" selection-end="1113" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="675">
@@ -1435,13 +1317,6 @@
           <folding>
             <marker date="1396490437000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="968" selection-end="968" vertical-scroll-proportion="-5.625" vertical-offset="285" max-vertical-offset="1230">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1480,20 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="11" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140330011109_add_slug_column_to_opinions.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="461">
@@ -1504,20 +1365,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20140412033134_add_slug_column_to_blogs.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="12" selection-start="65" selection-end="65" vertical-scroll-proportion="0.03253796" vertical-offset="0" max-vertical-offset="461">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="15" selection-start="1213" selection-end="1222" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="51" selection-start="848" selection-end="852" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
@@ -1550,37 +1397,184 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="18" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0" vertical-offset="566" max-vertical-offset="1050">
+        <state line="20" column="24" selection-start="566" selection-end="567" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sources/_usedmethod_fields.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140417040016_rolify_create_roles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="7" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/role.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="12" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/category1.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/category2.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/category3.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/contenttag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/costtype.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="138" selection-end="138" vertical-scroll-proportion="0.15495868" vertical-offset="0" max-vertical-offset="484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/deliverymethod.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="236" selection-end="236" vertical-scroll-proportion="0.18595041" vertical-offset="0" max-vertical-offset="484">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/opinion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="12" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/schedtype.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="12" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/sourcetype.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="12" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="5" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.0" vertical-offset="1489" max-vertical-offset="1950">
+        <state line="124" column="0" selection-start="3406" selection-end="3406" vertical-scroll-proportion="0.0" vertical-offset="1494" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="981" selection-end="1140" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1050">
+        <state line="64" column="12" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/usedmethod.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="12" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="5" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="108" selection-start="2613" selection-end="2613" vertical-scroll-proportion="0.0" vertical-offset="1084" max-vertical-offset="1770">
+        <state line="110" column="14" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0" vertical-offset="1299" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
+    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="998" selection-end="998" vertical-scroll-proportion="1.2339332" vertical-offset="0" max-vertical-offset="615">
+        <state line="43" column="21" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="97" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="41" selection-start="283" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="705" selection-end="705" vertical-scroll-proportion="0.74882627" vertical-offset="41" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>

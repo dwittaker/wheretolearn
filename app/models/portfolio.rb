@@ -61,6 +61,19 @@ end
 
   validates_associated :usedmethods
 
+  validates :prtitle,
+            :presence => true,
+            :uniqueness => false,
+            :case_sensitive => false,
+            :length => { :maximum => 50, :minimum => 3 }
+
+  validates :prdesc,
+            :presence => false,
+
+            :length => { :maximum => 300, :minimum => 3 }
+
+
+
   extend FriendlyId
   friendly_id :folioname, use: :slugged
   #TODO: Need to decide whether to keep folioname based on source - subject : module or use title and desc
@@ -70,5 +83,9 @@ end
   pg_search_scope :search_by_basic, :against => [:cost, :currency, :enddate, :physaddress,:pweburl, :startdate, :prttitle, :prtdesc],
                   :associated_against => {:source => :name, :subject => :name, :subject_module => :smname, :opinions => [:optitle,:comment,:rating]
                   }
+
+
+  resourcify
+
   #TODO: Configure rating to not require decimals
 end
