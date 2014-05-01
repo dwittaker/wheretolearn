@@ -1,4 +1,6 @@
 class SchedtypesController < ApplicationController
+  load_and_authorize_resource
+
   # GET /schedtypes
   # GET /schedtypes.json
   def index

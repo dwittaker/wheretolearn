@@ -30,21 +30,21 @@ class Opinion < ActiveRecord::Base
   validates :optitle,
             :presence => true,
             :uniqueness => false,
-            :case_sensitive => false,
+            # :case_sensitive => false,
             :length => { :maximum => 50, :minimum => 3 }
 
   validates :comment,
             :presence => true,
             :uniqueness => false,
-            :case_sensitive => false,
+            #:case_sensitive => false,
             :length => { :maximum => 500, :minimum => 3 }
 
   validates :rating,
             :presence => true,
 
-            :numericality => true,
-            :greater_than_or_equal_to => 0,
-            :less_than_or_equal_to => 10
+            :numericality => true #,
+            #:greater_than_or_equal_to => 0,
+            #:less_than_or_equal_to => 10
 
 
   resourcify

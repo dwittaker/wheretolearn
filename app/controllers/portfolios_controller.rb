@@ -1,5 +1,6 @@
 class PortfoliosController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
+  load_and_authorize_resource
   # GET /portfolios
   # GET /portfolios.json
 

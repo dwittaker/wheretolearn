@@ -1,4 +1,5 @@
 class CosttypesController < ApplicationController
+  load_and_authorize_resource
   # GET /costtypes
   # GET /costtypes.json
   def index

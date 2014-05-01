@@ -64,7 +64,7 @@ end
   validates :prtitle,
             :presence => true,
             :uniqueness => false,
-            :case_sensitive => false,
+
             :length => { :maximum => 50, :minimum => 3 }
 
   validates :prdesc,

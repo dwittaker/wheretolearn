@@ -1,5 +1,6 @@
 class SubjectModulesController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
+  load_and_authorize_resource
   # GET /subject_modules
   # GET /subject_modules.json
   def index

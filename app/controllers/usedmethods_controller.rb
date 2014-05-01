@@ -1,4 +1,6 @@
 class UsedmethodsController < ApplicationController
+  load_and_authorize_resource
+  
   # GET /usedmethods
   # GET /usedmethods.json
   def index

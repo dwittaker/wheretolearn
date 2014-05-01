@@ -1,5 +1,6 @@
 class Category3sController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
+  load_and_authorize_resource
   # GET /category3s
   # GET /category3s.json
   def index

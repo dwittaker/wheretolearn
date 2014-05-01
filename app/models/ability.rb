@@ -5,6 +5,14 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
        user ||= User.new # guest user (not logged in)
+       #@user.roles.each { |role| send(role.name.downcase) }
+
+=begin
+       if @user.roles.size == 0
+         can :read, :all #for guest without roles
+       end
+=end
+
        if user.has_role? :admin
          # an admin can do everything
          can :manage, :all
@@ -14,7 +22,7 @@ class Ability
        elsif user.has_role? :member
          can :read, :all
          can :create, Blogit::Post
-         can :update, Blogit::Post
+         can :update, Blogit::Post#, :id => Blogit::Post.with_role(:owner, user).pluck(:id)
          can :destroy, Blogit::Post
          can :create, Opinion
          can :update, Opinion
@@ -24,6 +32,8 @@ class Ability
          can :destroy, Contenttag
 
        elsif user.has_role? :sourcemgr
+         member
+         subjectmgr
          can :read, :all
          can :create, Blogit::Post
          can :update, Blogit::Post
@@ -41,6 +51,7 @@ class Ability
 
 
        elsif user.has_role? :subjectmgr
+         member
          can :read, :all
          can :create, Blogit::Post
          can :update, Blogit::Post
@@ -51,6 +62,8 @@ class Ability
          can :create, Subject_Module
          can :update, Subject_Module
          can :destroy, Subject_Module
+       else
+         can :read, :all #for guest without roles
        end
     #
     # The first argument to `can` is the action you are giving the user 

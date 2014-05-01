@@ -1,0 +1,12 @@
+
+    <%= f.fields_for(:users_roles) do |users_roles_form| %>
+        <div>
+          <%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %>
+          <%= users_roles_form.check_box :users_roles, role.id, @user.roles.include?(role)  %>
+          <%=h role.name %>
+        </div>
+
+
+
+
+    <% end %>

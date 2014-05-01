@@ -1,9 +1,14 @@
 class User < ActiveRecord::Base
-  rolify
+  rolify :before_add => :before_add_method
+  before_create { self.add_role :member}
 
-  roles_attribute :roles_mask
+  def before_add_method(role)
+    # do something before it gets added
+  end
 
-  roles :admin, :guest, :member, :sourcemgr, :subjectmgr
+  #roles_attribute :roles_mask
+
+
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
@@ -14,6 +19,11 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :profile_name
   # attr_accessible :title, :body
+
+  attr_accessible :role_ids
+  attr_accessible :roles_attributes
+  accepts_nested_attributes_for :roles, :reject_if => lambda { |a| a[:name].blank? }, :allow_destroy => true
+
   has_many :opinions
 
 
@@ -61,7 +71,9 @@ class User < ActiveRecord::Base
 
 
 
-
   extend FriendlyId
   friendly_id :profile_name
+
+  has_and_belongs_to_many :roles, :join_table => :users_roles
+  #roles :admin, :guest, :member, :sourcemgr, :subjectmgr
 end

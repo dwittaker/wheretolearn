@@ -1,4 +1,5 @@
 class SourcetypesController < ApplicationController
+  load_and_authorize_resource
   # GET /sourcetypes
   # GET /sourcetypes.json
   def index

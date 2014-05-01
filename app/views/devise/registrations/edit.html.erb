@@ -19,8 +19,30 @@
   <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></div>
 
-  <div><%= f.submit "Update" %></div>
+
+
+    <% if current_user.has_role? :admin %>
+        <p><h2>Roles</h2>
+        <% for role in Role.all %>
+            <div>
+              <%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %>
+              <%=h role.name %>
+            </div>
+
+        <% end %>
+        </p>
+    <% end %>
+    <%= hidden_field_tag "user[role_ids][]", "" %>
+
+
+    <div><%= f.submit "Update Basic Info" %></div>
 <% end %>
+
+
+
+
+
+
 
 <h3>Cancel my account</h3>
 

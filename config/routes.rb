@@ -4,6 +4,42 @@ Wheretolearn::Application.routes.draw do
 
 
 
+  get "users/index"
+
+  get "users/edit"
+
+  get "users/update"
+
+  get "users/new"
+
+  get "users/create"
+
+  get "users/destroy"
+
+  get "roles/index"
+
+  get "roles/edit"
+
+  get "roles/update"
+
+  get "roles/new"
+
+  get "roles/create"
+
+  get "roles/destroy"
+
+  get "role/index"
+
+  get "role/edit"
+
+  get "role/update"
+
+  get "role/new"
+
+  get "role/create"
+
+  get "role/destroy"
+
   get "search/search"
 
   resources :schedtypes
@@ -22,11 +58,18 @@ Wheretolearn::Application.routes.draw do
 
   devise_for :users, skip: [:sessions]
 
+  resources :users do
+    :roles
+  end
+
+
+
   as :user do
     get "/login" => 'devise/sessions#new', as: :new_user_session
     post "/login" => 'devise/sessions#create', as: :user_session
     delete "/logout" => 'devise/sessions#destroy', as: :destroy_user_session
   end
+
 
  ##=====
 
