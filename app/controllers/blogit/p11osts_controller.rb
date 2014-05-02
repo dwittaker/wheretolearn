@@ -3,7 +3,8 @@ module Blogit
   # Using explicit ::Blogit::ApplicationController fixes NoMethodError 'blogit_authenticate' in
   # the main_app
 #  class PostsController < ::Blogit::PostsController
-  class PostsController < ::Blogit::ApplicationController
+  class P11ostsController < ::B11logit::ApplicationController
+
 #  class PostsController < ApplicationController
 
 =begin

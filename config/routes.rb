@@ -201,8 +201,10 @@ match  ':controller/:action.:format'
 
   #######=========================
   #######HAS TO REMAIN AS LAST
-  mount Blogit::Engine => '/blog',
-        :controllers => {:posts => "posts"}
+  mount Blogit::Engine => '/blog'
+        #the lines below were commented out in order to use the decorator instead of having to copy the whole post controller over
+        #,
+        #:controllers => {:posts => "posts"}
 
 
   get 'subject_tags/:tag', to: 'subjects#index', as: :subject_tag
