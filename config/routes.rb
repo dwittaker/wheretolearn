@@ -201,7 +201,8 @@ match  ':controller/:action.:format'
 
   #######=========================
   #######HAS TO REMAIN AS LAST
-  mount Blogit::Engine => '/blog'
+  mount Blogit::Engine => '/blog',
+        :controllers => {:posts => "posts"}
 
 
   get 'subject_tags/:tag', to: 'subjects#index', as: :subject_tag

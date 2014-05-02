@@ -1,0 +1,28 @@
+<p><div id="search">
+  <%= render partial: 'search/searchmodel', locals: {:clearpath => blogit_path} %>
+</div>
+</p>
+
+<p>
+  <br><br>
+<%= login_required class: "actions", id: "new_blog_post_link" do %>
+  <%= link_to t(:new_blog_post, scope: 'blogit.posts'), new_post_path,:class => "btn btn-default" %>
+<% end %>
+</p>
+
+
+<br><br>
+<p><h2>Browse our Blogs!</h2><hr></p>
+<% if @posts.any? %>
+
+  <%= render partial: "blogit/posts/post",
+    collection: @posts,
+    spacer_template: "blog_post_spacer",
+    locals: {show_comments_count: (Blogit.configuration.include_comments == :active_records) }  %>
+<% else %>
+
+  <%= render partial: "blogit/posts/empty" %>
+
+<% end %>
+
+<%= render "pagination" %>
