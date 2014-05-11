@@ -1,5 +1,5 @@
 class AddModuleidToPortfolio_2 < ActiveRecord::Migration
   def change
-    add_column :portfolio, :moduleid, :integer
+    add_column :portfolios, :moduleid, :integer
   end
 end
