@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140503173845_add_userreference_to_users_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140504011951_add_update_references_to_users_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140504034749_remove_updated_from_users_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140505005813_change_created_at_column_users_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/users_role.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/users_role_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/users_roles.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Rails_console__wheretolearn.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/blogit/p11osts_controller.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/role.rb" afterPath="$PROJECT_DIR$/app/models/role.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/roles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/roles_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb" afterPath="$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -62,15 +40,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,57 +67,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/portfolios/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="33.75" vertical-offset="810" max-vertical-offset="1530">
-              <folding>
-                <marker date="1396124166000" expanded="true" signature="100:347" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="222:336" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="385:469" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="493:586" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="609:754" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="778:1060" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="1085:1161" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="1183:1278" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="1300:1479" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="1502:1658" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="1680:1840" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="1863:1998" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="2020:2151" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="2187:2813" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="2368:2797" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="2455:2768" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="2474:2534" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="2552:2755" placeholder="..." />
-                <marker date="1396124166000" expanded="true" signature="2847:3185" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_usedmethod_fields.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/portfolios/_usedmethod_fields.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="139" selection-start="95" selection-end="222" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="390">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="19" selection-start="2666" selection-end="2686" vertical-scroll-proportion="1.269802" vertical-offset="1002" max-vertical-offset="1665">
+            <state line="101" column="19" selection-start="2666" selection-end="2686" vertical-scroll-proportion="0.0" vertical-offset="1002" max-vertical-offset="1665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="721" max-vertical-offset="1455">
+            <state line="25" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="975">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131221151949_add_moduleid_to_portfolio_1.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="3" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131221154007_remove_moduleid_int_from_portfolio.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131221155005_add_moduleid_to_portfolio_2.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131221155005_add_moduleid_to_portfolio_2.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20131221153906_remove_moduleid_from_portfolio.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131221153906_remove_moduleid_from_portfolio.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -167,7 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/costtypes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/deliverymethods_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
@@ -218,6 +184,7 @@
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb" />
       </list>
     </option>
   </component>
@@ -443,24 +410,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1201,7 +1150,11 @@
       <created>1399011572631</created>
       <updated>1399011572631</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Finished up some role stuff, changed user role table to include created fields, created a new version of the users_role table">
+      <created>1399769062965</created>
+      <updated>1399769062965</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1226,9 +1179,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32492998" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1243,7 +1197,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1282,7 +1235,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fixed add method button to be able to allow addition of multiple nested children. Had to modify helper to replace strings. Also , modified button to add new row after the last record, using the tr:last option&#10;" />
     <MESSAGE value="Modded to convert tags to links which allow them to link to index pages with subset of content based which have that tag. Need to set so that the page tells you that you are looking at a subset based on a tag.&#10;" />
     <MESSAGE value="Have just added Opinions scaffold and table to system, adding source and portfolio as potential items for opinions using polymorpic." />
     <MESSAGE value="Have added friendly_id system for permalink slugs to Subject, Sources and Users. Need to sort out for Blog&#10;" />
@@ -1307,7 +1259,8 @@
     <MESSAGE value="Added roles controller rolify as well as configured search for blogit engine. Changes made directly to engine files, need to sort out override of engine thru local files&#10;" />
     <MESSAGE value="Added overridden blogit post controller to project. Need to sort out so that it references the original&#10;" />
     <MESSAGE value="Used decorator to override index action in posts controller. Local posts controller renamed to p11osts as it's not needed anymore.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Used decorator to override index action in posts controller. Local posts controller renamed to p11osts as it's not needed anymore.&#10;" />
+    <MESSAGE value="Finished up some role stuff, changed user role table to include created fields, created a new version of the users_role table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished up some role stuff, changed user role table to include created fields, created a new version of the users_role table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1350,28 +1303,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140209200201_devise_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="6" selection-start="1224" selection-end="1236" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/roles/create.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="427" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="25" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="2160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/portfolios_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="279" selection-end="279" vertical-scroll-proportion="0.32467532" vertical-offset="0" max-vertical-offset="462" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/portfolios_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="26" selection-start="2547" selection-end="2547" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1905">
@@ -1386,7 +1317,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140503173845_add_userreference_to_users_roles.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.25974026" vertical-offset="0" max-vertical-offset="462" />
+        <state line="8" column="0" selection-start="324" selection-end="324" vertical-scroll-proportion="0.25974026" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -1405,12 +1338,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140504011951_add_update_references_to_users_roles.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="155" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
+        <state line="3" column="4" selection-start="155" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140504034749_remove_updated_from_users_roles.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="43" selection-start="159" selection-end="159" vertical-scroll-proportion="0.097402595" vertical-offset="0" max-vertical-offset="462" />
+        <state line="3" column="43" selection-start="159" selection-end="159" vertical-scroll-proportion="0.097402595" vertical-offset="0" max-vertical-offset="462">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/rolify-3.4.0/lib/generators/rolify/user_generator.rb">
@@ -1635,25 +1572,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="33.75" vertical-offset="810" max-vertical-offset="1530">
           <folding>
-            <marker date="1396124166000" expanded="true" signature="100:347" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="222:336" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="385:469" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="493:586" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="609:754" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="778:1060" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="1085:1161" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="1183:1278" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="1300:1479" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="1502:1658" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="1680:1840" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="1863:1998" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="2020:2151" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="2187:2813" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="2368:2797" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="2455:2768" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="2474:2534" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="2552:2755" placeholder="..." />
-            <marker date="1396124166000" expanded="true" signature="2847:3185" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396124166000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1695,7 +1632,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="19" selection-start="2666" selection-end="2686" vertical-scroll-proportion="1.269802" vertical-offset="1002" max-vertical-offset="1665">
+        <state line="101" column="19" selection-start="2666" selection-end="2686" vertical-scroll-proportion="0.0" vertical-offset="1002" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131221153906_remove_moduleid_from_portfolio.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131221155005_add_moduleid_to_portfolio_2.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
           <folding />
         </state>
       </provider>
