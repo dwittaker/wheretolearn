@@ -16,8 +16,8 @@ class Ability
        if user.has_role? :admin
          # an admin can do everything
          can :manage, :all
-       elsif user.has_role? :guest
-         can :read, :all
+       #elsif user.has_role? :guest
+       #  can :read, :all
 
        elsif user.has_role? :member
          can :read, :all
@@ -30,6 +30,11 @@ class Ability
          can :create, Contenttag
          can :update, Contenttag
          can :destroy, Contenttag
+
+       elsif user.has_role? :supermember
+         member
+         sourcemgr
+         subjectmgr
 
        elsif user.has_role? :sourcemgr
          member

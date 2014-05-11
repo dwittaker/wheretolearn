@@ -29,6 +29,23 @@
       <%= f.text_field :profile_name %>
     </div>
 
+    <% if current_user.has_role? :admin  %>
+        <p><h2>Roles</h2>
+        <% for role in Role.all  %>
+            <% unless role.name == "owner" %>
+            <div>
+              <%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role), :disabled => (current_user == @user? true : false ) %>
+              <%=h role.name %>
+
+            </div>
+            <% end %>
+        <% end %>
+
+        </p>
+    <% end %>
+    <%= hidden_field_tag "user[role_ids][]", "" %>
+
+
 
     <div class="actions">
       <%= f.submit %>

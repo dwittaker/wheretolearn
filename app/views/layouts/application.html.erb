@@ -34,10 +34,6 @@
       <li ><%= link_to "Portfolios", portfolios_path %></li>
 
       <li><%= link_to "Blogs", blogit_path  %></li>
-      <% if current_user.present? %>
-
-      <li><%= link_to "New Blog", blogit.new_post_path  %></li>
-      <% end %>
 
     <% if current_user.present? %>
       <% if current_user.has_role? :admin %>

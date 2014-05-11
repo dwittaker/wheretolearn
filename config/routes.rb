@@ -3,7 +3,7 @@ Wheretolearn::Application.routes.draw do
 
 
 
-
+=begin
   get "users/index"
 
   get "users/edit"
@@ -15,6 +15,7 @@ Wheretolearn::Application.routes.draw do
   get "users/create"
 
   get "users/destroy"
+
 
   get "roles/index"
 
@@ -39,6 +40,8 @@ Wheretolearn::Application.routes.draw do
   get "role/create"
 
   get "role/destroy"
+=end
+
 
   get "search/search"
 
