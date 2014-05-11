@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db/migrate/20131215162844_create_subjects.rb" afterPath="$PROJECT_DIR$/db/migrate/20131221162114_create_subjects.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131221162114_create_subjects.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -928,7 +928,11 @@
       <created>1399775526712</created>
       <updated>1399775526712</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="renamed subject creation migration file to try and migrate">
+      <created>1399776019787</created>
+      <updated>1399776019787</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1009,7 +1013,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Have added friendly_id system for permalink slugs to Subject, Sources and Users. Need to sort out for Blog&#10;" />
     <MESSAGE value="Installed sitemap generator gem - not configured yet&#10;" />
     <MESSAGE value="Completed configuration of sitemap for both main app + blog." />
     <MESSAGE value="Added Slug to Subject_modules to allow Friendly_id for SEF. Still need to work out a suitable page for the modules&#10;" />
@@ -1034,7 +1037,8 @@
     <MESSAGE value="Finished up some role stuff, changed user role table to include created fields, created a new version of the users_role table" />
     <MESSAGE value="removed module id change to allow migrate to pass" />
     <MESSAGE value="recreated first commit migrate file - apparently it was deleted&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="recreated first commit migrate file - apparently it was deleted&#10;" />
+    <MESSAGE value="renamed subject creation migration file to try and migrate" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed subject creation migration file to try and migrate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
