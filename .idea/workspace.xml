@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb" afterPath="$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140220234608_remove_schedtype_from_portfolios.rb" afterPath="$PROJECT_DIR$/db/migrate/20140220234608_remove_schedtype_from_portfolios.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -52,7 +53,16 @@
       <file leaf-file-name="20140218114323_remove_costtype_from_portfolios.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="8" column="3" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140220234608_remove_schedtype_from_portfolios.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140220234608_remove_schedtype_from_portfolios.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="41" selection-start="112" selection-end="112" vertical-scroll-proportion="0.08955224" vertical-offset="0" max-vertical-offset="335">
               <folding />
             </state>
           </provider>
@@ -85,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140306034020_add_subject_reference_column_to_portfolios.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140306034020_add_subject_reference_column_to_portfolios.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140306034020_add_subject_reference_column_to_portfolios.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="335">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -112,15 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140101201431_create_contenttags.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140101201431_create_contenttags.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -134,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/sourcetypes_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/subject_modules_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/usedmethods_controller.rb" />
@@ -185,6 +185,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20140101200910_rename_column.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140112203316_add_sourcetype_id_to_sources.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140220234608_remove_schedtype_from_portfolios.rb" />
       </list>
     </option>
   </component>
@@ -1000,7 +1001,11 @@
       <created>1399782271362</created>
       <updated>1399782271362</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="commented out columns as the column name is correct already&#10;">
+      <created>1399782686590</created>
+      <updated>1399782686590</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1081,7 +1086,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Modified opinions to include slugs, added title field, modified views accordingly. &#10;" />
     <MESSAGE value="Last commit after installing PostGreSql. Added to gems and converted database.yaml to point to PG DB. Had to dump from SQLite3 to a sql file, change out a number of field types to ensure compatibility, then run it on the PG database, Let's hope it works." />
     <MESSAGE value="Last, Last commit after installing PostGreSql. This is the dump file that was used" />
     <MESSAGE value="INstalled PG Search on Postgres, added support for 'against associated' records to be able to find a record thru searches on its children's contents. Setup Portfolio, subject" />
@@ -1106,7 +1110,8 @@
     <MESSAGE value="renamed the class in the file to allow success" />
     <MESSAGE value="commented out the rename column as the table hasn't existed yet&#10;" />
     <MESSAGE value="commented out the line as i had done a remove and retried the add with the proper reference type two migrates later." />
-    <option name="LAST_COMMIT_MESSAGE" value="commented out the line as i had done a remove and retried the add with the proper reference type two migrates later." />
+    <MESSAGE value="commented out columns as the column name is correct already&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented out columns as the column name is correct already&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1149,13 +1154,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.12/lib/active_record/associations/association.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="975" selection-end="975" vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="3690">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.12/lib/active_record/associations.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="163" column="0" selection-start="9301" selection-end="9301" vertical-scroll-proportion="0.0" vertical-offset="2288" max-vertical-offset="24195">
@@ -1505,13 +1503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140220033709_add_column_referenceto_portfolio2.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="312">
@@ -1522,6 +1513,20 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20140306034020_add_subject_reference_column_to_portfolios.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="3" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140220234608_remove_schedtype_from_portfolios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="41" selection-start="112" selection-end="112" vertical-scroll-proportion="0.08955224" vertical-offset="0" max-vertical-offset="335">
           <folding />
         </state>
       </provider>

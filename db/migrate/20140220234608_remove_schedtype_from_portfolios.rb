@@ -1,6 +1,6 @@
 class RemoveSchedtypeFromPortfolios < ActiveRecord::Migration
   def up
-    remove_column :portfolios, :schedtype, :integer
+    remove_column :portfolios, :schedtype
   end
 
   def down
