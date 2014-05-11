@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb" afterPath="$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb" afterPath="$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -31,15 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="10" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="754" max-vertical-offset="1500">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,25 +80,7 @@
       <file leaf-file-name="20131221151949_add_moduleid_to_portfolio_1.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="3" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131221154007_remove_moduleid_int_from_portfolio.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20131221155005_add_moduleid_to_portfolio_2.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131221155005_add_moduleid_to_portfolio_2.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+            <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.18564357" vertical-offset="0" max-vertical-offset="404">
               <folding />
             </state>
           </provider>
@@ -134,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/deliverymethods_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/opinions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/schedtypes_controller.rb" />
@@ -184,6 +157,7 @@
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb" />
       </list>
     </option>
@@ -1154,7 +1128,11 @@
       <created>1399769062965</created>
       <updated>1399769062965</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="removed module id change to allow migrate to pass">
+      <created>1399771543321</created>
+      <updated>1399771543321</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1179,10 +1157,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32492998" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1235,7 +1213,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Modded to convert tags to links which allow them to link to index pages with subset of content based which have that tag. Need to set so that the page tells you that you are looking at a subset based on a tag.&#10;" />
     <MESSAGE value="Have just added Opinions scaffold and table to system, adding source and portfolio as potential items for opinions using polymorpic." />
     <MESSAGE value="Have added friendly_id system for permalink slugs to Subject, Sources and Users. Need to sort out for Blog&#10;" />
     <MESSAGE value="Installed sitemap generator gem - not configured yet&#10;" />
@@ -1260,7 +1237,8 @@
     <MESSAGE value="Added overridden blogit post controller to project. Need to sort out so that it references the original&#10;" />
     <MESSAGE value="Used decorator to override index action in posts controller. Local posts controller renamed to p11osts as it's not needed anymore.&#10;" />
     <MESSAGE value="Finished up some role stuff, changed user role table to include created fields, created a new version of the users_role table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished up some role stuff, changed user role table to include created fields, created a new version of the users_role table" />
+    <MESSAGE value="removed module id change to allow migrate to pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed module id change to allow migrate to pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1332,13 +1310,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140504011951_add_update_references_to_users_roles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="155" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
@@ -1651,13 +1622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="381">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131221155005_add_moduleid_to_portfolio_2.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="381">
@@ -1665,9 +1629,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131221154007_remove_moduleid_int_from_portfolio.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="47" selection-start="178" selection-end="178" vertical-scroll-proportion="0.23622048" vertical-offset="0" max-vertical-offset="381">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140504011951_add_update_references_to_users_roles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="53" selection-start="123" selection-end="130" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
+        <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.18564357" vertical-offset="0" max-vertical-offset="404">
           <folding />
         </state>
       </provider>

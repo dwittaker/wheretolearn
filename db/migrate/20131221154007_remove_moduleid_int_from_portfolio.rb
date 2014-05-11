@@ -4,6 +4,6 @@ class RemoveModuleidIntFromPortfolio < ActiveRecord::Migration
   end
 
   def down
-    add_column :portfolios, :moduleid, :Int
+    add_column :portfolios, :moduleid, :integer
   end
 end
