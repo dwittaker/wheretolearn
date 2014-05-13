@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/source.rb" afterPath="$PROJECT_DIR$/app/models/source.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject.rb" afterPath="$PROJECT_DIR$/app/models/subject.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subject_module.rb" afterPath="$PROJECT_DIR$/app/models/subject_module.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -33,37 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="20140220033316_create_schedtypes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140220033316_create_schedtypes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="2" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140220033709_add_column_referenceto_portfolio2.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140220033709_add_column_referenceto_portfolio2.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140318053149_friendly_id.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140318053149_friendly_id.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="subject.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="6" selection-start="2883" selection-end="2883" vertical-scroll-proportion="-7.8461537" vertical-offset="1416" max-vertical-offset="2010">
+            <state line="113" column="0" selection-start="2973" selection-end="2973" vertical-scroll-proportion="-7.6923075" vertical-offset="1495" max-vertical-offset="1980">
+              <folding>
+                <marker date="1399950662000" expanded="true" signature="2877:2995" placeholder="=begin ... =end" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="40" selection-start="996" selection-end="996" vertical-scroll-proportion="1.3606558" vertical-offset="319" max-vertical-offset="1005">
               <folding />
             </state>
           </provider>
@@ -72,17 +61,19 @@
       <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/source.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="6" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1290">
+            <state line="63" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subject_module.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="subject_module.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="16" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.59158415" vertical-offset="646" max-vertical-offset="1140">
-              <folding />
+            <state line="59" column="5" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1110">
+              <folding>
+                <marker date="1399950635000" expanded="true" signature="1143:1272" placeholder="=begin ... =end" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,24 +82,6 @@
         <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="77" column="39" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.0" vertical-offset="1038" max-vertical-offset="1455">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140218114323_remove_costtype_from_portfolios.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="5" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20140317055757_create_opinions.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140317055757_create_opinions.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -127,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/usedmethods_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/role_old.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140417040016_rolify_create_roles.rb" />
@@ -175,9 +147,10 @@
         <option value="$PROJECT_DIR$/db/migrate/20140112203316_add_sourcetype_id_to_sources.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140218114323_remove_costtype_from_portfolios.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140220234608_remove_schedtype_from_portfolios.rb" />
-        <option value="$PROJECT_DIR$/app/models/subject.rb" />
-        <option value="$PROJECT_DIR$/app/models/source.rb" />
         <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
+        <option value="$PROJECT_DIR$/app/models/source.rb" />
+        <option value="$PROJECT_DIR$/app/models/subject.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -334,20 +307,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass (v3.2.12, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1027,7 +986,11 @@
       <created>1399948908777</created>
       <updated>1399948908777</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="disabled more new record function in subject model 'should generate friendly id?' function&#10;">
+      <created>1399949714419</created>
+      <updated>1399949714420</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1052,9 +1015,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1378,13 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131221151949_add_moduleid_to_portfolio_1.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
@@ -1532,23 +1488,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="5" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1110">
+          <folding>
+            <marker date="1399950635000" expanded="true" signature="1143:1272" placeholder="=begin ... =end" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/source.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="6" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1290">
+        <state line="63" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/subject.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="6" selection-start="2883" selection-end="2883" vertical-scroll-proportion="-7.8461537" vertical-offset="1416" max-vertical-offset="2010">
-          <folding />
+        <state line="113" column="0" selection-start="2973" selection-end="2973" vertical-scroll-proportion="-7.6923075" vertical-offset="1495" max-vertical-offset="1980">
+          <folding>
+            <marker date="1399950662000" expanded="true" signature="2877:2995" placeholder="=begin ... =end" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="16" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.59158415" vertical-offset="646" max-vertical-offset="1140">
+        <state line="60" column="40" selection-start="996" selection-end="996" vertical-scroll-proportion="1.3606558" vertical-offset="319" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>

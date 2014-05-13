@@ -51,7 +51,6 @@ class SubjectModule < ActiveRecord::Base
 
 
 
-=begin
   extend FriendlyId
   friendly_id :smname, use: :slugged
 
@@ -59,7 +58,6 @@ class SubjectModule < ActiveRecord::Base
     true
     #new_record?
   end
-=end
 
   include PgSearch
   multisearchable :against => [:smdescription, :smname, :smpurpose]

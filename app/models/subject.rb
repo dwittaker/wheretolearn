@@ -106,7 +106,6 @@ class Subject < ActiveRecord::Base
 #after_update :save_subject_modules
 validates_associated :subject_modules
 
-=begin
   extend FriendlyId
   friendly_id :name, use: :slugged
 
@@ -114,7 +113,6 @@ validates_associated :subject_modules
 
     new_record?
   end
-=end
 
 
   include PgSearch

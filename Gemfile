@@ -57,3 +57,5 @@ gem 'sitemap_generator'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'rails_12factor', group: :production

@@ -60,7 +60,6 @@ class Source < ActiveRecord::Base
 
   attr_accessible :tag_list
 
-=begin
   extend FriendlyId
   friendly_id :name, use: :slugged
 
@@ -68,7 +67,6 @@ class Source < ActiveRecord::Base
     true
     #new_record?
   end
-=end
 
   include PgSearch
   multisearchable :against => [:description, :name, :physaddress, :weburl]
