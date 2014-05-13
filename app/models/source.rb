@@ -60,20 +60,21 @@ class Source < ActiveRecord::Base
 
   attr_accessible :tag_list
 
+=begin
   extend FriendlyId
   friendly_id :name, use: :slugged
+
+  def should_generate_new_friendly_id?
+    true
+    #new_record?
+  end
+=end
 
   include PgSearch
   multisearchable :against => [:description, :name, :physaddress, :weburl]
   pg_search_scope :search_by_basic, :against => [:description, :name, :physaddress, :weburl],
                   :associated_against => {:sourcetype => :stdesc, :opinions => :optitle}
 
-=begin
-  def should_generate_new_friendly_id?
-    true
-    #new_record?
-  end
-=end
 
   resourcify
 end
