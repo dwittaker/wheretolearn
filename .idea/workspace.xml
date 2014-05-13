@@ -90,7 +90,7 @@
       <file leaf-file-name="20140507032741_add_index_to_users_roles.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="80" selection-start="146" selection-end="146" vertical-scroll-proportion="0.07874016" vertical-offset="0" max-vertical-offset="381">
+            <state line="2" column="29" selection-start="95" selection-end="95" vertical-scroll-proportion="0.07874016" vertical-offset="0" max-vertical-offset="381">
               <folding />
             </state>
           </provider>
@@ -954,7 +954,11 @@
       <created>1399953240188</created>
       <updated>1399953240188</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="removing the index from the old users_roles (1)">
+      <created>1399954806043</created>
+      <updated>1399954806043</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1035,7 +1039,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Converted portfolio - opinion related paths to polymorphic_path. Mainly done inside opinion controller, pages etc. Now moving to Sources&#10;" />
     <MESSAGE value="Added search functionality for all aspects of site content including blogit engine. Need to determine how the changes to the blogit content would be moved to production." />
     <MESSAGE value="Added User authentication and authorization using devise, cancan and rolify to create abilities. Still WIP, need to finalize  how to handle the CRUD for various resources and finalize the different roles" />
     <MESSAGE value="Added roles controller rolify as well as configured search for blogit engine. Changes made directly to engine files, need to sort out override of engine thru local files&#10;" />
@@ -1060,7 +1063,8 @@
     <MESSAGE value="installed rails_12factor which should help with rails 4 and serving static assets" />
     <MESSAGE value="commented out code that created a slug table for friendly_id which isn't being used anyway" />
     <MESSAGE value="added new line in migration to create second version of users_roles table which has its own id etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="added new line in migration to create second version of users_roles table which has its own id etc." />
+    <MESSAGE value="removing the index from the old users_roles (1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing the index from the old users_roles (1)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1479,7 +1483,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="80" selection-start="146" selection-end="146" vertical-scroll-proportion="0.07874016" vertical-offset="0" max-vertical-offset="381">
+        <state line="2" column="29" selection-start="95" selection-end="95" vertical-scroll-proportion="0.07874016" vertical-offset="0" max-vertical-offset="381">
           <folding />
         </state>
       </provider>
