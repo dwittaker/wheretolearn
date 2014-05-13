@@ -1,5 +1,6 @@
 class Friendly_Id < ActiveRecord::Migration
   def self.up
+=begin
     create_table :slugs do |t|
       t.string :name
       t.integer :sluggable_id
@@ -10,9 +11,10 @@ class Friendly_Id < ActiveRecord::Migration
     end
     add_index :slugs, [:name, :sluggable_type, :scope, :sequence], :unique => true
     add_index :slugs, :sluggable_id
+=end
   end
 
   def self.down
-    drop_table :slugs
+    #drop_table :slugs
   end
 end
