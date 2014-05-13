@@ -68,10 +68,12 @@ class Source < ActiveRecord::Base
   pg_search_scope :search_by_basic, :against => [:description, :name, :physaddress, :weburl],
                   :associated_against => {:sourcetype => :stdesc, :opinions => :optitle}
 
+=begin
   def should_generate_new_friendly_id?
     true
     #new_record?
   end
+=end
 
   resourcify
 end
