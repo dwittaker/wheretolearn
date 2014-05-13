@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" afterPath="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb" afterPath="$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -78,10 +78,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140504011213_create_users_roles.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140504011213_create_users_roles.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
+            <state line="4" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140507032741_add_index_to_users_roles.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="80" selection-start="146" selection-end="146" vertical-scroll-proportion="0.07874016" vertical-offset="0" max-vertical-offset="381">
               <folding />
             </state>
           </provider>
@@ -110,17 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="63" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0" vertical-offset="796" max-vertical-offset="1260">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subject_module.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="5" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1110">
-              <folding>
-                <marker date="1399950635000" expanded="true" signature="1143:1272" placeholder="=begin ... =end" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -170,7 +168,6 @@
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rolify-3.4.0/lib/rolify/role.rb" />
         <option value="$PROJECT_DIR$/app/models/users_role.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
@@ -189,6 +186,7 @@
         <option value="$PROJECT_DIR$/db/migrate/20140318061938_remove_slugs_table.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140318053149_friendly_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb" />
       </list>
     </option>
   </component>
@@ -952,7 +950,11 @@
       <created>1399952737103</created>
       <updated>1399952737103</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="added new line in migration to create second version of users_roles table which has its own id etc.">
+      <created>1399953240188</created>
+      <updated>1399953240188</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1033,7 +1035,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="fixed search associated against with multiple table fields for opinions. Need to modify opinions controller to be polymorphic&#10;" />
     <MESSAGE value="Converted portfolio - opinion related paths to polymorphic_path. Mainly done inside opinion controller, pages etc. Now moving to Sources&#10;" />
     <MESSAGE value="Added search functionality for all aspects of site content including blogit engine. Need to determine how the changes to the blogit content would be moved to production." />
     <MESSAGE value="Added User authentication and authorization using devise, cancan and rolify to create abilities. Still WIP, need to finalize  how to handle the CRUD for various resources and finalize the different roles" />
@@ -1058,7 +1059,8 @@
     <MESSAGE value="disabled more new record function in subject model 'should generate friendly id?' function&#10;" />
     <MESSAGE value="installed rails_12factor which should help with rails 4 and serving static assets" />
     <MESSAGE value="commented out code that created a slug table for friendly_id which isn't being used anyway" />
-    <option name="LAST_COMMIT_MESSAGE" value="commented out code that created a slug table for friendly_id which isn't being used anyway" />
+    <MESSAGE value="added new line in migration to create second version of users_roles table which has its own id etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="added new line in migration to create second version of users_roles table which has its own id etc." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1166,13 +1168,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="10" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="136" selection-end="136" vertical-scroll-proportion="0.097402595" vertical-offset="0" max-vertical-offset="462">
           <folding />
         </state>
       </provider>
@@ -1412,7 +1407,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="5" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1110">
           <folding>
-            <marker date="1399950635000" expanded="true" signature="1143:1272" placeholder="=begin ... =end" />
+            <marker date="1399950635000" expanded="true" signature="-1:-1" placeholder="=begin ... =end" />
           </folding>
         </state>
       </provider>
@@ -1477,7 +1472,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
+        <state line="4" column="0" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="80" selection-start="146" selection-end="146" vertical-scroll-proportion="0.07874016" vertical-offset="0" max-vertical-offset="381">
           <folding />
         </state>
       </provider>
