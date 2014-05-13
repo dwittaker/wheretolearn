@@ -110,8 +110,8 @@ validates_associated :subject_modules
   friendly_id :name, use: :slugged
 
   def should_generate_new_friendly_id?
-    #true
-    new_record?
+
+    #new_record?
   end
 
 
