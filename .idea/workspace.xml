@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140318053149_friendly_id.rb" afterPath="$PROJECT_DIR$/db/migrate/20140318053149_friendly_id.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140318061938_remove_slugs_table.rb" afterPath="$PROJECT_DIR$/db/migrate/20140318061938_remove_slugs_table.rb" />
+    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" afterPath="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -70,10 +69,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140318060854_create_friendly_id_slugs.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140318060854_create_friendly_id_slugs.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140318060854_create_friendly_id_slugs.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="381">
+            <state line="18" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140504011213_create_users_roles.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="4" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140503173845_add_userreference_to_users_roles.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140503173845_add_userreference_to_users_roles.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -104,15 +121,6 @@
               <folding>
                 <marker date="1399950635000" expanded="true" signature="1143:1272" placeholder="=begin ... =end" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfolio.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="39" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.0" vertical-offset="1038" max-vertical-offset="1455">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,7 +163,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140503173845_add_userreference_to_users_roles.rb" />
         <option value="$PROJECT_DIR$/app/controllers/roles_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140504011951_add_update_references_to_users_roles.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140504034749_remove_updated_from_users_roles.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140505005813_change_created_at_column_users_roles.rb" />
@@ -181,6 +188,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/migrate/20140318061938_remove_slugs_table.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140318053149_friendly_id.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb" />
       </list>
     </option>
   </component>
@@ -940,7 +948,11 @@
       <created>1399950896229</created>
       <updated>1399950896229</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="commented out code that created a slug table for friendly_id which isn't being used anyway">
+      <created>1399952737103</created>
+      <updated>1399952737103</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1021,7 +1033,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added source to against associated search with opinion and source type&#10;" />
     <MESSAGE value="fixed search associated against with multiple table fields for opinions. Need to modify opinions controller to be polymorphic&#10;" />
     <MESSAGE value="Converted portfolio - opinion related paths to polymorphic_path. Mainly done inside opinion controller, pages etc. Now moving to Sources&#10;" />
     <MESSAGE value="Added search functionality for all aspects of site content including blogit engine. Need to determine how the changes to the blogit content would be moved to production." />
@@ -1046,7 +1057,8 @@
     <MESSAGE value="disabled new record function in subject model 'should generate friendly id?' function" />
     <MESSAGE value="disabled more new record function in subject model 'should generate friendly id?' function&#10;" />
     <MESSAGE value="installed rails_12factor which should help with rails 4 and serving static assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="installed rails_12factor which should help with rails 4 and serving static assets" />
+    <MESSAGE value="commented out code that created a slug table for friendly_id which isn't being used anyway" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented out code that created a slug table for friendly_id which isn't being used anyway" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1089,13 +1101,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/arel-3.0.3/lib/arel/table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.33195877" vertical-offset="49" max-vertical-offset="2295">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/activerecord-3.2.12/lib/active_record/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="454" column="0" selection-start="20240" selection-end="20240" vertical-scroll-proportion="0.33195877" vertical-offset="6649" max-vertical-offset="10890">
@@ -1224,13 +1229,6 @@
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.27559054" vertical-offset="0" max-vertical-offset="381">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.31496063" vertical-offset="0" max-vertical-offset="381">
           <folding />
         </state>
       </provider>
@@ -1442,13 +1440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140417040016_rolify_create_roles.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140318053149_friendly_id.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="9" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
@@ -1465,7 +1456,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140318060854_create_friendly_id_slugs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="18" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140503173845_add_userreference_to_users_roles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140417040016_rolify_create_roles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="24" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140504011213_create_users_roles.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15748031" vertical-offset="0" max-vertical-offset="381">
           <folding />
         </state>
       </provider>
