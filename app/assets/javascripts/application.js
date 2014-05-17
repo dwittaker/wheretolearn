@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-
+//= require jquery.wookmark
 //= require_tree .
 //
 
@@ -62,5 +62,11 @@ $(document).ready(function () {
 
     $(function() {
         $('.datepicker').datepicker({dateFormat: 'yy-mm-dd'});
+
+
+       // $(".grid").wookmark({
+       //     offset: 5,
+       //     autoResize: true
+       // });
     });
 });

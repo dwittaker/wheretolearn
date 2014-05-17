@@ -1,58 +1,5 @@
 
 
-/*var subject_moduleFieldsUI = {
-    init: function() {
-        $('#addButton').on('click', function() {
-            formHandler.appendFields();
-            formHandler.hideForm();
-        });
-    }
-};*/
-
-// Set up the UI/UX for the ships screens.  This object sets up all the functionality we need to:
-//  1.  Bind to the "click" event of the "#addButton" on the modal form.
-//  2.  Append data from the modal form to the Subject_modules table.
-//  3.  Hide the modal form when the user is done entering data.
-//
-// If any other events need to be wired up, the init function would be the place to put them.
-var yysubject_moduleFieldsUI = {
-    init: function() {
-        // Configuration for the jQuery validator plugin:
-        // Set the error messages to appear under the element that has the error.  By default, the
-        // errors appear in the all-too-familiar bulleted-list.
-        // Other configuration options can be seen here:  https://github.com/victorjonsson/jQuery-Form-Validator
-        var validationSettings = {
-            //validateOnBlur : true,
-            errorMessagePosition : 'element'
-        };
-
-        $.validate(false, validationSettings);
-
-        // Run validation on an input element when it loses focus.
-        //$('#new-subject_module-fields').validateOnBlur();
-        //$('#new_subject').validateOnBlur();
-
-        $('#addButton').on('click', function(e) {
-            // If the form validation on our Subject_modules modal "form" fails, stop everything and prompt the user
-            // to fix the issues.
-            
-            //var isValid = $('#new-subject_module-fields').validate(false, validationSettings);
-            //var isValid = $.validate(false, validationSettings);
-
-            //alert(isValid);
-            //var isValid = $('#new_subject').validate(false, validationSettings);
-            //if(!isValid) {
-            //    e.stopPropagation();
-
-            //    return false;
-            //}
-
-            // This is the code from previous posts...
-            formHandler.appendFields();
-            formHandler.hideForm();
-        });
-    }
-};
 
 var formHandler = {
     // Public method for adding a new row to the table.
@@ -155,4 +102,30 @@ var rowBuilder = function() {
         addRow: attachRow,
         link: link
     }
+
+
 }();
+
+$(document).ready(function () {
+
+        $(".grid").wookmark({
+
+
+            align: 'left',
+            autoResize: true,
+            comparator: null,
+            container: $('#grid-container'),
+            direction: undefined,
+            ignoreInactiveItems: true,
+            itemWidth: 300,
+            fillEmptySpace: false,
+            flexibleWidth: 1,
+            offset: 5,
+            onLayoutChanged: undefined,
+            outerOffset: 0,
+            possibleFilters: [],
+            resizeDelay: 50,
+            verticalOffset: undefined
+        });
+
+});

@@ -1,0 +1,27 @@
+<h1>Listing subjects</h1>
+
+<div id="grid-container">
+  <% @subjects.each do |subject| %>
+
+      <div class="well grid" >
+
+        <h4><%= link_to subject.name, subject %></h4>
+        <p>Description: <%= subject.description %></p>
+        <p>Purpose: <%= subject.purpose %></p>
+
+        <!--
+        <p><%= subject.complexity %></p>
+
+        <p><%= subject.category1.cat1desc %></p>
+        <p><%= subject.category2.cat2desc %></p>
+        <p><%= subject.category3.cat3desc %></p>
+        <p><%= subject.avgtimetolearn %></p>
+        -->
+        <p><%= link_to 'Show', subject %>
+        <%= link_to 'Edit', edit_subject_path(subject) %>
+        <%= link_to 'Destroy', subject, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+  <% end %>
+</div>
+
+<br>
