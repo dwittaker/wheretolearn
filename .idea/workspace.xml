@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="wheretolearn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,7 +109,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="3" selection-start="597" selection-end="597" vertical-scroll-proportion="0.54329" vertical-offset="139" max-vertical-offset="1050">
+            <state line="16" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.21861471" vertical-offset="139" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -163,7 +163,6 @@
         <option value="$PROJECT_DIR$/app/views/subjects/_indextable.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/subjects.css.scss" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/app/views/portfolios/_usedmethod_fields.html.erb" />
@@ -179,6 +178,7 @@
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/subjects.js" />
         <option value="$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -1701,7 +1701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="597" selection-end="597" vertical-scroll-proportion="0.54329" vertical-offset="139" max-vertical-offset="1050">
+        <state line="16" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="0.21861471" vertical-offset="139" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
