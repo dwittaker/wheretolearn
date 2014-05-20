@@ -1,77 +1,90 @@
-<%= form_for(@portfolio) do |f| %>
-  <% if @portfolio.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@portfolio.errors.count, "error") %> prohibited this portfolio from being saved:</h2>
+<%= form_for @portfolio, :html => { :class => 'form-horizontal' } do |f| %>
 
-      <ul>
-      <% @portfolio.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+    <div class="control-group">
+      <%= f.label 'Title:', :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_field :prttitle, :class => 'text_field' %>
+      </div>
     </div>
-  <% end %>
-
-
-    <div class="field">
-      <%= f.label :prttitle %><br />
-      <%= f.text_field :prttitle %>
-    </div>
-    <div class="field">
-      <%= f.label :prtdesc %><br />
-      <%= f.text_area :prtdesc, :rows => 3 %>
+    <div class="control-group">
+      <%= f.label 'Description:', :class => 'control-label' %>
+      <div class="controls">
+        <%= f.text_area :prtdesc, :rows => 3, :class => 'text_area' %>
+      </div>
     </div>
 
-  <div class="field">
-    <%= f.label :source %><br />
-    <%= f.collection_select :source_id, Source.find(:all), :id, :name, :prompt => "Select a Source" %>
+  <div class="control-group">
+    <%= f.label 'Source', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :source_id, Source.find(:all), :id, :name, :prompt => "Select a Source", :class => 'dropdown_field'  %>
+    </div>
   </div>
-    <div class="field">
-      <%= f.label :subject %><br />
 
-      <%= f.collection_select( :subject_id, @subjects, :id, :name, options ={:prompt => "Select a Subject"}) %>
-      <%= f.collection_select :subject_module_id, SubjectModule.find(:all), :id, :smname, :prompt => "Select a Module" %>
+    <div class="control-group">
+      <%= f.label 'Subject & Module', :class => 'control-label' %>
+      <div class="controls">
+
+        <%= f.collection_select( :subject_id, @subjects, :id, :name, options ={:prompt => "Select a Subject"}, :class => 'dropdown_field') %>
+        <%= f.collection_select :subject_module_id, SubjectModule.find(:all), :id, :smname, :prompt => "Select a Module", :class => 'dropdown_field' %>
+      </div>
+    </div>
+
+  <div class="control-group">
+    <%= f.label 'Web URL:', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :pweburl, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label 'Physical Address:', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :physaddress, :row => 2, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label 'Cost', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :cost, size: 15, :class => 'text_field' %>
+      <%= f.select :currency, @currlist.map{|cl| [ cl[0], cl[0] ]},:prompt => "Select a Currency", :class => 'dropdown_field' %>
+    </div>
+  </div>
+
+    <div class="control-group">
+      <%= f.label 'Cost Type:', :class => 'control-label' %>
+      <div class="controls">
+
+        <%= f.collection_select :costtype_id, Costtype.find(:all), :id, :costname, :prompt => "Select a Type", :class => 'dropdown_field' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :schedtype_id, :class => 'control-label' %>
+      <div class="controls">
+
+        <%= f.collection_select :schedtype_id, Schedtype.find(:all), :id, :schedname, :prompt => "Select a Type", :class => 'dropdown_field' %>
+      </div>
     </div>
 
 
+    <div class="control-group">
+    <%= f.label :startdate, :class => 'control-label' %>
+    <div class="controls">
 
-  <div class="field">
-    <%= f.label :pweburl %><br />
-    <%= f.text_field :pweburl %>
+      <%= f.text_field :startdate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :physaddress %><br />
-    <%= f.text_area :physaddress, :rows => 3 %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br />
-    <%= f.text_field :cost, size: 15 %>
-    <%= f.select :currency, @currlist.map{|cl| [ cl[0], cl[0] ]},:prompt => "Select a Currency" %>
-  </div>
+  <div class="control-group">
+    <%= f.label :enddate, :class => 'control-label' %>
+    <div class="controls">
 
-  <div class="field">
-    <%= f.label :costtype_id %><br />
-    <%= f.collection_select :costtype_id, Costtype.find(:all), :id, :costname, :prompt => "Select a Type" %>
-  </div>
-  <div class="field">
-    <%= f.label :schedtype_id %><br />
-    <%= f.collection_select :schedtype_id, Schedtype.find(:all), :id, :schedname, :prompt => "Select a Type" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :startdate %><br />
-    <%= f.text_field :startdate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
-  </div>
-  <div class="field">
-    <%= f.label :enddate %><br />
-    <%= f.text_field :enddate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
+      <%= f.text_field :enddate, :class => 'datepicker', :size => 10, :maxlength => 10 %>
+    </div>
   </div>
     <p></p><p></p>
-
 
     <fieldset>
       <legend>Delivery Methods <%= "for #{ @portfolio.source.name + @portfolio.subject_module.subjtitle }" unless @portfolio.source.blank? %></legend>
       <div  id="usedmethods">
-    <table width="200" id="usedmethods-table" class="table table-hover table-striped" >
+        <table width="200" id="usedmethods-table" class="table table-hover table-striped" >
           <thead>
           <th></th>
 
@@ -79,18 +92,18 @@
           </thead>
           <tbody>
 
-        <tr><td><p><%= link_to_add_fields2( "Add a Method", f, :usedmethods,:class => "btn btn-primary") %></p></td><td></td></tr>
-        <%= render('usedmethod_fields', :f => f) %>
+          <tr><td><p><%= link_to_add_fields2( "Add a Method", f, :usedmethods,:class => "btn btn-primary") %></p></td><td></td></tr>
+          <%= render('usedmethod_fields', :f => f) %>
           </tbody>
-    </table>
+        </table>
         <p></p>
       </div>
     </fieldset>
 
 
+  <div class="form-actions">
+    <%= f.submit "Save", :class => 'btn btn-primary', :title => "Save the changes to this Portfolio." %>
 
-    <div class="modal-footer">
-      <%= f.submit("Save", :class => "btn btn-primary", :title => "Save the changes to this Portfolio.") %>
-      <%= link_to("Cancel", portfolios_path, :confirm => "Are you sure you want to cancel?  Any changes will be lost.", :class => "btn btn-inverse", :title => "Cancel the changes and return to the Portfolio Index.") %>
-    </div>
+    <%= link_to( t('.cancel', :default => t("helpers.links.cancel")), portfolios_path, :confirm => "Are you sure you want to cancel?  Any changes will be lost.", :class => "btn", :title => "Cancel the changes and return to the Portfolio Index.") %>
+  </div>
 <% end %>

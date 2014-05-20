@@ -1,14 +1,33 @@
-<div id="search">
-  <%= render partial: 'search/searchmodel', locals: {:clearpath => subjects_path} %>
+<div class="row">
+  <div class="col-md-8">
+    <%= link_to 'Create New Subject', new_subject_path, class: "btn btn-mini btn-warning" %>
+  </div>
+  <div class="col-md-4">
+
+
+    <div id="search">
+      <a id="gridbtn" href="#" class="btn btn-default btn-mini" role="button">Grid</a>
+      <a id="listbtn" href="#" class="btn btn-default btn-mini" role="button">List</a>
+
+      <%= render partial: 'search/searchmodel', locals: {:clearpath => subjects_path} %>
+    </div>
+  </div>
 </div>
 
-<br><br>
 
+
+<br><br>
+<h1>Subjects</h1>
+<div id="divgrid">
 <%= render partial: 'subjectindexgrid' %>
+</div>
+<div id="divlist">
+  <%= render partial: 'subjectindextable' %>
+</div>
+
 
 <br />
 
-<%= link_to 'New Subject', new_subject_path %>
 <p>
 
 <div id="tag_cloud">

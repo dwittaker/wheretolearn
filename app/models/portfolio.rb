@@ -61,13 +61,13 @@ end
 
   validates_associated :usedmethods
 
-  validates :prtitle,
+  validates :prttitle,
             :presence => true,
             :uniqueness => false,
 
             :length => { :maximum => 50, :minimum => 3 }
 
-  validates :prdesc,
+  validates :prtdesc,
             :presence => false,
 
             :length => { :maximum => 300, :minimum => 3 }

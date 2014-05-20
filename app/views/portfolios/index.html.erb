@@ -1,56 +1,73 @@
-<div id="search">
-  <%= render partial: 'search/searchmodel', locals: {:clearpath => portfolios_path} %>
+
+<%- model_class = Portfolio -%>
+<div class="row">
+  <div class="col-md-8">
+    <%= link_to 'Create New Portfolio', new_portfolio_path, class: "btn btn-success btn-mini" %>
+  </div>
+  <div class="col-md-4">
+    <div id="search">
+      <%= render partial: 'search/searchmodel', locals: {:clearpath => portfolios_path} %>
+    </div>
+  </div>
 </div>
+
+<br><br>
 
 <div class="page-header">
-<h1>Listing Portfolios</h1>
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Desc</th>
+      <th>Subject & Module</th>
+      <th>Source</th>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Desc</th>
-    <th>SubjectModule</th>
-    <th>Source</th>
-    <th>Pweburl</th>
-    <th>Physaddress</th>
-    <th>Cost</th>
-    <th>Currency</th>
-    <th>Costtype</th>
-    <th>Schedtype</th>
+      <th>Cost</th>
+      <th>Currency</th>
+      <th>Cost Type</th>
+      <th>Schedule Type</th>
 
-    <th>Startdate</th>
-    <th>Enddate</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @portfolios.each do |portfolio| %>
+      <tr>
+        <td><%= link_to portfolio.prttitle , portfolio_path(portfolio) %></td>
 
-<% @portfolios.each do |portfolio| %>
-  <tr>
+        <td><%= portfolio.prtdesc %></td>
 
-    <td><%= portfolio.prttitle %></td>
-    <td><%= portfolio.prtdesc %></td>
+        <td><%= portfolio.subject_module.subjtitle %></td>
+        <td><%= portfolio.source.name %></td>
 
-    <td><%= portfolio.subject_module.subjtitle %></td>
-    <td><%= portfolio.source.name %></td>
 
-    <td><%= portfolio.pweburl %></td>
-    <td><%= portfolio.physaddress %></td>
-    <td><%= portfolio.cost %></td>
-    <td><%= portfolio.currency %></td>
-    <td><%= portfolio.costtype.costname %></td>
-    <td><%= portfolio.schedtype.schedname %></td>
+        <td><%= portfolio.cost %></td>
+        <td><%= portfolio.currency %></td>
+        <td><%= portfolio.costtype.costname %></td>
+        <td><%= portfolio.schedtype.schedname %></td>
 
-    <td><%=  listdt(portfolio.startdate) %></td>
-    <td><%=  listdt(portfolio.enddate) %></td>
-    <td><%= link_to 'Show', portfolio %></td>
-    <td><%= link_to 'Edit', edit_portfolio_path(portfolio) %></td>
-    <td><%= link_to 'Destroy', portfolio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+        <td><%=  listdt(portfolio.startdate) %></td>
+        <td><%=  listdt(portfolio.enddate) %></td>
+
+        <td>
+          <%= link_to 'Show', portfolio, :class => 'btn btn-mini' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_portfolio_path(portfolio), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      portfolio_path(portfolio),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Portfolio', new_portfolio_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_portfolio_path,
+            :class => 'btn btn-primary' %>

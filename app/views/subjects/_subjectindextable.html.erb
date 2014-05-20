@@ -1,6 +1,6 @@
-<h1>Listing subjects</h1>
 
-<table>
+
+<table class="table table-striped">
   <tr>
 
     <th>Name</th>
@@ -11,9 +11,7 @@
     <th>Category1</th>
     <th>Category2</th>
     <th>Category3</th>
-    <th>Avgtimetolearn</th>
-    <th></th>
-    <th></th>
+    <th>Learn Time</th>
     <th></th>
   </tr>
 
@@ -21,18 +19,35 @@
 
       <tr>
 
-        <td><%= subject.name %></td>
+        <td><%= link_to subject.name, subject %></td>
         <td><%= subject.description %></td>
         <td><%= subject.purpose %></td>
-        <td><%= subject.complexity %></td>
+        <td>
+          <%= hidden_field "complexityval", subject.id, :value => subject.complexity %>
+
+
+          <div class="progress">
+            <div id="complexbarlow_<%= subject.id %>" name="complexbarlow[<%= subject.id %>]" class="bar bar-success mypopover" style="width:33%;" title="" data-content="Easy peezy" data-placement="bottom" data-toggle="popover" data-original-title="Meh"></div>
+            <div id="complexbarmid_<%= subject.id %>" name="complexbarlow[<%= subject.id %>]" class="bar bar-warning mypopover" style="width:33%;" title="" data-content="Getting hot in here" data-placement="bottom" data-toggle="popover" data-original-title="Hmm"></div>
+            <div id="complexbarhigh_<%= subject.id %>" name="complexbarlow[<%= subject.id %>]" class="bar bar-danger mypopover" style="width:33%;" title="" data-content="You will not succeed" data-placement="bottom" data-toggle="popover" data-original-title="Sigh"></div>
+          </div>
+        </td>
 
         <td><%= subject.category1.cat1desc %></td>
         <td><%= subject.category2.cat2desc %></td>
         <td><%= subject.category3.cat3desc %></td>
         <td><%= subject.avgtimetolearn %></td>
-        <td><%= link_to 'Show', subject %></td>
-        <td><%= link_to 'Edit', edit_subject_path(subject) %></td>
-        <td><%= link_to 'Destroy', subject, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <%= link_to 'Show', subject, :class => 'btn btn-mini' %>
+        <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_subject_path(subject) , :class => 'btn btn-mini' %>
+
+        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                    subject,
+                    :method => :delete,
+                    :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                    :class => 'btn btn-mini btn-danger' %>
+        </td>
       </tr>
   <% end %>
 </table>

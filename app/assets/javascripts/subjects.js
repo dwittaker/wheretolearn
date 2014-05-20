@@ -106,6 +106,7 @@ var rowBuilder = function() {
 
 }();
 
+/*
 $(document).ready(function () {
 
         $(".grid").wookmark({
@@ -128,4 +129,117 @@ $(document).ready(function () {
             verticalOffset: undefined
         });
 
+});
+*/
+
+
+$(function(){
+
+    var $container = $('#masonry-container');
+
+    $container.imagesLoaded(function(){
+        $container.masonry({
+            itemSelector: '.boxd3',
+            columnWidth: 200
+
+        });
+    });
+
+    $container.infinitescroll({
+            navSelector  : '#page-nav',    // selector for the paged navigation
+            nextSelector : '#page-nav a',  // selector for the NEXT link (to page 2)
+            itemSelector : '.boxd3',     // selector for all items you'll retrieve
+            loading: {
+                finishedMsg: 'No more pages to load.',
+                img: 'http://i.imgur.com/6RMhx.gif'
+            }
+        },
+        // trigger Masonry as a callback
+        function( newElements ) {
+            // hide new items while they are loading
+            var $newElems = $( newElements ).css({ opacity: 0 });
+            // ensure that images load before adding to masonry layout
+            $newElems.imagesLoaded(function(){
+                // show elems now they're ready
+                $newElems.animate({ opacity: 1 });
+                $container.masonry( 'appended', $newElems, true );
+            });
+        }
+    );
+
+    $('#divgrid').show();
+    $('#gridbtn').addClass('active');
+
+    $('#divlist').hide();
+
+
+    $('#gridbtn').click(function(){
+        $('#divgrid').show();
+        $('#divlist').hide();
+        $('#gridbtn').addClass('active');
+        $('#listbtn').removeClass('active');
+    });
+
+    $('#listbtn').click(function(){
+        $('#divgrid').hide();
+        $('#divlist').show();
+        $('#listbtn').addClass('active');
+        $('#gridbtn').removeClass('active');
+    });
+
+
+
+
+});
+
+$(document).ready(function(){
+//function setprogbar(fieldnum, comp) {
+
+    $('[id^=complexityval_]').each(function(index) {
+
+    comp = $(this).val();
+
+    num = comp;
+    num = num * 10;
+    var bar1 = 0;
+    var bar2 = 0;
+    var bar3 = 0;
+
+    if (num > 66)
+    {
+        bar1 = 33;
+        bar2 = 33;
+        bar3 = num - 66;
+    }
+    else
+    {
+        if (num > 33)
+        {
+            bar1 = 33;
+            bar2 = num - 33;
+            bar3 = 0;
+        }
+        else
+        {
+            bar1 = num;
+            bar2 = 0;
+            bar3 = 0;
+        }
+    }
+
+    var blankstr = "";
+
+    var pblow = blankstr.concat("#complexbarlow_", $(this).attr('id').replace(/complexityval_/, ''),"");
+    var pbmid = blankstr.concat("#complexbarmid_",$(this).attr('id').replace(/complexityval_/, ''),"");
+    var pbhigh = blankstr.concat("#complexbarhigh_",$(this).attr('id').replace(/complexityval_/, ''),"");
+
+/*        var pblow = blankstr.concat("#complexbarlow_",fieldnum);
+        var pbmid = blankstr.concat("#complexbarmid_",fieldnum);
+        var pbhigh = blankstr.concat("#complexbarhigh_",fieldnum);*/
+
+    $(pblow).width(blankstr.concat(bar1,"%"));
+    $(pbmid).width(blankstr.concat(bar2,"%"));
+    $(pbhigh).width(blankstr.concat(bar3,"%"));
+
+    });
 });
