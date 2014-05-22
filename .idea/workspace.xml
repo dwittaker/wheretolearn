@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/portfolios/_portfolioindextable.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/_searchmodel.html.erb" afterPath="$PROJECT_DIR$/app/views/search/_searchmodel.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/_subject_module_display.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/_subject_module_display.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/blogit/posts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/blogit/posts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/index.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/index.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/search.html.erb" afterPath="$PROJECT_DIR$/app/views/search/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/show.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/show.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/subjects.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/subjects.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/subjects.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/subjects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/search_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -51,7 +34,7 @@
       <file leaf-file-name="subjects.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/subjects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="0" selection-start="4283" selection-end="4283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445">
+            <state line="142" column="29" selection-start="4252" selection-end="4252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445">
               <folding>
                 <element signature="e#21#703#0" expanded="false" />
                 <element signature="e#716#920#0" expanded="false" />
@@ -101,16 +84,25 @@
       <file leaf-file-name="search.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="169" selection-end="181" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="675">
+            <state line="16" column="7" selection-start="454" selection-end="454" vertical-scroll-proportion="-5.625" vertical-offset="105" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap_and_overrides.css.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="search_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="61" selection-start="318" selection-end="318" vertical-scroll-proportion="0.2970297" vertical-offset="0" max-vertical-offset="404">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap_and_overrides.css.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="17" selection-start="1607" selection-end="1607" vertical-scroll-proportion="1.092643" vertical-offset="334" max-vertical-offset="960">
+            <state line="49" column="17" selection-start="1607" selection-end="1607" vertical-scroll-proportion="-16.708334" vertical-offset="334" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -147,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/role.rb" />
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rolify-3.4.0/lib/rolify/role.rb" />
         <option value="$PROJECT_DIR$/app/models/users_role.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
@@ -196,8 +187,9 @@
         <option value="$PROJECT_DIR$/app/views/sources/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/subjects.css.scss" />
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/search/search.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
+        <option value="$PROJECT_DIR$/app/views/search/search.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
       </list>
     </option>
   </component>
@@ -595,6 +587,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1293,7 +1303,11 @@
       <created>1400568636927</created>
       <updated>1400568636927</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="modified aesthetics to use more bootstrap, added grid/list views for source and portfolio">
+      <created>1400758868996</created>
+      <updated>1400758868997</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1318,9 +1332,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1353,7 +1367,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Used decorator to override index action in posts controller. Local posts controller renamed to p11osts as it's not needed anymore.&#10;" />
     <MESSAGE value="Finished up some role stuff, changed user role table to include created fields, created a new version of the users_role table" />
     <MESSAGE value="removed module id change to allow migrate to pass" />
     <MESSAGE value="recreated first commit migrate file - apparently it was deleted&#10;" />
@@ -1378,7 +1391,8 @@
     <MESSAGE value="Made changes for publishing to digital ocean" />
     <MESSAGE value="Setup wookmark on subject index page. Need to modify parent page to allow user to select table or grid view&#10;" />
     <MESSAGE value="Setup Twitter-BootStrap-rails and modified certain portfolio and subject views. Also, setup grid vs list for subject page.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup Twitter-BootStrap-rails and modified certain portfolio and subject views. Also, setup grid vs list for subject page.&#10;" />
+    <MESSAGE value="modified aesthetics to use more bootstrap, added grid/list views for source and portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified aesthetics to use more bootstrap, added grid/list views for source and portfolio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1421,11 +1435,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/subject_module.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="5" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1110" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140507032741_add_index_to_users_roles.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="29" selection-start="95" selection-end="95" vertical-scroll-proportion="0.07874016" vertical-offset="0" max-vertical-offset="381" />
@@ -1733,18 +1742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/subjects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="0" selection-start="4283" selection-end="4283" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2445">
-          <folding>
-            <element signature="e#21#703#0" expanded="false" />
-            <element signature="e#716#920#0" expanded="false" />
-            <element signature="e#1365#2054#0" expanded="false" />
-            <element signature="e#2183#3472#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="727" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="585">
@@ -1773,16 +1770,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="169" selection-end="181" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="675">
+        <state line="49" column="17" selection-start="1607" selection-end="1607" vertical-scroll-proportion="-16.708334" vertical-offset="334" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/subjects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="17" selection-start="1607" selection-end="1607" vertical-scroll-proportion="1.092643" vertical-offset="334" max-vertical-offset="960">
+        <state line="142" column="29" selection-start="4252" selection-end="4252" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445">
+          <folding>
+            <element signature="e#21#703#0" expanded="false" />
+            <element signature="e#716#920#0" expanded="false" />
+            <element signature="e#1365#2054#0" expanded="false" />
+            <element signature="e#2183#3472#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="454" selection-end="454" vertical-scroll-proportion="-5.625" vertical-offset="105" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="61" selection-start="318" selection-end="318" vertical-scroll-proportion="0.2970297" vertical-offset="0" max-vertical-offset="404">
           <folding />
         </state>
       </provider>
