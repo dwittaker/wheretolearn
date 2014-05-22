@@ -1,0 +1,48 @@
+
+<table class="table table-striped">
+  <tr>
+
+    <th>Name</th>
+    <th>Description</th>
+    <th>Url</th>
+    <th>Address</th>
+
+    <th>Type</th>
+    <th>Methods</th>
+    <th></th>
+  </tr>
+
+  <% @sources.each do |source| %>
+
+      <tr>
+
+        <td><%= link_to source.name, source %></td>
+        <td><%= source.description %></td>
+        <td><%= source.weburl %></td>
+        <td><%= source.physaddress %></td>
+        <td><%= source.sourcetype.stdesc %></td>
+        <td>
+          <% if (source.usedmethods.length > 0) %>
+              <div >
+                <% source.usedmethods.each do |sm| %>
+                    <span class="label label-default"><%= sm.deliverymethod.dmdesc %></span>
+                <% end %>
+              </div>
+          <% end %>
+        </td>
+      
+        <td>
+        <%= link_to 'Show', source, :class => 'btn btn-mini' %>
+        <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_source_path(source) , :class => 'btn btn-mini' %>
+
+        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                    source,
+                    :method => :delete,
+                    :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                    :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+  <% end %>
+</table>
+<br>

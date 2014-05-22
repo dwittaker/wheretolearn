@@ -34,15 +34,18 @@ background-color: #ffffff;
 
 #masonry-container {
   background: #FCFCFC;
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 5px;
+  margin-bottom: 200px;
   border-radius: 5px;
   clear: both;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 1px;
 
+  margin: 0 auto;
 }
+
+
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
@@ -64,13 +67,17 @@ background-color: #ffffff;
 .boxd3 {
   margin: 5px;
   padding: 5px;
-  background: #faf7f4;
+  //background: #fa753e;
+  background: #fff9ed;
+  //background: #faf7f4;
   font-size: 11px;
   line-height: 1.4em;
   float: left;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
+  margin-bottom: 0px;
+
+  border-radius: 0px;
 }
 
 .boxd3 h2 {

@@ -1,4 +1,9 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Subject -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+
 
 
 <p>
@@ -22,22 +27,22 @@
 </p>
 
 <p>
-  <b>Category1:</b>
+  <b>Category 1:</b>
   <%= @subject.category1.cat1desc %>
 </p>
 
 <p>
-  <b>Category2:</b>
+  <b>Category 2:</b>
   <%= @subject.category2.cat2desc %>
 </p>
 
 <p>
-  <b>Category3:</b>
+  <b>Category 3:</b>
   <%= @subject.category3.cat3desc %>
 </p>
 
 <p>
-  <b>Avgtimetolearn:</b>
+  <b>Average Learn Time:</b>
   <%= @subject.avgtimetolearn %>
 </p>
 
@@ -51,6 +56,14 @@
   <p></p>
 </div>
 
-
-<%= link_to 'Edit', edit_subject_path(@subject) %> |
-<%= link_to 'Back', subjects_path %>
+<div class="form-actions">
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_subject_path(@subject), :class => 'btn' %>
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+            subjects_path, :class => 'btn'  %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              subject_path(@subject),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

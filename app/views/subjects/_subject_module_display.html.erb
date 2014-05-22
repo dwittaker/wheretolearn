@@ -6,6 +6,7 @@
   </thead>
   <tbody>
 
+    <% if @subject.subject_modules.present? %>
       <% @subject.subject_modules.each do |subject_modules| %>
           <tr class="fields">
             <td><%= subject_modules.smname %></td>
@@ -13,5 +14,10 @@
             <td><%= subject_modules.smpurpose %></td>
           </tr>
       <% end %>
+    <% else %>
+    <tr class="fields">
+      <td colspan="3">No Modules Found</td>
+    </tr>
+    <% end %>
   </tbody>
 </table>

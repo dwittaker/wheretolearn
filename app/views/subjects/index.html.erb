@@ -1,15 +1,23 @@
-<div class="row">
-  <div class="col-md-8">
-    <%= link_to 'Create New Subject', new_subject_path, class: "btn btn-mini btn-warning" %>
-  </div>
-  <div class="col-md-4">
+<%- model_class = Subject -%>
 
+<div class="row">
+
+  <div class="col-md-4">
+    <%= link_to 'Create New Subject', new_subject_path, class: "btn btn-mini btn-success" %>
+  </div>
+  <div class="col-md-4"> </div>
+
+  <div class="col-md-1"><a id="gridbtn" href="#" class="btn btn-default btn-mini" role="button">Grid</a>
+    <a id="listbtn" href="#" class="btn btn-default btn-mini" role="button">List</a></div>
+  <div class="col-md-3">
 
     <div id="search">
-      <a id="gridbtn" href="#" class="btn btn-default btn-mini" role="button">Grid</a>
-      <a id="listbtn" href="#" class="btn btn-default btn-mini" role="button">List</a>
 
-      <%= render partial: 'search/searchmodel', locals: {:clearpath => subjects_path} %>
+      <div><%= render partial: 'search/searchmodel', locals: {:clearpath => subjects_path} %></div>
+
+
+
+
     </div>
   </div>
 </div>
@@ -17,7 +25,10 @@
 
 
 <br><br>
-<h1>Subjects</h1>
+<div class="page-header">
+    <h1>Subjects</h1>
+</div>
+
 <div id="divgrid">
 <%= render partial: 'subjectindexgrid' %>
 </div>

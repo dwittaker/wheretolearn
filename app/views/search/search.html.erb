@@ -3,19 +3,20 @@
   <h1>What would you like to learn?</h1>
 </div>
 </p>
+<form >
 
-<p><form class="navbar-search pull-left">
   <div class="col-lg-6">
   <div class="input-group">
-    <%= text_field_tag(:srchquery, params[:srchquery], :class => "form-control") %>
+    <%= text_field_tag(:srchquerybig, params[:srchquery], :class => "form-control") %>
       <span class="input-group-btn">
   <%= submit_tag("Search", :class => "btn btn-default", :title => "Looking for something in particular? Let's go then!") %>
       </span>
   </div><!-- /input-group -->
   </div>
+
 </form>
 
-</p>
+<br>
 <br>
 
 

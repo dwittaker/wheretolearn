@@ -3,7 +3,11 @@
   <div class="col-md-8">
     <%= link_to 'Create New Source', new_source_path, class: "btn btn-success btn-mini" %>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-1">
+    <a id="gridbtn" href="#" class="btn btn-default btn-mini" role="button">Grid</a>
+    <a id="listbtn" href="#" class="btn btn-default btn-mini" role="button">List</a>
+  </div>
+    <div class="col-md-3">
       <div id="search">
         <%= render partial: 'search/searchmodel', locals: {:clearpath => sources_path} %>
       </div>
@@ -11,37 +15,14 @@
 </div>
 <br><br>
 <div class="page-header">
-<h1>Knowledge sources</h1>
+<h1>Sources</h1>
 </div>
 
-
-
-<br>
-
-<% @sources.each do |source| %>
-  <div class="source">
-    <h1><%= link_to source.name, source, :class => 'title' %></h1>
-    <p><%= source.description %></p>
-    <p><%= source.weburl %></p>
-    <p><%= source.physaddress %></p>
-    <p><%= source.sourcetype.stdesc  %></p>
-    <% if (source.usedmethods.length > 0) %>
-    <div class="well well-sm">
-      <% source.usedmethods.each do |sm| %>
-          <span class="label label-default"><%= sm.deliverymethod.dmdesc %></span>
-      <% end %>
-    </div>
-    <% end %>
-    <div class="meta">
-        <%= link_to time_ago_in_words(source.created_at)+" ago", source %>
-        <span class="admin" >
-            | <%= link_to 'Edit', edit_source_path(source) %>
-            | <%= link_to 'Destroy', source, method: :delete, data: { confirm: 'Are you sure?' } %> |
-        </span>
-    </div>
- </div>
-<% end %>
-
-
+<div id="divgrid">
+  <%= render partial: 'sourceindexgrid' %>
+</div>
+<div id="divlist">
+  <%= render partial: 'sourceindextable' %>
+</div>
 
 

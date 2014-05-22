@@ -140,7 +140,9 @@ $(function(){
     $container.imagesLoaded(function(){
         $container.masonry({
             itemSelector: '.boxd3',
-            columnWidth: 200
+            isFitWidth: true,
+            isFitHeight: true
+
 
         });
     });

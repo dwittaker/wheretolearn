@@ -1,0 +1,32 @@
+
+
+<div id="masonry-container" class="transitions-enabled infinite-scroll  clearfix">
+  <% @sources.each do |source| %>
+
+      <div class="boxd3 col2" >
+
+        <h4><%= link_to source.name, source %></h4>
+        <p><strong>Description</strong>: <%= source.description %></p>
+        <p><strong>URL</strong>: <%= source.weburl %></p>
+        <p><strong>Type</strong>: <%= source.sourcetype.stdesc %></p>
+        <p><strong>Methods</strong>:<br>
+          <% if (source.usedmethods.length > 0) %>
+            <div >
+              <% source.usedmethods.each do |sm| %>
+                  <span class="label label-default"><%= sm.deliverymethod.dmdesc %></span>
+              <% end %>
+            </div>
+        <% end %>
+        </p>
+
+        <p>
+        <%= link_to glyph('info-sign'), source %>
+        <%= link_to glyph(:edit), edit_source_path(source) %>
+        <%= link_to glyph(:remove), source, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
+
+      </div>
+  <% end %>
+</div>
+
+<br>

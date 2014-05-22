@@ -1,0 +1,51 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Desc</th>
+    <th>Subject & Module</th>
+    <th>Source</th>
+
+    <th>Cost</th>
+    <th>Currency</th>
+    <th>Cost Type</th>
+    <th>Schedule Type</th>
+
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th><%=t '.actions', :default => t("helpers.actions") %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @portfolios.each do |portfolio| %>
+      <tr>
+        <td><%= link_to portfolio.prttitle , portfolio_path(portfolio) %></td>
+
+        <td><%= portfolio.prtdesc %></td>
+
+        <td><%= portfolio.subject_module.subjtitle %></td>
+        <td><%= portfolio.source.name %></td>
+
+
+        <td><%= portfolio.cost %></td>
+        <td><%= portfolio.currency %></td>
+        <td><%= portfolio.costtype.costname %></td>
+        <td><%= portfolio.schedtype.schedname %></td>
+
+        <td><%=  listdt(portfolio.startdate) %></td>
+        <td><%=  listdt(portfolio.enddate) %></td>
+
+        <td>
+          <%= link_to 'Show', portfolio, :class => 'btn btn-mini' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_portfolio_path(portfolio), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      portfolio_path(portfolio),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
