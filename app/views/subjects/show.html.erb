@@ -1,15 +1,10 @@
 <%- model_class = Subject -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %>: <%= @subject.name %></h1>
 </div>
 
-
-
-
-<p>
-  <b>Name:</b>
-  <%= @subject.name %>
-</p>
+<div class="row">
+<div class="col-md-4">
 
 <p>
   <b>Description:</b>
@@ -51,11 +46,16 @@
   <%= raw @subject.tag_list.map{ |t| link_to t, subject_tag_path(t) }.join(' | ') %>
 </p>
 
+  </div>
+<div class="col-md-1"></div>
+<div class="col-md-7">
+  <h5>Modules</h5>
 <div id="subject_module_display">
   <%= render('subject_module_display') %>
   <p></p>
 </div>
-
+</div>
+</div>
 <div class="form-actions">
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_subject_path(@subject), :class => 'btn' %>

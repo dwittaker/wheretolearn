@@ -1,42 +1,61 @@
 <%- model_class = Portfolio -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %>: <%= @portfolio.prttitle %>, from <%= @portfolio.source.name %></h1>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong>Title:</strong></dt>
-  <dd><%= @portfolio.prttitle %></dd>
-  <dt><strong>Description:</strong></dt>
-  <dd><%= @portfolio.prtdesc %></dd>
-  <dt><strong>Subject & Module:</strong></dt>
-  <dd><%= @portfolio.subject_module.subjtitle %></dd>
-  <dt><strong>Source:</strong></dt>
-  <dd><%= @portfolio.source.name %></dd>
-  <dt><strong>Web Url:</strong></dt>
-  <dd><%= @portfolio.pweburl %></dd>
-  <dt><strong>Address:</strong></dt>
-  <dd><%= @portfolio.physaddress %></dd>
-  <dt><strong>Cost:</strong></dt>
-  <dd><%= @portfolio.cost %></dd>
-  <dt><strong>Currency:</strong></dt>
-  <dd><%= @portfolio.currency %></dd>
-  <dt><strong>Cost Type:</strong></dt>
-  <dd><%= @portfolio.costtype.costname %></dd>
-  <dt><strong>Schedule Type:</strong></dt>
-  <dd><%= @portfolio.schedtype.schedname %></dd>
-  <dt><strong>Start Date:</strong></dt>
-  <dd><%= @portfolio.startdate.to_formatted_s(:long) %></dd>
-  <dt><strong>End Date:</strong></dt>
-  <dd><%= @portfolio.enddate.to_formatted_s(:long) %></dd>
-  <dt><strong>Used Methods:</strong></dt>
-  <dd>
-    <div class="well well-sm">
-      <% @portfolio.usedmethods.each do |um| %>
-          <span class="label label-default"><%= um.deliverymethod.dmdesc %></span>
-      <% end %>
-    </div>
-  </dd>
-</dl>
+<div class=row">
+  <div class="col-md-5">
+    <dl class="dl-horizontal">
+
+
+      <dt><strong>Subject & Module:</strong></dt>
+      <dd><%= @portfolio.subject_module.subjtitle %></dd>
+      <dt><strong>Description:</strong></dt>
+      <dd><%= @portfolio.prtdesc %></dd>
+      <dt><strong>Web Url:</strong></dt>
+      <dd><%= @portfolio.pweburl %></dd>
+      <dt><strong>Address:</strong></dt>
+      <dd><%= @portfolio.physaddress %></dd>
+    </dl>
+  </div>
+
+  <div class="col-md-7">
+    <dl class="dl-horizontal">
+      <dt><strong>Cost:</strong></dt>
+      <dd><%= @portfolio.cost %></dd>
+      <dt><strong>Currency:</strong></dt>
+      <dd><%= @portfolio.currency %></dd>
+      <dt><strong>Cost Type:</strong></dt>
+      <dd><%= @portfolio.costtype.costname %></dd>
+      <dt><strong>Schedule Type:</strong></dt>
+      <dd><%= @portfolio.schedtype.schedname %></dd>
+      <dt><strong>Start Date:</strong></dt>
+      <dd><%= @portfolio.startdate.to_formatted_s(:long) %></dd>
+      <dt><strong>End Date:</strong></dt>
+      <dd><%= @portfolio.enddate.to_formatted_s(:long) %></dd>
+
+
+    </dl>
+  </div>
+
+</div><br><br>
+<div class="row">
+  <div class="col-md-5">
+    <dt><strong>Used Methods:</strong></dt>
+    <dd>
+      <div class="well well-sm">
+        <% @portfolio.usedmethods.each do |um| %>
+            <span class="label label-default"><%= um.deliverymethod.dmdesc %></span>
+        <% end %>
+      </div>
+    </dd>
+
+
+  </div>
+  <div class="col-md-7"></div>
+</div>
+
+
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),

@@ -7,8 +7,7 @@
     <th>Source</th>
 
     <th>Cost</th>
-    <th>Currency</th>
-    <th>Cost Type</th>
+
     <th>Schedule Type</th>
 
     <th>Start Date</th>
@@ -27,9 +26,8 @@
         <td><%= portfolio.source.name %></td>
 
 
-        <td><%= portfolio.cost %></td>
-        <td><%= portfolio.currency %></td>
-        <td><%= portfolio.costtype.costname %></td>
+        <td><%= portfolio.cost %> <%= portfolio.currency %><br><%= portfolio.costtype.costname %></td>
+
         <td><%= portfolio.schedtype.schedname %></td>
 
         <td><%=  listdt(portfolio.startdate) %></td>
