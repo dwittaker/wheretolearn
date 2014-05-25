@@ -1,8 +1,29 @@
+
+
+
 @import "twitter/bootstrap/bootstrap";
 
-body { padding-top: 100px; }
+
+body {
+  padding-top: 100px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  text-rendering: optimizelegibility;
+}
 
 @import "twitter/bootstrap/responsive";
+
+p, ol, ul, td {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+
+}
+h1, h2, h3, h4, h5, h6 {
+
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizelegibility;
+}
+
+
 
 // Set the correct sprite paths
 @iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
@@ -37,6 +58,28 @@ body { padding-top: 100px; }
   color: #FFFFFF;
 }
 
+@mylink-color: #1e1e81;
+
+
+#srchrslt a{
+  color: @mylink-color ;
+
+}
+
+.tablelink:visited, .tablelink{
+  color: #d9534f;
+  /*#0634E9;*/
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.tablelink:hover {
+  background-color: inherit;
+color: darken(#d9534f, 15%);
+  text-decoration: none;
+}
+
+
 
 .page-header {
 padding-bottom: 9px;
@@ -57,4 +100,21 @@ border-bottom: 1px solid #F5D15F;
 height: 30px;
 color: orange;
 
+}
+
+
+// Variables
+@link-color:       orange;
+@link-color-hover: darken(@link-color, 15%);
+
+// Usage
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @link-color-hover;
+    text-decoration: underline;
+    background-color: none;
+  }
 }

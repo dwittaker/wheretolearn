@@ -18,7 +18,7 @@
   <tbody>
   <% @portfolios.each do |portfolio| %>
       <tr>
-        <td><%= link_to portfolio.prttitle , portfolio_path(portfolio) %></td>
+        <td><%= link_to portfolio.prttitle , portfolio_path(portfolio), :class => "tablelink"  %></td>
 
         <td><%= portfolio.prtdesc %></td>
 

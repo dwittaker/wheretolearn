@@ -4,58 +4,106 @@
 </div>
 
 <div class="row">
-<div class="col-md-4">
+    <div class="col-md-4">
 
-<p>
-  <b>Description:</b>
-  <%= @subject.description %>
-</p>
+    <p>
+      <b>Description:</b>
+      <%= @subject.description %>
+    </p>
 
-<p>
-  <b>Purpose:</b>
-  <%= @subject.purpose %>
-</p>
+    <p>
+      <b>Purpose:</b>
+      <%= @subject.purpose %>
+    </p>
 
-<p>
-  <b>Complexity:</b>
-  <%= @subject.complexity %>
-</p>
+    <p>
+      <b>Complexity:</b>
+      <%= @subject.complexity %>
+    </p>
 
-<p>
-  <b>Category 1:</b>
-  <%= @subject.category1.cat1desc %>
-</p>
+    <p>
+      <b>Category 1:</b>
+      <%= @subject.category1.cat1desc %>
+    </p>
 
-<p>
-  <b>Category 2:</b>
-  <%= @subject.category2.cat2desc %>
-</p>
+    <p>
+      <b>Category 2:</b>
+      <%= @subject.category2.cat2desc %>
+    </p>
 
-<p>
-  <b>Category 3:</b>
-  <%= @subject.category3.cat3desc %>
-</p>
+    <p>
+      <b>Category 3:</b>
+      <%= @subject.category3.cat3desc %>
+    </p>
 
-<p>
-  <b>Average Learn Time:</b>
-  <%= @subject.avgtimetolearn %>
-</p>
+    <p>
+      <b>Average Learn Time:</b>
+      <%= @subject.avgtimetolearn %>
+    </p>
 
-<p>
-  <b>Tags:</b>
-  <%= raw @subject.tag_list.map{ |t| link_to t, subject_tag_path(t) }.join(' | ') %>
-</p>
+    <p>
+      <b>Tags:</b>
+      <%= raw @subject.tag_list.map{ |t| link_to t, subject_tag_path(t) }.join(' | ') %>
+    </p>
 
-  </div>
-<div class="col-md-1"></div>
-<div class="col-md-7">
-  <h5>Modules</h5>
-<div id="subject_module_display">
-  <%= render('subject_module_display') %>
-  <p></p>
+      </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-7">
+      <h4>Modules</h4>
+        <div id="subject_module_display">
+          <%= render('subject_module_display') %>
+          <p></p>
+        </div>
+    </div>
 </div>
-</div>
-</div>
+
+<br><br>
+
+<h4>Portfolios</h4>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Desc</th>
+    <th>Subject & Module</th>
+    <th>Source</th>
+
+    <th>Cost</th>
+
+    <th>Schedule Type</th>
+
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th><%=t '.actions', :default => t("helpers.actions") %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @subject.portfolios.each do |portfolio| %>
+      <tr>
+        <td><%= link_to portfolio.prttitle , portfolio_path(portfolio) %></td>
+
+        <td><%= portfolio.prtdesc %></td>
+
+        <td><%= portfolio.subject_module.subjtitle %></td>
+        <td><%= portfolio.source.name %></td>
+
+
+        <td><%= portfolio.cost %> <%= portfolio.currency %><br><%= portfolio.costtype.costname %></td>
+
+        <td><%= portfolio.schedtype.schedname %></td>
+
+        <td><%=  listdt(portfolio.startdate) %></td>
+        <td><%=  listdt(portfolio.enddate) %></td>
+
+        <td>
+          <%= link_to 'Show', portfolio, :class => 'btn btn-mini' %>
+         </td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+
 <div class="form-actions">
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
               edit_subject_path(@subject), :class => 'btn' %>
