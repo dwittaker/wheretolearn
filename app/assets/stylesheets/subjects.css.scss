@@ -33,16 +33,19 @@ background-color: #ffffff;
 */
 
 #masonry-container {
-  background: #FCFCFC;
+  background: rgba(253, 252, 252, 0);//#FDFCFC;
   padding: 5px;
-  margin-bottom: 200px;
-  border-radius: 5px;
+
   clear: both;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
 
   margin: 0 auto;
+  margin-bottom: 100px !important;
+
+  padding-bottom: 80px !important;
+  border: 1px solid #fafafa;
 }
 
 
@@ -68,16 +71,19 @@ background-color: #ffffff;
   margin: 5px;
   padding: 5px;
   //background: #fa753e;
-  background: #fff9ed;
+  //background: #fff9ed;
+  background-color: rgba(248, 248, 248, 0.25);
   //background: #faf7f4;
   font-size: 11px;
   line-height: 1.4em;
   float: left;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  margin-bottom: 0px;
-
+  margin-bottom: 10px;
+  position: 10px;
   border-radius: 0px;
+  border: 1px solid #E2E2E2;
+
 }
 
 .boxd3 h2 {

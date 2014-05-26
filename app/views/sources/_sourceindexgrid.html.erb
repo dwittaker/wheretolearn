@@ -5,7 +5,7 @@
 
       <div class="boxd3 col2" >
 
-        <h4><%= link_to source.name, source %></h4>
+        <h4><%= link_to source.name, source,:class => "gridlink" %></h4>
         <p><strong>Description</strong>: <%= source.description %></p>
         <p><strong>URL</strong>: <%= source.weburl %></p>
         <p><strong>Type</strong>: <%= source.sourcetype.stdesc %></p>

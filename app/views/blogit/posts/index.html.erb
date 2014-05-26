@@ -1,23 +1,21 @@
 
-
 <div class="row">
-  <div class="col-md-8">
-    <%= login_required class: "actions", id: "new_blog_post_link" do %>
-        <%= link_to t(:new_blog_post, scope: 'blogit.posts'), new_post_path,:class => "btn btn-success btn-mini" %>
-    <% end %>
-  </div>
-  <div class="col-md-4">
-    <div id="search" >
-
+  <div class="page-header col-md-12">
+    <h1>
+      <% if (login_required class: "actions", id: "new_blog_post_link") then %>
+          <span style="border-right:1px #F5D15F solid;margin-right: 10px">Browse our Blogs&nbsp;</span><%= link_to t(:new_blog_post, scope: 'blogit.posts'), new_post_path,:class => "btn btn-success btn-mini" %>
+      <% else %>
+          <span >Browse our Blogs&nbsp;</span>
+      <% end %>
       <%= render partial: 'search/searchmodel', locals: {:clearpath => blogit_path} %>
-    </div>
+    </h1>
   </div>
 </div>
 
-<br><br>
-<div class="page-header">
-  <h1>Browse our Blogs</h1>
-</div>
+
+
+
+
 
 <% if @posts.any? %>
 

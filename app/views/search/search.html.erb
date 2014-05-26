@@ -1,19 +1,20 @@
 
 <div class="container">
   <div class="jumbotron">
-  <h1>What do you want to learn?</h1>
-<p>Use our space to find & share faster, cheaper and more effective training sources.</p>
-
+    <%   if @searchables == nil %>
+        <h1>What do you want to learn?</h1>
+        <p>Use our space to find & share faster, cheaper and more effective training sources.</p>
+    <% end %>
   <form >
 
 
   <div class="input-group">
     <span class="input-group-btn">
 
-      <%= link_to "Join our community or...", register_path, :class => "btn btn-primary btn-lg", :title => "Be valued, we need your opinion" %>
+      <%= link_to "Join our community or...", register_path, :id => "btn_join", :class => "btn btn-primary btn-lg", :title => "Be valued, we need your opinion" %>
     </span>
 
-    <%= text_field_tag(:srchquerybig, params[:srchquery], :class => "form-control", :placeholder => "Just get to it. Find a better way...") %>
+    <%= text_field_tag(:srchquerybig, params[:srchquerybig], :class => "form-control", :placeholder => "Just get to it. Find a better way...") %>
       <span class="input-group-btn">
         <%= submit_tag("Search", :class => "btn btn-primary", :title => "Looking for something in particular? Let's go then!") %>
       </span>
@@ -25,21 +26,19 @@
 
   </div>
 
+<% if @searchables != nil %>
+    <span id="srchhead">Your Search Results for <b>"<%= params[:srchquerybig] %>"</b></span>
+    <% @searchables.each do |rslt| %>
 
-<br>
-<br>
+    <div id="srchrslt" class="">
 
-
-<%   if @searchables != nil %>
-<%    @searchables.each do |rslt| %>
-    <div id="srchrslt" class="txt-primary">
-      <span class="" style="font-size:20px">
         <%= link_to rslt.searchable.clstype + ': ' + rslt.searchable.srchtitle, rslt.searchable.respond_to?(:srchparent)? polymorphic_path([rslt.searchable.srchparent,rslt.searchable]) : (rslt.searchable.class.to_s=="Blogit::Post"? polymorphic_path([blogit,rslt.searchable]) : polymorphic_path(rslt.searchable))%>
-      </span>
+
       <p><%= rslt.searchable.srchtext %></p>
     </div>
-<%      end %>
-<%   end%>
+    <% end %>
+</div>
+<% end %>
 
 
 

@@ -141,7 +141,7 @@ $(function(){
         $container.masonry({
             itemSelector: '.boxd3',
             isFitWidth: true,
-            isFitHeight: true
+            isFitHeight: false
 
 
         });

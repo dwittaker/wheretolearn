@@ -1,4 +1,8 @@
 <form class="pull-right">
+
+    <a id="gridbtn" href="#" class="btn btn-default btn-mini" role="button">Grid</a>
+    <a id="listbtn" href="#" class="btn btn-default btn-mini" role="button">List</a>
+
   <%= text_field_tag(:srchquery, params[:srchquery], :class => "search-query") %>
   <%= submit_tag("Search", :class => "btn btn-mini btn-warning", :title => "Looking for something in particular? Let's go then!") %>
   <%= link_to("Clear",clearpath , :class => "btn btn-mini")%>
