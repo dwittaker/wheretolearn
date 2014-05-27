@@ -123,4 +123,5 @@ validates_associated :subject_modules
 
   resourcify
 
+  #TODO:  Need to merge index page code or set jquery to refresh so that page does not load double
 end
