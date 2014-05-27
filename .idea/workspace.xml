@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/posts_model_decorator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -16,7 +16,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wheretolearn@Rails_console__wheretolearn.coverage" NAME="Rails console: wheretolearn Coverage Results" MODIFIED="1399267529842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
-    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1401176026901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
+    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1401177535947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@IRB_console__wheretolearn.coverage" NAME="IRB console: wheretolearn Coverage Results" MODIFIED="1395450505247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boot.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/boot.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="27" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-8.75" vertical-offset="195" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -96,28 +96,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_model_decorator.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posts_model_decorator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/posts_model_decorator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.28103045" vertical-offset="0" max-vertical-offset="660">
+            <state line="22" column="18" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="post.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="1935">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfolio.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="3" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="1455">
+            <state line="88" column="0" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.2404093" vertical-offset="835" max-vertical-offset="1485">
               <folding />
             </state>
           </provider>
@@ -158,7 +149,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/portfolios/_usedmethod_fields.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -185,8 +175,9 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/subject.rb" />
-        <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb" />
         <option value="$PROJECT_DIR$/config/initializers/posts_model_decorator.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb" />
       </list>
     </option>
   </component>
@@ -508,6 +499,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1216,7 +1229,11 @@
       <created>1401175077398</created>
       <updated>1401175077398</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="created an extension of the blogit post model with necessary fields in order to allow various things such as search to work for blogit on heroku and digital ocean&#10;">
+      <created>1401176213773</created>
+      <updated>1401176213773</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1254,7 +1271,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32492998" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2562592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27761415" sideWeight="0.49902534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27761415" sideWeight="0.49902534" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1297,7 +1314,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="renamed the class in the file to allow success" />
     <MESSAGE value="commented out the rename column as the table hasn't existed yet&#10;" />
     <MESSAGE value="commented out the line as i had done a remove and retried the add with the proper reference type two migrates later." />
     <MESSAGE value="commented out columns as the column name is correct already&#10;" />
@@ -1322,7 +1338,8 @@
     <MESSAGE value="test to get bootstrap less working with heroku&#10;" />
     <MESSAGE value="did precompile assets using &quot;RAILS_ENV=production bundle exec rake assets:precompile&quot; based on advice found at https://devcenter.heroku.com/articles/rails-asset-pipeline &#10;" />
     <MESSAGE value="fixed todo on subject index by moving it to model" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed todo on subject index by moving it to model" />
+    <MESSAGE value="created an extension of the blogit post model with necessary fields in order to allow various things such as search to work for blogit on heroku and digital ocean&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="created an extension of the blogit post model with necessary fields in order to allow various things such as search to work for blogit on heroku and digital ocean&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1570,13 +1587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="38" selection-start="2708" selection-end="2721" vertical-scroll-proportion="-10.625" vertical-offset="840" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/portfolios/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="6" selection-start="379" selection-end="379" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="360">
@@ -1694,13 +1704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="73" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="19" selection-start="646" selection-end="646" vertical-scroll-proportion="0.52645504" vertical-offset="26" max-vertical-offset="585">
@@ -1725,13 +1728,6 @@
     <entry file="file://$PROJECT_DIR$/public/assets/manifest.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="68" selection-start="3428" selection-end="3428" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="3" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0" vertical-offset="1031" max-vertical-offset="1455">
           <folding />
         </state>
       </provider>
@@ -1766,16 +1762,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/posts_model_decorator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="1935">
+        <state line="22" column="18" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="233" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/posts_model_decorator.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.28103045" vertical-offset="0" max-vertical-offset="660">
+        <state line="6" column="73" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="-8.75" vertical-offset="195" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="3" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.36525613" vertical-offset="1006" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="0" selection-start="2326" selection-end="2326" vertical-scroll-proportion="1.2404093" vertical-offset="835" max-vertical-offset="1485">
           <folding />
         </state>
       </provider>
