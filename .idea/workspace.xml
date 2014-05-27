@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="styling changes across board&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
+    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -40,6 +40,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="73" selection-start="237" selection-end="237" vertical-scroll-proportion="0.23622048" vertical-offset="0" max-vertical-offset="1050">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_subjectindexgrid.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/subjects/_subjectindexgrid.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,19 +76,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_portfolioindexgrid.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_portfolioindexgrid.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="11" selection-start="479" selection-end="479" vertical-scroll-proportion="0.40526316" vertical-offset="41" max-vertical-offset="450">
+            <state line="16" column="51" selection-start="652" selection-end="652" vertical-scroll-proportion="-8.291667" vertical-offset="41" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_searchmodel.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/search/_searchmodel.html.erb">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="197" selection-end="197" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="225">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -108,15 +126,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sources.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sources.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="435">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -130,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/rolify-3.4.0/lib/rolify/role.rb" />
         <option value="$PROJECT_DIR$/app/models/users_role.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
@@ -181,6 +189,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/subjects.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/subjects.js" />
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -472,6 +481,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1376,7 +1403,11 @@
       <created>1401063425513</created>
       <updated>1401063425513</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="added a todo">
+      <created>1401172935626</created>
+      <updated>1401172935627</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1403,7 +1434,7 @@
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3627451" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1436,7 +1467,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="trying to add moduleid with recently skipped migration since it will be used shortly" />
     <MESSAGE value="seriously..... starting over migration, re-downloaded create subject migration file" />
     <MESSAGE value="seriously..... starting over migration, fixing module add class&#10;" />
     <MESSAGE value="deleted this migration as the one prior did this already&#10;" />
@@ -1461,7 +1491,8 @@
     <MESSAGE value="Trying to include searchquery big" />
     <MESSAGE value="overall style changes with bootstrap overrides, changed fonts, colours" />
     <MESSAGE value="styling changes across board" />
-    <option name="LAST_COMMIT_MESSAGE" value="styling changes across board" />
+    <MESSAGE value="added a todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a todo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1504,19 +1535,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140318061938_remove_slugs_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="5" selection-start="63" selection-end="63" vertical-scroll-proportion="0.07025761" vertical-offset="0" max-vertical-offset="427" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/source.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.34894612" vertical-offset="796" max-vertical-offset="1260" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
@@ -1543,13 +1564,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/subjects/_subject_module_table.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
@@ -1909,7 +1923,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="479" selection-end="479" vertical-scroll-proportion="0.40526316" vertical-offset="41" max-vertical-offset="450">
+        <state line="16" column="51" selection-start="652" selection-end="652" vertical-scroll-proportion="-8.291667" vertical-offset="41" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="73" selection-start="237" selection-end="237" vertical-scroll-proportion="0.23622048" vertical-offset="0" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
