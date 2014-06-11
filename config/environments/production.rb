@@ -71,7 +71,7 @@ Wheretolearn::Application.configure do
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => 'wheretolearn.it',
-      :user_name            => 'info',
+      :user_name            => 'info@wheretolearn.it',
       :password             => 'Forkayla2',
       :authentication       => 'plain',
       :enable_starttls_auto => true  }
