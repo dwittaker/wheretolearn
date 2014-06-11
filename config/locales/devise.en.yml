@@ -18,11 +18,11 @@ en:
       unconfirmed: "You have to confirm your account before continuing."
     mailer:
       confirmation_instructions:
-        subject: "Confirmation instructions"
+        subject: "Confirm your account on WhereToLearn.It"
       reset_password_instructions:
-        subject: "Reset password instructions"
+        subject: "Reset your password on WhereToLearn.It"
       unlock_instructions:
-        subject: "Unlock Instructions"
+        subject: "Unlock your account on WhereToLearn.It"
     omniauth_callbacks:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."
