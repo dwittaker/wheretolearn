@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/var.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -110,7 +105,7 @@
       <file leaf-file-name="devise.en.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="56" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.49744898" vertical-offset="165" max-vertical-offset="975">
+            <state line="22" column="57" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.42091838" vertical-offset="165" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -1391,7 +1386,11 @@
       <created>1402464589381</created>
       <updated>1402464589381</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="mail chgs&#10;">
+      <created>1402467081321</created>
+      <updated>1402467081322</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1416,7 +1415,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36134455" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1846,7 +1845,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="56" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.49744898" vertical-offset="165" max-vertical-offset="975">
+        <state line="22" column="57" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.42091838" vertical-offset="165" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
