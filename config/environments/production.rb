@@ -70,9 +70,9 @@ Wheretolearn::Application.configure do
   config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => '[redacted]',
-      :user_name            => 'dwittaker',
-      :password             => 'F0rk@yl@!',
+      :domain               => 'wheretolearn.it',
+      :user_name            => 'info',
+      :password             => 'Forkayla2',
       :authentication       => 'plain',
       :enable_starttls_auto => true  }
 end

@@ -72,7 +72,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="42" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.5925926" vertical-offset="840" max-vertical-offset="1260">
+            <state line="73" column="38" selection-start="2823" selection-end="2823" vertical-scroll-proportion="0.6296296" vertical-offset="840" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -1480,7 +1480,11 @@
       <created>1402462796004</created>
       <updated>1402462796004</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="mail chgs">
+      <created>1402463072728</created>
+      <updated>1402463072728</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1561,7 +1565,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="disabled new record function in subject model 'should generate friendly id?' function" />
     <MESSAGE value="disabled more new record function in subject model 'should generate friendly id?' function&#10;" />
     <MESSAGE value="installed rails_12factor which should help with rails 4 and serving static assets" />
     <MESSAGE value="commented out code that created a slug table for friendly_id which isn't being used anyway" />
@@ -1586,7 +1589,8 @@
     <MESSAGE value="added confirmable to devise" />
     <MESSAGE value="added email initializer block to all environments" />
     <MESSAGE value="added default url to production.rb" />
-    <option name="LAST_COMMIT_MESSAGE" value="added default url to production.rb" />
+    <MESSAGE value="mail chgs" />
+    <option name="LAST_COMMIT_MESSAGE" value="mail chgs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1931,7 +1935,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="42" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.5925926" vertical-offset="840" max-vertical-offset="1260">
+        <state line="73" column="38" selection-start="2823" selection-end="2823" vertical-scroll-proportion="0.6296296" vertical-offset="840" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
