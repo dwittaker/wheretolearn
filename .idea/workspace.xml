@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -54,7 +53,9 @@
         <entry file="file://$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
-              <folding />
+              <folding>
+                <marker date="1391974488000" expanded="true" signature="198:281" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,19 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="30" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1245">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="38" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="3315">
+            <state line="70" column="48" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.5185185" vertical-offset="840" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -95,10 +87,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="26" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.5555556" vertical-offset="300" max-vertical-offset="795">
+            <state line="35" column="26" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="795">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirmation_instructions.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="45" selection-start="143" selection-end="143" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="165">
               <folding />
             </state>
           </provider>
@@ -117,7 +118,13 @@
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="-9.041667" vertical-offset="38" max-vertical-offset="855">
-              <folding />
+              <folding>
+                <marker date="1398383020000" expanded="true" signature="216:299" placeholder="..." />
+                <marker date="1398383020000" expanded="true" signature="481:629" placeholder="..." />
+                <marker date="1398383020000" expanded="true" signature="638:736" placeholder="..." />
+                <marker date="1398383020000" expanded="true" signature="745:896" placeholder="..." />
+                <marker date="1398383020000" expanded="true" signature="1021:1163" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,8 +191,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20140609231228_add_confirmable_to_devise.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -701,6 +708,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="confirmations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1439,7 +1472,11 @@
       <created>1402452714485</created>
       <updated>1402452714485</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="added email initializer block to all environments">
+      <created>1402461992029</created>
+      <updated>1402461992029</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1520,7 +1557,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="commented out columns as the column name is correct already&#10;" />
     <MESSAGE value="column name actually existed and needs to be removed so comment removed as well as :integer removed from both costtype and schedtype removal migrations" />
     <MESSAGE value="disabled new record function in subject model 'should generate friendly id?' function" />
     <MESSAGE value="disabled more new record function in subject model 'should generate friendly id?' function&#10;" />
@@ -1545,7 +1581,8 @@
     <MESSAGE value="created an extension of the blogit post model with necessary fields in order to allow various things such as search to work for blogit on heroku and digital ocean&#10;" />
     <MESSAGE value="trying navbar logo click to home. still not working, but commit anyway&#10;" />
     <MESSAGE value="added confirmable to devise" />
-    <option name="LAST_COMMIT_MESSAGE" value="added confirmable to devise" />
+    <MESSAGE value="added email initializer block to all environments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added email initializer block to all environments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1834,14 +1871,22 @@
     <entry file="file://$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="389" selection-end="389" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270">
-          <folding />
+          <folding>
+            <marker date="1391974488000" expanded="true" signature="198:281" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="738" selection-end="738" vertical-scroll-proportion="-9.041667" vertical-offset="38" max-vertical-offset="855">
-          <folding />
+          <folding>
+            <marker date="1398383020000" expanded="true" signature="216:299" placeholder="..." />
+            <marker date="1398383020000" expanded="true" signature="481:629" placeholder="..." />
+            <marker date="1398383020000" expanded="true" signature="638:736" placeholder="..." />
+            <marker date="1398383020000" expanded="true" signature="745:896" placeholder="..." />
+            <marker date="1398383020000" expanded="true" signature="1021:1163" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1866,16 +1911,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="30" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1245">
+        <state line="4" column="45" selection-start="143" selection-end="143" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="26" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.5555556" vertical-offset="300" max-vertical-offset="795">
+        <state line="35" column="26" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="48" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.5185185" vertical-offset="840" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
