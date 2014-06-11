@@ -72,7 +72,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="48" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.5185185" vertical-offset="840" max-vertical-offset="1260">
+            <state line="72" column="42" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.5925926" vertical-offset="840" max-vertical-offset="1260">
               <folding />
             </state>
           </provider>
@@ -1476,7 +1476,11 @@
       <created>1402461992029</created>
       <updated>1402461992029</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="added default url to production.rb">
+      <created>1402462796004</created>
+      <updated>1402462796004</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1557,7 +1561,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="column name actually existed and needs to be removed so comment removed as well as :integer removed from both costtype and schedtype removal migrations" />
     <MESSAGE value="disabled new record function in subject model 'should generate friendly id?' function" />
     <MESSAGE value="disabled more new record function in subject model 'should generate friendly id?' function&#10;" />
     <MESSAGE value="installed rails_12factor which should help with rails 4 and serving static assets" />
@@ -1582,7 +1585,8 @@
     <MESSAGE value="trying navbar logo click to home. still not working, but commit anyway&#10;" />
     <MESSAGE value="added confirmable to devise" />
     <MESSAGE value="added email initializer block to all environments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added email initializer block to all environments" />
+    <MESSAGE value="added default url to production.rb" />
+    <option name="LAST_COMMIT_MESSAGE" value="added default url to production.rb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1927,7 +1931,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="48" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.5185185" vertical-offset="840" max-vertical-offset="1260">
+        <state line="72" column="42" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.5925926" vertical-offset="840" max-vertical-offset="1260">
           <folding />
         </state>
       </provider>
