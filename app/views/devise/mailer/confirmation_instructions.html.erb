@@ -1,5 +1,9 @@
-<p>Welcome <%= @email %>!</p>
+<p>Welcome to WhereToLearn.It, <%= @email %>!</p>
 
 <p>You can confirm your account email through the link below:</p>
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
+
+<p>Thanks for joining our community, now let's go learn something together.</p>
+
+<p>Have a great day!</p>
