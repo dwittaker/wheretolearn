@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -40,6 +40,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="51" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.5371901" vertical-offset="810" max-vertical-offset="1395">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirmation_instructions.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="confirmation_instructions.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="121" selection-start="376" selection-end="376" vertical-scroll-proportion="0.24793388" vertical-offset="0" max-vertical-offset="363">
+            <state line="6" column="121" selection-start="376" selection-end="376" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -145,7 +154,6 @@
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/subject.rb" />
         <option value="$PROJECT_DIR$/config/initializers/posts_model_decorator.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb" />
         <option value="$PROJECT_DIR$/app/views/search/search.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -158,6 +166,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/locales/devise.en.yml" />
         <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -537,6 +546,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1381,7 +1412,11 @@
       <created>1402547715198</created>
       <updated>1402547715198</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="confirmation instructions mod&#10;">
+      <created>1402559311224</created>
+      <updated>1402559311224</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1462,7 +1497,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="commented out code that created a slug table for friendly_id which isn't being used anyway" />
     <MESSAGE value="added new line in migration to create second version of users_roles table which has its own id etc." />
     <MESSAGE value="removing the index from the old users_roles (1)" />
     <MESSAGE value="removing the index from the old users_roles (1)&#10;" />
@@ -1487,7 +1521,8 @@
     <MESSAGE value="mail chgs" />
     <MESSAGE value="mail chgs&#10;" />
     <MESSAGE value="confirmation instructions mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="confirmation instructions mod" />
+    <MESSAGE value="confirmation instructions mod&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="confirmation instructions mod&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1668,13 +1703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="3" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.36525613" vertical-offset="1006" max-vertical-offset="1455" />
@@ -1842,7 +1870,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="121" selection-start="376" selection-end="376" vertical-scroll-proportion="0.24793388" vertical-offset="0" max-vertical-offset="363">
+        <state line="6" column="121" selection-start="376" selection-end="376" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="51" selection-start="2566" selection-end="2566" vertical-scroll-proportion="0.5371901" vertical-offset="810" max-vertical-offset="1395">
           <folding />
         </state>
       </provider>

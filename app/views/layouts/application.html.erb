@@ -61,19 +61,12 @@
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <% if current_user.present? %>
-      <% current_user.roles.each do |role| %>
-          <%= role.name %>
-      <% end  %>
-      <% else%>
-          User is not signed in...
-      <% end  %>
-          <% if user_signed_in? %>
-              <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
+      <% if user_signed_in? %>
+          <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
           <li><%= link_to "Log Out", logout_path %></li>
       <% else %>
           <li><%= link_to "Register", register_path %></li>
-          <li><%= link_to "Log in", login_path %></li>
+          <li><%= link_to "Log in", login_path  %></li>
       <% end %>
       <li>&nbsp;&nbsp;</li>
     </ul>
