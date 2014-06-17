@@ -65,14 +65,21 @@ Wheretolearn::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.action_mailer.default_url_options = { :host => 'wtls.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'wheretolearn.it' }
   config.action_mailer.delivery_method = :smtp
+  # change to true to allow email to be sent during development
+  config.action_mailer.perform_deliveries = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+
   config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => ENV['DOMAIN'],
-      :user_name            => ENV['EMAIL'],
-      :password             => ENV['PASSWORD'],
+      :domain               => ENV['GMAIL_DMN'],
+      :user_name            => ENV['GMAIL_USR'],
+      :password             => ENV['GMAIL_PSS'],
       :authentication       => 'plain',
-      :enable_starttls_auto => true  }
+      :enable_starttls_auto => true
+
+  }
 end
