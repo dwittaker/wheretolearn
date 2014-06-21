@@ -193,10 +193,7 @@ $(function(){
 
 
 });
-
 $(document).ready(function(){
-//function setprogbar(fieldnum, comp) {
-
     $('[id^=complexityval_]').each(function(index) {
 
     comp = $(this).val();
@@ -244,4 +241,7 @@ $(document).ready(function(){
     $(pbhigh).width(blankstr.concat(bar3,"%"));
 
     });
+
+//function setprogbar(fieldnum, comp) {
+
 });

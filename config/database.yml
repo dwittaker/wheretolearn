@@ -42,9 +42,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: wheretolearn
+  database: wheretolearn_prod
   pool: 5
-  username: duanewittaker
+  username: rails
   password:
 
 

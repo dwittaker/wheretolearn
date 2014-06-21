@@ -66,3 +66,6 @@ gem "rack", "~> 1.4.5"
 gem 'rails_12factor', group: :production
 
 gem 'figaro'
+
+gem 'bootstrap-wysiwyg-rails'
+

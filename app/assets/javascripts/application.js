@@ -10,8 +10,11 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+
+
 //= require jquery
 //= require jquery_ujs
+//= require jquery.hotkeys
 //= require twitter/bootstrap
 //= require masonry/jquery.masonry
 //= require masonry/jquery.event-drag
@@ -20,7 +23,9 @@
 //= require masonry/modernizr-transitions
 //= require masonry/box-maker
 //= require masonry/jquery.loremimages.min
+//= require bootstrap-wysiwyg
 //= require_tree .
+
 //
 
 

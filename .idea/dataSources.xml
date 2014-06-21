@@ -18,8 +18,8 @@
     <data-source source="LOCAL" name="Rails wheretolearn: production" uuid="dc1f2cf7-bf22-4798-a87e-23225ee4350a">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:wheretolearn</jdbc-url>
-      <user-name>duanewittaker</user-name>
+      <jdbc-url>jdbc:postgresql:wheretolearn_prod</jdbc-url>
+      <user-name>rails</user-name>
       <libraries />
     </data-source>
   </component>
