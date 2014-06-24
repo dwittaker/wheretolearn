@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="Changes to accommodate wysiwyg&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-ca9e07cd3e8a9d5ca88bec42d788ed3d.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-ca9e07cd3e8a9d5ca88bec42d788ed3d.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-e78da3cf98c5a9700cf22078178dc221.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-e78da3cf98c5a9700cf22078178dc221.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="$PROJECT_DIR$/public/assets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="$PROJECT_DIR$/public/assets/manifest.yml" />
+    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -62,7 +55,16 @@
       <file leaf-file-name="posts_controller_decorator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="9" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="735">
+            <state line="26" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="0" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.3875969" vertical-offset="945" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
@@ -86,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="-1.8125" vertical-offset="770" max-vertical-offset="1170">
+            <state line="71" column="0" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -149,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" />
@@ -200,6 +201,7 @@
         <option value="$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb" />
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/controllers/blogit/posts_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
       </list>
     </option>
   </component>
@@ -714,6 +716,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -841,8 +861,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/blogit/posts" />
       <recent name="$PROJECT_DIR$/app/controllers" />
+      <recent name="$PROJECT_DIR$/app/views/blogit/posts" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
       <recent name="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/assets/javascripts/blogit" />
       <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
@@ -1455,7 +1475,11 @@
       <created>1403585797237</created>
       <updated>1403585797237</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="asset precompile">
+      <created>1403587162250</created>
+      <updated>1403587162250</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1536,7 +1560,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Setup wookmark on subject index page. Need to modify parent page to allow user to select table or grid view&#10;" />
     <MESSAGE value="Setup Twitter-BootStrap-rails and modified certain portfolio and subject views. Also, setup grid vs list for subject page.&#10;" />
     <MESSAGE value="modified aesthetics to use more bootstrap, added grid/list views for source and portfolio" />
     <MESSAGE value="fixed search controller to allow for two different search field names since the main search was modified to 'searchqrybig' to allow separate styling" />
@@ -1561,7 +1584,8 @@
     <MESSAGE value="e-mail settings added to environment files along with environment variables" />
     <MESSAGE value="Finally got bootstrap wysiwyg toolbar to interact." />
     <MESSAGE value="Changes to accommodate wysiwyg" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to accommodate wysiwyg" />
+    <MESSAGE value="asset precompile" />
+    <option name="LAST_COMMIT_MESSAGE" value="asset precompile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1609,13 +1633,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/models/blogit/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.06329114" vertical-offset="30" max-vertical-offset="1485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/jquery-rails-3.0.4/vendor/assets/javascripts/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="3" selection-start="282" selection-end="282" vertical-scroll-proportion="0.37974682" vertical-offset="0" max-vertical-offset="146925">
@@ -1914,13 +1931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="9" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/controllers/blogit/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="7" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.42635658" vertical-offset="915" max-vertical-offset="1890">
@@ -2003,7 +2013,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="-1.8125" vertical-offset="770" max-vertical-offset="1170">
+        <state line="71" column="0" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2082" selection-end="2082" vertical-scroll-proportion="0.3875969" vertical-offset="945" max-vertical-offset="1890">
           <folding />
         </state>
       </provider>
