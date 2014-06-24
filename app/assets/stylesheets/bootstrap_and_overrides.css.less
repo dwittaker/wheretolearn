@@ -108,14 +108,16 @@ color: lighten(#000, 60%); //#999
 
 
 .tablelink:visited, .tablelink, .gridlink:visited, .gridlink,
-.bloglink:visited, .bloglink, #editor a, article > div > a, article > div > a:visited{
+.bloglink:visited, .bloglink, #editor a, article > div > a, article > div > a:visited,
+article > div > font > a, article > div > font > a:visited{
   color: @mylink-color; //#d9534f;
   /*#0634E9;*/
   background-color: inherit;
   text-decoration: none;
 }
 
-.tablelink:hover, .gridlink:hover, .bloglink:hover, #editor a:hover, article > div > a:hover {
+.tablelink:hover, .gridlink:hover, .bloglink:hover, #editor a:hover, article > div > a:hover
+, article > div > font > a:hover {
   background-color: inherit;
   color: @mylink-color-hover; //darken(#d9534f, 15%);
   text-decoration: none;
