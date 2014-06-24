@@ -21,4 +21,23 @@ Blogit::PostsController.class_eval do
       end
     end
 
+    def update
+      @post = current_blogger.blog_posts.find(params[:id])
+      @newpost = params[:post]
+
+      @newpost['body'].gsub! "\r\n", ""
+      @newpost['body'].gsub! "<a href=", "<a target=_blank href="
+
+#      if @newpost['body'].exclude? "http://" then
+#        @newpost['body'].gsub! "href=", "href="
+#      end
+
+      if @post.update_attributes(params[:post])
+        redirect_to @post, notice: t(:blog_post_was_successfully_updated, scope: 'blogit.posts')
+      else
+        render action: "edit"
+      end
+    end
+
+
 end

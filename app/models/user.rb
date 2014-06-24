@@ -85,7 +85,7 @@ class User < ActiveRecord::Base
     profile_name
   end
 
-  def login_required
+  def login_required2
 
 
   end
