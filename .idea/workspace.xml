@@ -36,19 +36,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="posts_controller_decorator.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="posts_controller_decorator.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="20" selection-start="562" selection-end="562" vertical-scroll-proportion="0.26271185" vertical-offset="267" max-vertical-offset="750">
+            <state line="27" column="0" selection-start="633" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="27" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="1920">
+            <state line="73" column="29" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.4398827" vertical-offset="945" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
@@ -193,8 +193,8 @@
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/controllers/blogit/posts_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
-        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
       </list>
     </option>
   </component>
@@ -1506,7 +1506,11 @@
       <created>1403591606066</created>
       <updated>1403591606066</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="asset precompile&#10;">
+      <created>1403592045005</created>
+      <updated>1403592045006</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1531,9 +1535,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36834735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36834735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2045,16 +2049,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="27" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="1920">
+        <state line="27" column="0" selection-start="633" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="562" selection-end="562" vertical-scroll-proportion="0.26271185" vertical-offset="267" max-vertical-offset="750">
+        <state line="73" column="29" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.4398827" vertical-offset="945" max-vertical-offset="1920">
           <folding />
         </state>
       </provider>

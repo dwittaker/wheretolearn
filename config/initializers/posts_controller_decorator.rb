@@ -25,9 +25,10 @@ Blogit::PostsController.class_eval do
       @post = current_blogger.blog_posts.find(params[:id])
       @newpost = params[:post]
 
-      @newpost['body'].strip!
       @newpost['body'].gsub! "\r\n", ""
       @newpost['body'].gsub! "<a href=", "<a target=_blank href="
+      @newpost['body'].strip!
+
 
 #      if @newpost['body'].exclude? "http://" then
 #        @newpost['body'].gsub! "href=", "href="
