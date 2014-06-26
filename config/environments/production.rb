@@ -82,4 +82,6 @@ Wheretolearn::Application.configure do
       :enable_starttls_auto => true
 
   }
+
+  GA.tracker = "UA-52302817-1"
 end

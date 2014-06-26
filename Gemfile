@@ -70,3 +70,4 @@ gem 'figaro'
 
 gem 'bootstrap-wysiwyg-rails'
 
+gem 'google-analytics-rails'
