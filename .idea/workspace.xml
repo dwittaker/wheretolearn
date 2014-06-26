@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -93,19 +94,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="33" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.57" vertical-offset="732" max-vertical-offset="1395">
+            <state line="70" column="47" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="732" max-vertical-offset="1395">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_post_links.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/blogit/posts/_post_links.html.erb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="268" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="165">
+            <state line="15" column="48" selection-start="484" selection-end="484" vertical-scroll-proportion="0.3305785" vertical-offset="105" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -170,7 +171,6 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/blogit.js" />
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/views/blogit/posts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/posts.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/posts.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
@@ -189,6 +189,7 @@
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -1534,7 +1535,11 @@
       <created>1403753183992</created>
       <updated>1403753183992</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="added Google Analytics&#10;">
+      <created>1403753225930</created>
+      <updated>1403753225931</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1615,7 +1620,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="fixed search controller to allow for two different search field names since the main search was modified to 'searchqrybig' to allow separate styling" />
     <MESSAGE value="Made layout changes to setup columns" />
     <MESSAGE value="Trying to include searchquery big" />
     <MESSAGE value="overall style changes with bootstrap overrides, changed fonts, colours" />
@@ -1640,7 +1644,8 @@
     <MESSAGE value="asset precompile" />
     <MESSAGE value="asset precompile&#10;" />
     <MESSAGE value="added Google Analytics" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Google Analytics" />
+    <MESSAGE value="added Google Analytics&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Google Analytics&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1688,11 +1693,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="764" selection-end="764" vertical-scroll-proportion="0.7092199" vertical-offset="0" max-vertical-offset="570" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/posts.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="7" selection-start="185" selection-end="185" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="195" />
@@ -1981,7 +1981,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="33" selection-start="2410" selection-end="2410" vertical-scroll-proportion="0.57" vertical-offset="732" max-vertical-offset="1395">
+        <state line="70" column="47" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="732" max-vertical-offset="1395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="48" selection-start="484" selection-end="484" vertical-scroll-proportion="0.3305785" vertical-offset="105" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>
