@@ -40,6 +40,10 @@ end
     folioname
   end
 
+  def pagetitle
+    subname.to_s + " portfolio from " + srcname.to_s
+  end
+
   def clstype
     "Portfolio"
   end

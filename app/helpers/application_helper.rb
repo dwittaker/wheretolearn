@@ -64,4 +64,10 @@ end
 def listdttm(dt)
   dt.strftime('%b %d, %y %H:%M %p' )
 end
+
+def title(page_title)
+  content_for :title, page_title.to_s
+end
+
+
 end

@@ -32,6 +32,7 @@ class Source < ActiveRecord::Base
     name
   end
 
+
   def srchtext
     description
   end
@@ -40,6 +41,9 @@ class Source < ActiveRecord::Base
     "Source"
   end
 
+  def pagetitle
+    name
+  end
 
 
   validates_associated :usedmethods

@@ -51,6 +51,10 @@ class Subject < ActiveRecord::Base
     description
   end
 
+  def pagetitle
+    name
+  end
+
 
   validates :name,
             :presence => true,

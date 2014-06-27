@@ -49,6 +49,10 @@ class SubjectModule < ActiveRecord::Base
     smdescription
   end
 
+  def pagetitle
+    self.subject.name + ' : ' + smname
+  end
+
 
 
   extend FriendlyId

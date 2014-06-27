@@ -1,4 +1,6 @@
 <%- model_class = Source -%>
+<% title 'Learn from ' + @source.pagetitle %>
+
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>

@@ -1,4 +1,5 @@
 <%- model_class = Portfolio -%>
+<% title 'Find out more about the ' + @portfolio.pagetitle %>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %>: <%= @portfolio.prttitle %>, from <%= @portfolio.source.name %></h1>
 </div>
