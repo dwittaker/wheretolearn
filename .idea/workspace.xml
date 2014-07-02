@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -30,6 +31,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="32" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.5261708" vertical-offset="619" max-vertical-offset="1440">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.5984042" vertical-offset="0" max-vertical-offset="405">
+            <state line="13" column="3" selection-start="197" selection-end="197" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -106,15 +116,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="0" selection-start="32" selection-end="89" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="195">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/source.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="8" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -168,7 +169,6 @@
         <option value="$PROJECT_DIR$/app/views/portfolios/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogit/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/search/search.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subject_modules/edit.html.erb" />
@@ -184,6 +184,7 @@
         <option value="$PROJECT_DIR$/app/views/opinions/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/opinions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/opinions/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -769,6 +770,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="opinions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1665,7 +1688,11 @@
       <created>1403841829538</created>
       <updated>1403841829538</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Page title mods&#10;">
+      <created>1403841957709</created>
+      <updated>1403841957709</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1746,7 +1773,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Trying to include searchquery big" />
     <MESSAGE value="overall style changes with bootstrap overrides, changed fonts, colours" />
     <MESSAGE value="styling changes across board" />
     <MESSAGE value="added a todo" />
@@ -1771,7 +1797,8 @@
     <MESSAGE value="added Google Analytics" />
     <MESSAGE value="added Google Analytics&#10;" />
     <MESSAGE value="Page title mods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Page title mods" />
+    <MESSAGE value="Page title mods&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Page title mods&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2018,13 +2045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="67" selection-end="67" vertical-scroll-proportion="0.10538641" vertical-offset="0" max-vertical-offset="1425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subjects/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="240">
@@ -2125,7 +2145,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/opinions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="213" selection-end="213" vertical-scroll-proportion="0.5984042" vertical-offset="0" max-vertical-offset="405">
+        <state line="13" column="3" selection-start="197" selection-end="197" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="32" selection-start="2170" selection-end="2170" vertical-scroll-proportion="0.5261708" vertical-offset="619" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
