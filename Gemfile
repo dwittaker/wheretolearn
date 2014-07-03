@@ -72,4 +72,4 @@ gem 'bootstrap-wysiwyg-rails'
 
 gem 'google-analytics-rails'
 
-gem 'ruby-debug-ide'
+

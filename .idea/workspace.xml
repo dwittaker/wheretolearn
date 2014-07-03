@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-b130c190482461477a4b7bcd9e342af7.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-b130c190482461477a4b7bcd9e342af7.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-e78da3cf98c5a9700cf22078178dc221.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-e78da3cf98c5a9700cf22078178dc221.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -49,7 +43,7 @@
       <file leaf-file-name="sources_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="36" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
+            <state line="60" column="12" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
               <folding />
             </state>
           </provider>
@@ -58,7 +52,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="20" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.7375" vertical-offset="815" max-vertical-offset="1215">
+            <state line="74" column="0" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.7375" vertical-offset="815" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -76,16 +70,16 @@
       <file leaf-file-name="_usedmethod_fields.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sources/_usedmethod_fields.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="11" selection-start="538" selection-end="538" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="390">
+            <state line="3" column="46" selection-start="129" selection-end="129" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
+      <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/source.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="31" column="8" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -122,7 +116,9 @@
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="0" selection-start="32" selection-end="89" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="195">
-              <folding />
+              <folding>
+                <marker date="1403838267000" expanded="true" signature="115:254" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1318,7 +1314,7 @@
       <RUBY_REMOTE_DEBUG_CONFIG NAME="PORT" VALUE="1234" />
       <RUBY_REMOTE_DEBUG_CONFIG NAME="DISPATCHER_PORT" VALUE="26162" />
       <RUBY_REMOTE_DEBUG_CONFIG NAME="REMOTE_ROOT" VALUE="/home/wheretolearn" />
-      <RUBY_REMOTE_DEBUG_CONFIG NAME="LOCAL_ROOT" VALUE="$PROJECT_DIR$/test" />
+      <RUBY_REMOTE_DEBUG_CONFIG NAME="LOCAL_ROOT" VALUE="$PROJECT_DIR$" />
       <method />
     </configuration>
     <list size="8">
@@ -1733,7 +1729,11 @@
       <created>1404268735118</created>
       <updated>1404268735119</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="changes to app to try and sort out DO problem. Installed ruby-debug-ide">
+      <created>1404428249407</created>
+      <updated>1404428249407</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1814,7 +1814,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="styling changes across board" />
     <MESSAGE value="added a todo" />
     <MESSAGE value="test to get bootstrap less working with heroku&#10;" />
     <MESSAGE value="did precompile assets using &quot;RAILS_ENV=production bundle exec rake assets:precompile&quot; based on advice found at https://devcenter.heroku.com/articles/rails-asset-pipeline &#10;" />
@@ -1839,7 +1838,8 @@
     <MESSAGE value="Page title mods" />
     <MESSAGE value="Page title mods&#10;" />
     <MESSAGE value="layout mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout mod" />
+    <MESSAGE value="changes to app to try and sort out DO problem. Installed ruby-debug-ide" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to app to try and sort out DO problem. Installed ruby-debug-ide" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2092,13 +2092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="5" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1515">
@@ -2137,14 +2130,23 @@
     <entry file="file://$PROJECT_DIR$/app/views/opinions/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
+          <folding>
+            <marker date="1397016945000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397016945000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397016945000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397016945000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397016945000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397016945000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/portfolios/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="32" selection-end="89" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="195">
-          <folding />
+          <folding>
+            <marker date="1403838267000" expanded="true" signature="115:254" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2185,21 +2187,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sources/_usedmethod_fields.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="538" selection-end="538" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="390">
+        <state line="3" column="46" selection-start="129" selection-end="129" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="8" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="36" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
+        <state line="60" column="12" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="20" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.7375" vertical-offset="815" max-vertical-offset="1215">
+        <state line="74" column="0" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.7375" vertical-offset="815" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
