@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__wheretolearn.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__wheretolearn.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__wheretolearn.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__wheretolearn.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/source.rb" afterPath="$PROJECT_DIR$/app/models/source.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -16,7 +20,8 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wheretolearn@Rails_console__wheretolearn.coverage" NAME="Rails console: wheretolearn Coverage Results" MODIFIED="1399267529842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
-    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1403834324905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
+    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1404470642722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
+    <SUITE FILE_PATH="coverage/wheretolearn@Production__wheretolearn.coverage" NAME="Production: wheretolearn Coverage Results" MODIFIED="1404470591165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@IRB_console__wheretolearn.coverage" NAME="IRB console: wheretolearn Coverage Results" MODIFIED="1395450505247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -49,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.7375" vertical-offset="815" max-vertical-offset="1215">
+            <state line="62" column="12" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -76,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="source.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/source.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="8" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+            <state line="58" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.5426357" vertical-offset="660" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -176,7 +181,6 @@
         <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
         <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/portfolios/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/source.rb" />
         <option value="$PROJECT_DIR$/app/models/subject.rb" />
         <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
         <option value="$PROJECT_DIR$/app/views/subject_modules/show.html.erb" />
@@ -187,6 +191,7 @@
         <option value="$PROJECT_DIR$/app/views/opinions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/source.rb" />
       </list>
     </option>
   </component>
@@ -391,20 +396,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="treetop (v1.4.15, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -869,64 +860,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="RailsProjectView">
@@ -1062,7 +995,7 @@
       <recent name="$PROJECT_DIR$/app/views" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby remote debug.DO">
+  <component name="RunManager" selected="Rails.Development: wheretolearn">
     <configuration default="false" name="Rails console: wheretolearn" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="wheretolearn" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -1733,7 +1666,11 @@
       <created>1404428249407</created>
       <updated>1404428249407</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Removed ruby debug ide. Problems encountered. Was unable to install and unable to start unicorn as a result">
+      <created>1404430491715</created>
+      <updated>1404430491715</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1814,7 +1751,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="added a todo" />
     <MESSAGE value="test to get bootstrap less working with heroku&#10;" />
     <MESSAGE value="did precompile assets using &quot;RAILS_ENV=production bundle exec rake assets:precompile&quot; based on advice found at https://devcenter.heroku.com/articles/rails-asset-pipeline &#10;" />
     <MESSAGE value="fixed todo on subject index by moving it to model" />
@@ -1839,7 +1775,8 @@
     <MESSAGE value="Page title mods&#10;" />
     <MESSAGE value="layout mod" />
     <MESSAGE value="changes to app to try and sort out DO problem. Installed ruby-debug-ide" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to app to try and sort out DO problem. Installed ruby-debug-ide" />
+    <MESSAGE value="Removed ruby debug ide. Problems encountered. Was unable to install and unable to start unicorn as a result" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed ruby debug ide. Problems encountered. Was unable to install and unable to start unicorn as a result" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2192,13 +2129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="12" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
@@ -2208,7 +2138,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.7375" vertical-offset="815" max-vertical-offset="1215">
+        <state line="62" column="12" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/source.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.5426357" vertical-offset="660" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
