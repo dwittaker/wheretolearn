@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="Truncate description and link target">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/_subjectindexgrid.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/_subjectindexgrid.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -1680,7 +1676,11 @@
       <created>1404613561731</created>
       <updated>1404613561731</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Truncate description and link target">
+      <created>1404616383014</created>
+      <updated>1404616383014</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1705,7 +1705,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36834735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1761,7 +1761,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="fixed todo on subject index by moving it to model" />
     <MESSAGE value="created an extension of the blogit post model with necessary fields in order to allow various things such as search to work for blogit on heroku and digital ocean&#10;" />
     <MESSAGE value="trying navbar logo click to home. still not working, but commit anyway&#10;" />
     <MESSAGE value="added confirmable to devise" />
@@ -1786,7 +1785,8 @@
     <MESSAGE value="Removed ruby debug ide. Problems encountered. Was unable to install and unable to start unicorn as a result" />
     <MESSAGE value="Increase source description validation to 600 instead of 300" />
     <MESSAGE value="Increase source description validation to 700&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Increase source description validation to 700&#10;" />
+    <MESSAGE value="Truncate description and link target" />
+    <option name="LAST_COMMIT_MESSAGE" value="Truncate description and link target" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
