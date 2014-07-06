@@ -19,8 +19,8 @@
 
       <tr>
 
-        <td><%= link_to subject.name, subject, :class => "tablelink" %></td>
-        <td><%= subject.description %></td>
+        <td width="100"><%= link_to subject.name, subject, :class => "tablelink" %></td>
+        <td width="200"><%= truncate(subject.description, length: 100) %></td>
         <td><%= subject.purpose %></td>
         <td>
           <%= hidden_field "complexityval", subject.id, :value => subject.complexity %>
