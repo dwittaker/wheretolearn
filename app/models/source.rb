@@ -57,7 +57,7 @@ class Source < ActiveRecord::Base
   validates :description,
             :presence => true,
 
-            :length => { :maximum => 600, :minimum => 3 }
+            :length => { :maximum => 700, :minimum => 3 }
 
   require "acts-as-taggable-on"
   acts_as_taggable

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__wheretolearn.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__wheretolearn.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__wheretolearn.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__wheretolearn.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/source.rb" afterPath="$PROJECT_DIR$/app/models/source.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -57,7 +53,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="12" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
+            <state line="41" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -84,7 +80,7 @@
       <file leaf-file-name="source.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/source.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.5426357" vertical-offset="660" max-vertical-offset="1320">
+            <state line="59" column="38" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.5813953" vertical-offset="660" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -1670,7 +1666,11 @@
       <created>1404430491715</created>
       <updated>1404430491715</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Increase source description validation to 600 instead of 300">
+      <created>1404507867434</created>
+      <updated>1404507867434</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1751,7 +1751,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="test to get bootstrap less working with heroku&#10;" />
     <MESSAGE value="did precompile assets using &quot;RAILS_ENV=production bundle exec rake assets:precompile&quot; based on advice found at https://devcenter.heroku.com/articles/rails-asset-pipeline &#10;" />
     <MESSAGE value="fixed todo on subject index by moving it to model" />
     <MESSAGE value="created an extension of the blogit post model with necessary fields in order to allow various things such as search to work for blogit on heroku and digital ocean&#10;" />
@@ -1776,7 +1775,8 @@
     <MESSAGE value="layout mod" />
     <MESSAGE value="changes to app to try and sort out DO problem. Installed ruby-debug-ide" />
     <MESSAGE value="Removed ruby debug ide. Problems encountered. Was unable to install and unable to start unicorn as a result" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed ruby debug ide. Problems encountered. Was unable to install and unable to start unicorn as a result" />
+    <MESSAGE value="Increase source description validation to 600 instead of 300" />
+    <option name="LAST_COMMIT_MESSAGE" value="Increase source description validation to 600 instead of 300" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2138,14 +2138,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="12" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
+        <state line="41" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/source.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.5426357" vertical-offset="660" max-vertical-offset="1320">
+        <state line="59" column="38" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.5813953" vertical-offset="660" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
