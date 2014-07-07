@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="Truncate description and link target">
+    <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/search/_searchmodel2.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -16,7 +18,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wheretolearn@Rails_console__wheretolearn.coverage" NAME="Rails console: wheretolearn Coverage Results" MODIFIED="1399267529842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
-    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1404470642722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
+    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1404712267841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@Production__wheretolearn.coverage" NAME="Production: wheretolearn Coverage Results" MODIFIED="1404470591165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@IRB_console__wheretolearn.coverage" NAME="IRB console: wheretolearn Coverage Results" MODIFIED="1395450505247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
   </component>
@@ -32,55 +34,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sources_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
+      <file leaf-file-name="_searchmodel.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/search/_searchmodel.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="12" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sources/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="21" selection-start="378" selection-end="378" vertical-scroll-proportion="12.5" vertical-offset="495" max-vertical-offset="1005">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_usedmethod_fields.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sources/_usedmethod_fields.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="46" selection-start="129" selection-end="129" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="390">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="source.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/source.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="38" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1320">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sourceindexgrid.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="37" selection-start="357" selection-end="448" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="570">
+            <state line="9" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -89,34 +46,70 @@
       <file leaf-file-name="confirmation_instructions.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="210">
+            <state line="5" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_subjectindexgrid.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/subjects/_subjectindexgrid.html.erb">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="85" selection-start="320" selection-end="320" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="555">
+            <state line="16" column="10" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_subjectindextable.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb">
+      <file leaf-file-name="sources_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="320" selection-end="320" vertical-scroll-proportion="0.4258675" vertical-offset="180" max-vertical-offset="900">
+            <state line="85" column="24" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1815">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_sourceindextable.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb">
+      <file leaf-file-name="_searchmodel2.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/search/_searchmodel2.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="27" selection-start="263" selection-end="263" vertical-scroll-proportion="-4.4583335" vertical-offset="163" max-vertical-offset="810">
+            <state line="5" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="48" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="1005">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="36" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.8325" vertical-offset="732" max-vertical-offset="1395">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="466" max-vertical-offset="930">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="28" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -135,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/subjects.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/blogit.js" />
         <option value="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/views/blogit/posts/_form.html.erb" />
@@ -156,7 +148,6 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/index.html.erb" />
@@ -181,11 +172,13 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/source.rb" />
-        <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/_subjectindexgrid.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/search/_searchmodel.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -416,164 +409,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap-wysiwyg-rails (v0.3.1, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap-wysiwyg-rails (v0.3.1, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit (v0.8.0, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit (v0.8.0, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit (v0.8.0, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit (v0.8.0, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit (v0.8.0, RVM: ruby-1.9.3-p392) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blogit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="wheretolearn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -603,6 +438,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -857,6 +710,90 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="confirmations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wheretolearn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -981,11 +918,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/search" />
       <recent name="$PROJECT_DIR$/app/controllers" />
       <recent name="$PROJECT_DIR$/app/views/blogit/posts" />
       <recent name="$PROJECT_DIR$/app/assets/javascripts" />
       <recent name="/usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/assets/javascripts/blogit" />
-      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/controllers/blogit" />
@@ -1680,7 +1617,11 @@
       <created>1404616383014</created>
       <updated>1404616383014</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="host test">
+      <created>1404616441568</created>
+      <updated>1404616441568</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1708,7 +1649,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36834735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36834735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32402235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1761,7 +1702,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="created an extension of the blogit post model with necessary fields in order to allow various things such as search to work for blogit on heroku and digital ocean&#10;" />
     <MESSAGE value="trying navbar logo click to home. still not working, but commit anyway&#10;" />
     <MESSAGE value="added confirmable to devise" />
     <MESSAGE value="added email initializer block to all environments" />
@@ -1786,7 +1726,8 @@
     <MESSAGE value="Increase source description validation to 600 instead of 300" />
     <MESSAGE value="Increase source description validation to 700&#10;" />
     <MESSAGE value="Truncate description and link target" />
-    <option name="LAST_COMMIT_MESSAGE" value="Truncate description and link target" />
+    <MESSAGE value="host test" />
+    <option name="LAST_COMMIT_MESSAGE" value="host test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1817,11 +1758,6 @@
           <option name="timeStamp" value="258" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb</url>
-          <line>4</line>
-          <option name="timeStamp" value="277" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/controllers/blogit/posts_controller.rb</url>
           <line>59</line>
           <option name="timeStamp" value="297" />
@@ -1834,38 +1770,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p392/gems/blogit-0.8.0/app/controllers/blogit/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="7" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.42635658" vertical-offset="915" max-vertical-offset="1890">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap-wysiwyg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogit/posts/_post_body.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="52" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogit/posts/_post.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogit/posts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="2145" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blogit/posts/_post_head.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="47" selection-start="74" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="135" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blogit/posts/_post_links.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="268" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="165" />
@@ -1874,11 +1778,6 @@
     <entry file="file://$PROJECT_DIR$/public/assets/application-ca9e07cd3e8a9d5ca88bec42d788ed3d.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="42" selection-start="2744" selection-end="2744" vertical-scroll-proportion="0.0" vertical-offset="1538" max-vertical-offset="2850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/posts_controller_decorator.rb">
@@ -1901,31 +1800,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/blogit.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="34" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="47" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0" vertical-offset="732" max-vertical-offset="1395" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="0" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0" vertical-offset="708" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/subject_modules/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
@@ -1951,13 +1833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sources/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="32" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="375">
@@ -1965,23 +1840,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="78" selection-start="1192" selection-end="1226" vertical-scroll-proportion="-9.041667" vertical-offset="308" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subject_modules/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="417">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="33" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
@@ -2114,13 +1975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="12" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="552" max-vertical-offset="1215">
@@ -2131,13 +1985,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/source.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="38" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
@@ -2163,9 +2010,114 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="3" selection-start="4000" selection-end="4000" vertical-scroll-proportion="-9.791667" vertical-offset="2510" max-vertical-offset="2850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="320" selection-end="320" vertical-scroll-proportion="0.4258675" vertical-offset="180" max-vertical-offset="900">
+        <state line="24" column="12" selection-start="520" selection-end="520" vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/subject_modules/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="8" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="334" selection-end="930" vertical-scroll-proportion="-5.0" vertical-offset="45" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/_searchmodel2.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/_searchmodel.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="254" selection-end="254" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="24" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="34" selection-start="475" selection-end="475" vertical-scroll-proportion="0.5808656" vertical-offset="0" max-vertical-offset="439">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="48" selection-start="1938" selection-end="1938" vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="36" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.8325" vertical-offset="732" max-vertical-offset="1395">
           <folding />
         </state>
       </provider>
