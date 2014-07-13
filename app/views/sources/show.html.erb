@@ -19,7 +19,7 @@
 
 <p>
   <b>Weburl:</b>
-  <%= @source.weburl %>
+  <%= link_to truncate(@source.weburl, :length => 20), "http://#{@source.weburl}", :class => "gridlink", :target => "_blank" %>
 </p>
 
 <p>

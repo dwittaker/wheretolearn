@@ -36,6 +36,9 @@ Wheretolearn::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
+# See everything in the log (default is :info)
+  config.log_level = :debug
+
   #as suggested by devise install
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
@@ -49,8 +52,8 @@ Wheretolearn::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
-      :port                 => 587,
+      :address              => ENV['GMAIL_HST'],
+      :port                 => ENV['GMAIL_PRT'],
       :domain               => ENV['GMAIL_DMN'],
       :user_name            => ENV['GMAIL_USR'],
       :password             => ENV['GMAIL_PSS'],
