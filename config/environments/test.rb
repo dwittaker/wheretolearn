@@ -35,7 +35,7 @@ Wheretolearn::Application.configure do
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
 
-  config.action_mailer.default_url_options = { :host => 'http://wtls.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'http://wheretolearn.it' }
 
   config.action_mailer.delivery_method = :smtp
   # change to true to allow email to be sent during development
