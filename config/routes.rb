@@ -194,7 +194,8 @@ match  ':controller/:action.:format'
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
 
-  root :to => 'subjects#index'
+  #root :to => 'subjects#index'
+  root :to => 'search#search'
 
   # See how all your routes lay out with "rake routes"
 
