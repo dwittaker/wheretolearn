@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/search/_searchmodel2.html.erb" afterPath="$PROJECT_DIR$/app/views/search/_searchmodel2.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wheretolearn.iml" afterPath="$PROJECT_DIR$/.idea/wheretolearn.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -97,10 +88,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devise.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="devise.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="9" selection-start="10521" selection-end="10521" vertical-scroll-proportion="0.6958763" vertical-offset="2955" max-vertical-offset="3720">
+            <state line="215" column="5" selection-start="10517" selection-end="10517" vertical-scroll-proportion="0.0" vertical-offset="3107" max-vertical-offset="3720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="25" selection-start="526" selection-end="526" vertical-scroll-proportion="0.79787236" vertical-offset="0" max-vertical-offset="390">
               <folding />
             </state>
           </provider>
@@ -128,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/initializers/blogit.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/blogit/posts/_post_head.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blogit/posts/_post_links.html.erb" />
@@ -179,6 +178,7 @@
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1691,7 +1691,15 @@
       <created>1405893314065</created>
       <updated>1405893314065</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="omniauth">
+      <created>1406427326780</created>
+      <updated>1406427326781</updated>
+    </task>
+    <task id="LOCAL-00107" summary="omniauth&#10;">
+      <created>1406427359087</created>
+      <updated>1406427359087</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1716,10 +1724,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1772,8 +1780,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="mail chgs" />
-    <MESSAGE value="mail chgs&#10;" />
     <MESSAGE value="confirmation instructions mod" />
     <MESSAGE value="confirmation instructions mod&#10;" />
     <MESSAGE value="menu mod to remove text at top" />
@@ -1797,7 +1803,9 @@
     <MESSAGE value="mail debug&#10;" />
     <MESSAGE value="use env var for default url&#10;" />
     <MESSAGE value="various settings for production and routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="various settings for production and routes" />
+    <MESSAGE value="omniauth" />
+    <MESSAGE value="omniauth&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="omniauth&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1888,11 +1896,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/sources_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="24" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="1815" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="475" selection-end="475" vertical-scroll-proportion="0.5808656" vertical-offset="0" max-vertical-offset="439" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
@@ -2130,7 +2133,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="9" selection-start="10521" selection-end="10521" vertical-scroll-proportion="0.6958763" vertical-offset="2955" max-vertical-offset="3720">
+        <state line="215" column="5" selection-start="10517" selection-end="10517" vertical-scroll-proportion="0.0" vertical-offset="3107" max-vertical-offset="3720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="526" selection-end="526" vertical-scroll-proportion="0.79787236" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
       </provider>
