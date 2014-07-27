@@ -72,4 +72,6 @@ gem 'bootstrap-wysiwyg-rails'
 
 gem 'google-analytics-rails'
 
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
