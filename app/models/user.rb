@@ -98,6 +98,9 @@ class User < ActiveRecord::Base
     "http://gravatar.com/avatar/#{hash}?d=mm"
   end
 
+  def from_omniauth
+
+  end
 
 
   extend FriendlyId
