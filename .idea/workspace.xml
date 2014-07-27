@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="5" selection-start="2748" selection-end="2748" vertical-scroll-proportion="0.0" vertical-offset="1266" max-vertical-offset="1920">
+            <state line="105" column="35" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.18632075" vertical-offset="1496" max-vertical-offset="1935">
               <folding />
             </state>
           </provider>
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devise.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="devise.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="36" selection-start="741" selection-end="741" vertical-scroll-proportion="-7.0802917" vertical-offset="3135" max-vertical-offset="3720">
+            <state line="15" column="36" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="3135" max-vertical-offset="3720">
               <folding />
             </state>
           </provider>
@@ -1550,7 +1550,11 @@
       <created>1406481885555</created>
       <updated>1406481885555</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="omniauth&#10;">
+      <created>1406485036657</created>
+      <updated>1406485036657</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1575,9 +1579,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1631,11 +1635,11 @@
     <MESSAGE value="mail debug&#10;" />
     <MESSAGE value="use env var for default url&#10;" />
     <MESSAGE value="various settings for production and routes" />
-    <MESSAGE value="omniauth&#10;" />
     <MESSAGE value="gitignore" />
     <MESSAGE value="gitignore&#10;" />
     <MESSAGE value="omniauth" />
-    <option name="LAST_COMMIT_MESSAGE" value="omniauth" />
+    <MESSAGE value="omniauth&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="omniauth&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1937,13 +1941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="5" selection-start="2748" selection-end="2748" vertical-scroll-proportion="0.0" vertical-offset="1266" max-vertical-offset="1920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="21" selection-start="954" selection-end="954" vertical-scroll-proportion="1.5126051" vertical-offset="225" max-vertical-offset="3330">
@@ -1974,7 +1971,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="36" selection-start="741" selection-end="741" vertical-scroll-proportion="-7.0802917" vertical-offset="3135" max-vertical-offset="3720">
+        <state line="15" column="36" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0" vertical-offset="3135" max-vertical-offset="3720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="35" selection-start="3056" selection-end="3056" vertical-scroll-proportion="0.18632075" vertical-offset="1496" max-vertical-offset="1935">
           <folding />
         </state>
       </provider>
