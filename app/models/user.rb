@@ -150,7 +150,7 @@ class User < ActiveRecord::Base
     else
       if authprovider == "facebook" then
 
-        user = User.create(first_name:auth.extra.raw_info.first_name,
+        user = User.create!(first_name:auth.extra.raw_info.first_name,
                            last_name:auth.extra.raw_info.last_name,
                            homepage:auth.extra.raw_info.link,
                            provider:auth.provider,
@@ -171,7 +171,7 @@ class User < ActiveRecord::Base
           newlast_name = ""
         end
 
-        user = User.create(first_name:newfirst_name,
+        user = User.create!(first_name:newfirst_name,
                            last_name:newlast_name,
                            homepage:auth.info.urls.Twitter,
                            provider:auth.provider,
