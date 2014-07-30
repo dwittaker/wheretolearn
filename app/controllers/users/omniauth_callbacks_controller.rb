@@ -1,7 +1,8 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def facebook
     # You need to implement the method below in your model (e.g. app/models/user.rb)
-    @user = User.from_omniauth(request.env["omniauth.auth"], "facebook")
+    #@user = User.from_omniauth(request.env["omniauth.auth"], "facebook")
+    @user = User.find_for_oauth(request.env["omniauth.auth"], "facebook")
 
     if @user.persisted?
       sign_in_and_redirect @user #, :event => :authentication #this will throw if @user is not activated
@@ -14,7 +15,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   def twitter
     # You need to implement the method below in your model (e.g. app/models/user.rb)
-    @user = User.from_omniauth(request.env["omniauth.auth"], "twitter")
+    #@user = User.from_omniauth(request.env["omniauth.auth"], "twitter")
+    @user = User.find_for_oauth(request.env["omniauth.auth"], "twitter")
 
     if @user.persisted?
       sign_in_and_redirect @user #, :event => :authentication #this will throw if @user is not activated

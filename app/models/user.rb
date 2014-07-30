@@ -98,10 +98,10 @@ class User < ActiveRecord::Base
     "http://gravatar.com/avatar/#{hash}?d=mm"
   end
 
-  def self.from_omniauth(auth, authprovider)
+  def self.fromxxx_omniauth(auth, authprovider)
 
-      User.find_or_create_by(auth.slice(:provider, :uid)) do |user|
-    #where(auth.slice(:provider, :uid)).first_or_create do |user|
+
+    where(auth.slice(:provider, :uid)).first_or_create do |user|
       #user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]
 
@@ -124,7 +124,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  def self.new_with_session(params, session)
+  def self.newxxx_with_session(params, session)
     super.tap do |user|
       if data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
         user.email = data["email"] if user.email.blank?
@@ -142,18 +142,47 @@ class User < ActiveRecord::Base
   end
 
   # Facebook Settings
-  def self.find_for_facebook_oauth(auth, signed_in_resource = nil)
+  def self.find_for_oauth(auth,authprovider, signed_in_resource = nil)
     user = User.where(provider: auth.provider, uid: auth.uid).first
     if user.present?
       user
     else
-      user = User.create(first_name:auth.extra.raw_info.first_name,
-                         last_name:auth.extra.raw_info.last_name,
-                         facebook_link:auth.extra.raw_info.link,
-                         provider:auth.provider,
-                         uid:auth.uid,
-                         email:auth.info.email,
-                         password:Devise.friendly_token[0,20])
+      if authprovider == "facebook" then
+
+        user = User.create(first_name:auth.extra.raw_info.first_name,
+                           last_name:auth.extra.raw_info.last_name,
+                           homepage:auth.extra.raw_info.link,
+                           provider:auth.provider,
+                           uid:auth.uid,
+                           email:auth.info.email,
+                           password:Devise.friendly_token[0,20],
+                           profile_name:auth.info.nickname,
+                           profile_image:auth.info.image)
+
+      end
+
+      if authprovider == "twitter" then
+
+        fullname = auth.info.name.split(' ')
+        newfirst_name = fullname[0]
+        newlast_name = fullname[fullname.length - 1]
+        if newlast_name == newfirst_name then
+          newlast_name = ""
+        end
+
+        user = User.create(first_name:newfirst_name,
+                           last_name:newlast_name,
+                           homepage:auth.info.urls.Twitter,
+                           provider:auth.provider,
+                           uid:auth.uid,
+
+                           password:Devise.friendly_token[0,20],
+                           profile_name:auth.info.nickname,
+                           profile_image:auth.extra.raw_info.profile_image_url)
+
+      end
+
+
     end
   end
 
