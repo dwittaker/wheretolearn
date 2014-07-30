@@ -122,7 +122,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  def self.new_with_session(params, session)
+  def self.newxxx_with_session(params, session)
     super.tap do |user|
       if data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
         user.email = data["email"] if user.email.blank?
@@ -132,7 +132,26 @@ class User < ActiveRecord::Base
       end
       if data = session["devise.twitter_data"] && session["devise.twitter_data"]["info"]
         user.profile_name = data["nickname"] if user.profile_name.blank?
+        fullname = data["name"].split(' ')
+        user.first_name = fullname[0]
+        user.last_name = fullname[fullname.length - 1]
       end
+    end
+  end
+
+  # Facebook Settings
+  def self.find_for_facebook_oauth(auth, signed_in_resource = nil)
+    user = User.where(provider: auth.provider, uid: auth.uid).first
+    if user.present?
+      user
+    else
+      user = User.create(first_name:auth.extra.raw_info.first_name,
+                         last_name:auth.extra.raw_info.last_name,
+                         facebook_link:auth.extra.raw_info.link,
+                         provider:auth.provider,
+                         uid:auth.uid,
+                         email:auth.info.email,
+                         password:Devise.friendly_token[0,20])
     end
   end
 
