@@ -176,7 +176,7 @@ class User < ActiveRecord::Base
                            homepage:auth.info.urls.Twitter,
                            provider:auth.provider,
                            uid:auth.uid,
-
+                           email: '',
                            password:Devise.friendly_token[0,20],
                            profile_name:auth.info.nickname,
                            profile_image:auth.extra.raw_info.profile_image_url)
