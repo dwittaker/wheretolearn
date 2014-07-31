@@ -32,19 +32,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="14" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.3640898" vertical-offset="2164" max-vertical-offset="3240">
+            <state line="155" column="0" selection-start="4650" selection-end="4650" vertical-scroll-proportion="0.0" vertical-offset="2164" max-vertical-offset="3240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="omniauth_callbacks_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="omniauth_callbacks_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="7" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+            <state line="22" column="24" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.8229426" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -1703,7 +1703,11 @@
       <created>1406768973755</created>
       <updated>1406768973755</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="omniauth &amp; login&#10;">
+      <created>1406769195947</created>
+      <updated>1406769195947</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2156,16 +2160,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+        <state line="155" column="0" selection-start="4650" selection-end="4650" vertical-scroll-proportion="0.0" vertical-offset="2164" max-vertical-offset="3240">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="14" selection-start="4649" selection-end="4649" vertical-scroll-proportion="0.3640898" vertical-offset="2164" max-vertical-offset="3240">
+        <state line="22" column="24" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.8229426" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
