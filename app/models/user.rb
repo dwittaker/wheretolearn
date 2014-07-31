@@ -148,18 +148,24 @@ class User < ActiveRecord::Base
     if user.present?
       user
     else
+
       if authprovider == "facebook" then
+        fbuser = User.where(email: auth.info.email).first
+        if fbuser.present?
+          user
 
-        user = User.create!(first_name:auth.extra.raw_info.first_name,
-                           last_name:auth.extra.raw_info.last_name,
-                           homepage:auth.extra.raw_info.link,
-                           provider:auth.provider,
-                           uid:auth.uid,
-                           email:auth.info.email,
-                           password:Devise.friendly_token[0,20],
-                           profile_name:auth.info.nickname,
-                           profile_image:auth.info.image)
-
+        else
+          user.skip_confirmation!
+          user = User.create!(first_name:auth.extra.raw_info.first_name,
+                             last_name:auth.extra.raw_info.last_name,
+                             homepage:auth.extra.raw_info.link,
+                             provider:auth.provider,
+                             uid:auth.uid,
+                             email:auth.info.email,
+                             password:Devise.friendly_token[0,20],
+                             profile_name:auth.info.nickname,
+                             profile_image:auth.info.image)
+        end
       end
 
       if authprovider == "twitter" then
@@ -171,6 +177,7 @@ class User < ActiveRecord::Base
           newlast_name = ""
         end
 
+        user.skip_confirmation!
         user = User.create!(first_name:newfirst_name,
                            last_name:newlast_name,
                            homepage:auth.info.urls.Twitter,
