@@ -179,6 +179,7 @@ class User < ActiveRecord::Base
         if newlast_name == newfirst_name then
           newlast_name = ""
         end
+        twittermail = auth.info.nickname + "@twitter.com"
 
 
         user = User.new(first_name:newfirst_name,
@@ -186,7 +187,7 @@ class User < ActiveRecord::Base
                            homepage:auth.info.urls.Twitter,
                            provider:auth.provider,
                            uid:auth.uid,
-                           email: '',
+                           email: twittermail,
                            password:Devise.friendly_token[0,20],
                            profile_name:auth.info.nickname,
                            profile_image:auth.extra.raw_info.profile_image_url)
