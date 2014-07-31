@@ -155,8 +155,8 @@ class User < ActiveRecord::Base
           user
 
         else
-          user.skip_confirmation!
-          user = User.create!(first_name:auth.extra.raw_info.first_name,
+
+          user = User.new(first_name:auth.extra.raw_info.first_name,
                              last_name:auth.extra.raw_info.last_name,
                              homepage:auth.extra.raw_info.link,
                              provider:auth.provider,
@@ -165,6 +165,8 @@ class User < ActiveRecord::Base
                              password:Devise.friendly_token[0,20],
                              profile_name:auth.info.nickname,
                              profile_image:auth.info.image)
+          user.save!
+          user.skip_confirmation!
         end
       end
 
@@ -177,8 +179,8 @@ class User < ActiveRecord::Base
           newlast_name = ""
         end
 
-        user.skip_confirmation!
-        user = User.create!(first_name:newfirst_name,
+
+        user = User.new(first_name:newfirst_name,
                            last_name:newlast_name,
                            homepage:auth.info.urls.Twitter,
                            provider:auth.provider,
@@ -187,7 +189,8 @@ class User < ActiveRecord::Base
                            password:Devise.friendly_token[0,20],
                            profile_name:auth.info.nickname,
                            profile_image:auth.extra.raw_info.profile_image_url)
-
+        user.save!
+        user.skip_confirmation!
       end
 
 
