@@ -165,8 +165,9 @@ class User < ActiveRecord::Base
                              password:Devise.friendly_token[0,20],
                              profile_name:auth.info.nickname,
                              profile_image:auth.info.image)
-          user.save!
           user.skip_confirmation!
+          user.save!
+
         end
       end
 
@@ -189,8 +190,9 @@ class User < ActiveRecord::Base
                            password:Devise.friendly_token[0,20],
                            profile_name:auth.info.nickname,
                            profile_image:auth.extra.raw_info.profile_image_url)
-        user.save!
+
         user.skip_confirmation!
+        user.save!
       end
 
 
