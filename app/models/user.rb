@@ -149,7 +149,7 @@ class User < ActiveRecord::Base
       user
     else
 
-      if authprovider == "facebook" then
+      if authprovider == "facebook"
         fbuser = User.where(email: auth.info.email).first
         if fbuser.present?
           user
@@ -171,15 +171,15 @@ class User < ActiveRecord::Base
         end
       end
 
-      if authprovider == "twitter" then
+      if authprovider == "twitter"
 
         fullname = auth.info.name.split(' ')
         newfirst_name = fullname[0]
         newlast_name = fullname[fullname.length - 1]
-        if newlast_name == newfirst_name then
+        if newlast_name == newfirst_name
           newlast_name = ""
         end
-        twittermail = auth.info.nickname + "@twitter.com"
+        twittermail = "#{auth.info.nickname}@twitter.com"
 
 
         user = User.new(first_name:newfirst_name,
