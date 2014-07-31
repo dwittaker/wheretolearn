@@ -194,6 +194,10 @@ class User < ActiveRecord::Base
     end
   end
 
+  def skip_confirmation!
+    self.confirmed_at = Time.now
+  end
+
 
   extend FriendlyId
   friendly_id :profile_name
