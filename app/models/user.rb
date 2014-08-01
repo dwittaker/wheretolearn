@@ -158,7 +158,7 @@ class User < ActiveRecord::Base
           user
 
         else
-
+          logger.info 'out of it'
           user = User.new(first_name:auth.extra.raw_info.first_name,
                              last_name:auth.extra.raw_info.last_name,
                              homepage:auth.extra.raw_info.link,
