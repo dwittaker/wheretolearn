@@ -23,7 +23,9 @@ log_test('here')
 
 
     if defined? @user && @user.persisted?
-      log_test('here inside')
+      log_test('here inside with')
+      log_test(defined? @user)
+      log_test(@user.persisted?)
       sign_in_and_redirect @user #,  :event => :authentication #this will throw if @user is not activated
       set_flash_message(:notice, :success, :kind => "Twitter") if is_navigational_format?
     else
@@ -37,6 +39,6 @@ log_test('here')
 
   def log_test(message)
     Rails.logger.info(message)
-    puts message
+
   end
 end

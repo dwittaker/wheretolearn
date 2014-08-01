@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -45,7 +44,7 @@
       <file leaf-file-name="omniauth_callbacks_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="5" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.88778055" vertical-offset="229" max-vertical-offset="705">
+            <state line="26" column="30" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.40149626" vertical-offset="229" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -1727,7 +1726,11 @@
       <created>1406857941334</created>
       <updated>1406857941334</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="omniauth &amp; login&#10;">
+      <created>1406858214545</created>
+      <updated>1406858214545</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2191,7 +2194,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="1497" selection-end="1497" vertical-scroll-proportion="0.88778055" vertical-offset="229" max-vertical-offset="705">
+        <state line="26" column="30" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.40149626" vertical-offset="229" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
