@@ -152,6 +152,7 @@ class User < ActiveRecord::Base
 
       if authprovider == "facebook"
         user = User.where(email: auth.info.email).first
+        logger.info 'before present check'
         if user.present?
           logger.info 'in it to win it'
           user
@@ -172,6 +173,8 @@ class User < ActiveRecord::Base
           user.save!
           user
         end
+
+        logger.info 'after block'
       end
 
       if authprovider == "twitter"

@@ -35,7 +35,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="0" selection-start="4682" selection-end="4682" vertical-scroll-proportion="0.33665836" vertical-offset="2220" max-vertical-offset="3315">
+            <state line="176" column="32" selection-start="5429" selection-end="5429" vertical-scroll-proportion="0.74812967" vertical-offset="2340" max-vertical-offset="3360">
               <folding />
             </state>
           </provider>
@@ -1758,7 +1758,11 @@
       <created>1406910941298</created>
       <updated>1406910941298</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="omniauth &amp; login&#10;">
+      <created>1406921047552</created>
+      <updated>1406921047552</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2170,7 +2174,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="4682" selection-end="4682" vertical-scroll-proportion="0.33665836" vertical-offset="2220" max-vertical-offset="3315">
+        <state line="176" column="32" selection-start="5429" selection-end="5429" vertical-scroll-proportion="0.74812967" vertical-offset="2340" max-vertical-offset="3360">
           <folding />
         </state>
       </provider>
