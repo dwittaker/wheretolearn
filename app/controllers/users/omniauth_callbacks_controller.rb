@@ -34,4 +34,9 @@ log_test('here')
 
     log_test('here after block')
   end
+
+  def log_test(message)
+    Rails.logger.info(message)
+    puts message
+  end
 end
