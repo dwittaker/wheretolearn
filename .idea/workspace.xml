@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -41,19 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="omniauth_callbacks_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="omniauth_callbacks_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="570">
+            <state line="34" column="30" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.85037404" vertical-offset="169" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="30" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.4201031" vertical-offset="797" max-vertical-offset="1245">
+            <state line="71" column="14" selection-start="1966" selection-end="1974" vertical-scroll-proportion="0.0" vertical-offset="797" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
@@ -180,8 +180,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20140730020032_addprofile_imageto_users.rb" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" />
       </list>
     </option>
   </component>
@@ -1718,7 +1718,11 @@
       <created>1406777814015</created>
       <updated>1406777814015</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="omniauth &amp; login&#10;">
+      <created>1406857883405</created>
+      <updated>1406857883405</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -2166,6 +2170,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="14" selection-start="1966" selection-end="1974" vertical-scroll-proportion="0.0" vertical-offset="797" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="22" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="2565" max-vertical-offset="3255">
@@ -2175,14 +2186,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="30" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.4201031" vertical-offset="797" max-vertical-offset="1245">
+        <state line="34" column="30" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.85037404" vertical-offset="169" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
