@@ -149,6 +149,7 @@ class User < ActiveRecord::Base
       user
     else
 
+
       if authprovider == "facebook"
         fbuser = User.where(email: auth.info.email).first
         if fbuser.present?
