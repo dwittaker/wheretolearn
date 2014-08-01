@@ -69,5 +69,9 @@ def title(page_title)
   content_for :title, page_title.to_s
 end
 
+  def log_test(message)
+    Rails.logger.info(message)
+    puts message
+  end
 
 end
