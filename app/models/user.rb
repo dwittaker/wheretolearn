@@ -167,7 +167,7 @@ class User < ActiveRecord::Base
                              profile_image:auth.info.image)
           user.skip_confirmation!
           user.save!
-
+          user
         end
       end
 
@@ -194,6 +194,7 @@ class User < ActiveRecord::Base
 
         user.skip_confirmation!
         user.save!
+        user
       end
 
 
