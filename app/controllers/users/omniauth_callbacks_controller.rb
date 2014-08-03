@@ -32,8 +32,5 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   end
 
-  def log_test(message)
-    Rails.logger.info(message)
 
-  end
 end
