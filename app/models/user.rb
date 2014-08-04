@@ -154,12 +154,19 @@ class User < ActiveRecord::Base
         user = User.where(email: auth.info.email).first
 
         if user.present?
-
+          if user.provider.nil?
+            user.update_attributes!(provider: auth.provider,
+                                    uid: auth.uid,
+                                    profile_image: auth.info.image,
+                                    homepage: auth.extra.raw_info.link
+            )
+            user.save!
+          end
           user
 
 
         else
-          logger.info 'out of it'
+
           user = User.new(first_name:auth.extra.raw_info.first_name,
                              last_name:auth.extra.raw_info.last_name,
                              homepage:auth.extra.raw_info.link,
