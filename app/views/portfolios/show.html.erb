@@ -31,9 +31,9 @@
       <dt><strong>Schedule Type:</strong></dt>
       <dd><%= @portfolio.schedtype.schedname %></dd>
       <dt><strong>Start Date:</strong></dt>
-      <dd><%= @portfolio.startdate.to_formatted_s(:long) %></dd>
+      <dd><%= longdttm(@portfolio.startdate) %></dd>
       <dt><strong>End Date:</strong></dt>
-      <dd><%= @portfolio.enddate.to_formatted_s(:long) %></dd>
+      <dd><%= longdttm(@portfolio.enddate) %></dd>
 
 
     </dl>

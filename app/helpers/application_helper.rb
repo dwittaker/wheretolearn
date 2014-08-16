@@ -60,6 +60,8 @@ end
 def listdt(dt)
   if !dt.nil?
     dt.strftime('%b %d, %Y')
+  else
+    ""
   end
 end
 
@@ -70,6 +72,14 @@ def listdttm(dt)
     ""
   end
 
+end
+
+def longdttm(dt)
+  if !dt.nil?
+    dt.to_formatted_s(:long)
+  else
+    ""
+  end
 end
 
 def title(page_title)

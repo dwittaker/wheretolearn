@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -16,7 +17,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/wheretolearn@Rails_console__wheretolearn.coverage" NAME="Rails console: wheretolearn Coverage Results" MODIFIED="1399267529842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
-    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1407815781034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
+    <SUITE FILE_PATH="coverage/wheretolearn@Development__wheretolearn.coverage" NAME="Development: wheretolearn Coverage Results" MODIFIED="1408168565257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@Production__wheretolearn.coverage" NAME="Production: wheretolearn Coverage Results" MODIFIED="1404470591165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
     <SUITE FILE_PATH="coverage/wheretolearn@IRB_console__wheretolearn.coverage" NAME="IRB console: wheretolearn Coverage Results" MODIFIED="1395450505247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="wheretolearn" />
   </component>
@@ -50,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="43" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-8.125" vertical-offset="300" max-vertical-offset="1155">
+            <state line="32" column="20" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.5278592" vertical-offset="300" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
@@ -63,7 +64,14 @@
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
-              <folding />
+              <folding>
+                <marker date="1403831190000" expanded="true" signature="85:413" placeholder="..." />
+                <marker date="1403831190000" expanded="true" signature="123:406" placeholder="..." />
+                <marker date="1403831190000" expanded="true" signature="132:397" placeholder="..." />
+                <marker date="1403831190000" expanded="false" signature="146:195" placeholder="..." />
+                <marker date="1403831190000" expanded="true" signature="433:486" placeholder="..." />
+                <marker date="1403831190000" expanded="true" signature="505:559" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,7 +80,11 @@
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="450">
-              <folding />
+              <folding>
+                <marker date="1401060835000" expanded="true" signature="83:739" placeholder="..." />
+                <marker date="1401060835000" expanded="true" signature="155:720" placeholder="..." />
+                <marker date="1401060835000" expanded="true" signature="478:705" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="2" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.45479453" vertical-offset="764" max-vertical-offset="1305">
+            <state line="79" column="6" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1455">
               <folding />
             </state>
           </provider>
@@ -144,7 +156,6 @@
         <option value="$PROJECT_DIR$/app/views/sources/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subject_modules/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
-        <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/portfolios/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/models/subject.rb" />
         <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
@@ -186,6 +197,7 @@
         <option value="$PROJECT_DIR$/config/initializers/registrations_controller_decorator.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
       </list>
     </option>
   </component>
@@ -1790,7 +1802,11 @@
       <created>1408168188989</created>
       <updated>1408168188989</updated>
     </task>
-    <option name="localTasksCounter" value="151" />
+    <task id="LOCAL-00151" summary="blank date rep&#10;">
+      <created>1408168297623</created>
+      <updated>1408168297623</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1815,14 +1831,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32633054" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27450982" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27450982" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27761415" sideWeight="0.50097466" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1850,7 +1866,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Changes to accommodate wysiwyg" />
     <MESSAGE value="asset precompile&#10;" />
     <MESSAGE value="added Google Analytics" />
     <MESSAGE value="added Google Analytics&#10;" />
@@ -1875,7 +1890,8 @@
     <MESSAGE value="devise registration customized and user images" />
     <MESSAGE value="asset precompile" />
     <MESSAGE value="blank date rep" />
-    <option name="LAST_COMMIT_MESSAGE" value="blank date rep" />
+    <MESSAGE value="blank date rep&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="blank date rep&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2198,14 +2214,25 @@
     <entry file="file://$PROJECT_DIR$/app/views/portfolios/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="388">
-          <folding />
+          <folding>
+            <marker date="1403831190000" expanded="true" signature="85:413" placeholder="..." />
+            <marker date="1403831190000" expanded="true" signature="123:406" placeholder="..." />
+            <marker date="1403831190000" expanded="true" signature="132:397" placeholder="..." />
+            <marker date="1403831190000" expanded="false" signature="146:195" placeholder="..." />
+            <marker date="1403831190000" expanded="true" signature="433:486" placeholder="..." />
+            <marker date="1403831190000" expanded="true" signature="505:559" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
+          <folding>
+            <marker date="1401060835000" expanded="true" signature="83:739" placeholder="..." />
+            <marker date="1401060835000" expanded="true" signature="155:720" placeholder="..." />
+            <marker date="1401060835000" expanded="true" signature="478:705" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2216,16 +2243,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="43" selection-start="1225" selection-end="1225" vertical-scroll-proportion="-8.125" vertical-offset="300" max-vertical-offset="1155">
+        <state line="79" column="6" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1455">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="2" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.45479453" vertical-offset="764" max-vertical-offset="1305">
+        <state line="32" column="20" selection-start="1158" selection-end="1158" vertical-scroll-proportion="0.5278592" vertical-offset="300" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
