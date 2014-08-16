@@ -89,7 +89,7 @@
       <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="5" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.66027397" vertical-offset="764" max-vertical-offset="1275">
+            <state line="62" column="2" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.45479453" vertical-offset="764" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
@@ -1786,7 +1786,11 @@
       <created>1408165388284</created>
       <updated>1408165388284</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="blank date rep">
+      <created>1408168188989</created>
+      <updated>1408168188989</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1846,7 +1850,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Finally got bootstrap wysiwyg toolbar to interact." />
     <MESSAGE value="Changes to accommodate wysiwyg" />
     <MESSAGE value="asset precompile&#10;" />
     <MESSAGE value="added Google Analytics" />
@@ -1871,7 +1874,8 @@
     <MESSAGE value="omniauth &amp; login&#10;" />
     <MESSAGE value="devise registration customized and user images" />
     <MESSAGE value="asset precompile" />
-    <option name="LAST_COMMIT_MESSAGE" value="asset precompile" />
+    <MESSAGE value="blank date rep" />
+    <option name="LAST_COMMIT_MESSAGE" value="blank date rep" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2221,7 +2225,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="5" selection-start="1918" selection-end="1918" vertical-scroll-proportion="0.66027397" vertical-offset="764" max-vertical-offset="1275">
+        <state line="62" column="2" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.45479453" vertical-offset="764" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>

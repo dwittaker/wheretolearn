@@ -58,7 +58,9 @@ def flash_class(type)
 end
 
 def listdt(dt)
-  dt.strftime('%b %d, %Y')
+  if !dt.nil?
+    dt.strftime('%b %d, %Y')
+  end
 end
 
 def listdttm(dt)
