@@ -62,7 +62,12 @@ def listdt(dt)
 end
 
 def listdttm(dt)
-  dt.strftime('%b %d, %y %H:%M %p' )
+  if !dt.nil?
+    dt.strftime('%b %d, %y %H:%M %p' )
+  else
+    ""
+  end
+
 end
 
 def title(page_title)
