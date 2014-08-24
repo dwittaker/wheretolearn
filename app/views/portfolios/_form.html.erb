@@ -38,7 +38,7 @@
   <div class="control-group">
     <%= f.label 'Physical Address:', :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_area :physaddress, :row => 2, :class => 'text_area' %>
+      <%= f.text_area :physaddress, :rows => 3, :class => 'text_area' %>
     </div>
   </div>
   <div class="control-group">
@@ -56,6 +56,18 @@
         <%= f.collection_select :costtype_id, Costtype.find(:all), :id, :costname, :prompt => "Select a Type", :class => 'dropdown_field' %>
       </div>
     </div>
+    <div class="control-group">
+      <%= f.label 'Demo Available:', :class => 'control-label' %>
+      <div class="controls">
+        <%=hidden_field_tag 'portfolio[prtdemo]', '0'%>
+        <%=check_box_tag 'portfolio[prtdemo]', 1, @portfolio.prtdemo %>
+
+
+
+
+      </div>
+    </div>
+
     <div class="control-group">
       <%= f.label :schedtype_id, :class => 'control-label' %>
       <div class="controls">

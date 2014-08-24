@@ -28,6 +28,9 @@
       <dd><%= @portfolio.currency %></dd>
       <dt><strong>Cost Type:</strong></dt>
       <dd><%= @portfolio.costtype.costname %></dd>
+      <dt><strong>Demo Available:</strong></dt>
+      <dd><%= boolyesno(@portfolio.prtdemo) %></dd>
+
       <dt><strong>Schedule Type:</strong></dt>
       <dd><%= @portfolio.schedtype.schedname %></dd>
       <dt><strong>Start Date:</strong></dt>

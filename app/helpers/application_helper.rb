@@ -86,6 +86,14 @@ def title(page_title)
   content_for :title, page_title.to_s
 end
 
+def boolyesno(bool)
+  if bool then
+    "Yes"
+  else
+    "No"
+  end
+end
+
 
 
 end
