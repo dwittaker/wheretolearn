@@ -53,7 +53,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="63" selection-start="644" selection-end="644" vertical-scroll-proportion="0.6593407" vertical-offset="0" max-vertical-offset="1200">
+            <state line="16" column="89" selection-start="670" selection-end="670" vertical-scroll-proportion="0.6593407" vertical-offset="0" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -1532,7 +1532,11 @@
       <created>1408910689116</created>
       <updated>1408910689116</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="portfolio show link&#10;">
+      <created>1408910763309</created>
+      <updated>1408910763309</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1557,10 +1561,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="22" width="1400" height="809" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3669468" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33193278" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32352942" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2160229" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1977,7 +1981,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="63" selection-start="644" selection-end="644" vertical-scroll-proportion="0.6593407" vertical-offset="0" max-vertical-offset="1200">
+        <state line="16" column="89" selection-start="670" selection-end="670" vertical-scroll-proportion="0.6593407" vertical-offset="0" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
