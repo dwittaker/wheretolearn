@@ -14,7 +14,7 @@
       <dt><strong>Description:</strong></dt>
       <dd><%= @portfolio.prtdesc %></dd>
       <dt><strong>Web Url:</strong></dt>
-      <dd><%= link_to truncate(@portfolio.pweburl, :length => 20), "http://#{@portfolio.pweburl}", :class => "tablelink", :target => "_blank" %></dd>
+      <dd><%= link_to truncate(@portfolio.pweburl, :length => 40), "http://#{@portfolio.pweburl}", :class => "tablelink", :target => "_blank" %></dd>
       <dt><strong>Address:</strong></dt>
       <dd><%= @portfolio.physaddress %></dd>
     </dl>
