@@ -9,7 +9,15 @@ module PortfoliosHelper
 
 
   def readdhttp(lnk)
-    lnk.gsub!("http://","")
-    "http://#{lnk}"
+    if lnk.include? "http://" or lnk.include? "https://"
+    #lnk.gsub!("http://","")
+      lnk
+    else
+      "http://#{lnk}"
+    end
+
   end
+
+
+
 end
