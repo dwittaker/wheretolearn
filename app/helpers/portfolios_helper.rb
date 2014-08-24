@@ -7,4 +7,9 @@ module PortfoliosHelper
     #@currencylist = [ "CAD", "EUR", "GBP", "JMD", "USD"]
   end
 
+
+  def readdhttp(lnk)
+    lnk.gsub!("http://","")
+    "http://#{lnk}"
+  end
 end
