@@ -28,8 +28,11 @@
       <dd><%= @portfolio.currency %></dd>
       <dt><strong>Cost Type:</strong></dt>
       <dd><%= @portfolio.costtype.costname %></dd>
-      <dt><strong>Demo Available:</strong></dt>
-      <dd><%= boolyesno(@portfolio.prtdemo) %></dd>
+      <dt><strong>Tiered Cost:</strong></dt>
+      <dd><%= boolyesno(@portfolio.prttiercost) %></dd>
+      <dt><strong>Free Trial:</strong></dt>
+      <dd><%= boolyesno(@portfolio.prttrial) %></dd>
+
 
       <dt><strong>Schedule Type:</strong></dt>
       <dd><%= @portfolio.schedtype.schedname %></dd>

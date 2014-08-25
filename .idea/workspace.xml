@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140825012418_change_prtdesc_to_text.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140825020050_add_tiercost_to_portfolios.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20140825020643_add_default_value_to_prttiercost.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/_portfolioindextable.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/_portfolioindextable.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" afterPath="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/portfolio.rb" afterPath="$PROJECT_DIR$/app/models/portfolio.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/portfolios_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/portfolios_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" afterPath="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -37,34 +46,88 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/portfolios/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1905">
+            <state line="62" column="76" selection-start="2481" selection-end="2481" vertical-scroll-proportion="-5.625" vertical-offset="795" max-vertical-offset="1965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20140825020643_add_default_value_to_prttiercost.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140825020643_add_default_value_to_prttiercost.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="78" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20140824190711_add_default_value_to_prtdemo.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20140824190711_add_default_value_to_prtdemo.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="4" selection-start="74" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="55" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.48387095" vertical-offset="300" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_portfolioindexgrid.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="85" selection-start="327" selection-end="327" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="450">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sourceindexgrid.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="40" selection-start="590" selection-end="590" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sourceindextable.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="63" selection-start="465" selection-end="465" vertical-scroll-proportion="-10.0" vertical-offset="60" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfolio.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="39" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.24817519" vertical-offset="1038" max-vertical-offset="1515">
+            <state line="3" column="62" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20140825012418_change_prtdesc_to_text.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20140825012418_change_prtdesc_to_text.rb">
+      <file leaf-file-name="_portfolioindextable.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindextable.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="48" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="29" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="-8.583333" vertical-offset="229" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolios_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/portfolios_controller.rb">
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+            <state line="105" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1725">
               <folding />
             </state>
           </provider>
@@ -83,10 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/subject_modules/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/portfolios/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/subject.rb" />
-        <option value="$PROJECT_DIR$/app/models/subject_module.rb" />
         <option value="$PROJECT_DIR$/app/views/subject_modules/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/opinions/edit.html.erb" />
@@ -94,11 +153,9 @@
         <option value="$PROJECT_DIR$/app/views/opinions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/source.rb" />
         <option value="$PROJECT_DIR$/app/views/subjects/_subjectindexgrid.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/_subjectindextable.html.erb" />
         <option value="$PROJECT_DIR$/app/views/search/_searchmodel.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sources/show.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/application.yml" />
@@ -127,13 +184,19 @@
         <option value="$PROJECT_DIR$/app/views/portfolios/_usedmethod_fields.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140824180228_rename_portdemo_column_portfolios.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140824190711_add_default_value_to_prtdemo.rb" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/helpers/portfolios_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/portfolios_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20140825012418_change_prtdesc_to_text.rb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/_portfolioindextable.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/portfolios_helper.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140825020050_add_tiercost_to_portfolios.rb" />
         <option value="$PROJECT_DIR$/app/models/portfolio.rb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140825020643_add_default_value_to_prttiercost.rb" />
+        <option value="$PROJECT_DIR$/app/views/portfolios/show.html.erb" />
       </list>
     </option>
   </component>
@@ -341,38 +404,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheretolearn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1628,7 +1659,11 @@
       <created>1408929246749</created>
       <updated>1408929246749</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="portfolio description length issue">
+      <created>1408930184608</created>
+      <updated>1408930184608</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1688,7 +1723,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Page title mods" />
     <MESSAGE value="Page title mods&#10;" />
     <MESSAGE value="layout mod" />
     <MESSAGE value="changes to app to try and sort out DO problem. Installed ruby-debug-ide" />
@@ -1713,7 +1747,8 @@
     <MESSAGE value="added demo available field" />
     <MESSAGE value="portfolio show link" />
     <MESSAGE value="portfolio show link&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="portfolio show link&#10;" />
+    <MESSAGE value="portfolio description length issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="portfolio description length issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1756,21 +1791,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="502" selection-end="502" vertical-scroll-proportion="0.41845495" vertical-offset="0" max-vertical-offset="466" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="45" selection-start="2857" selection-end="2857" vertical-scroll-proportion="0.32403433" vertical-offset="959" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="15" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.3183024" vertical-offset="0" max-vertical-offset="555" />
@@ -1945,23 +1965,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140824190711_add_default_value_to_prtdemo.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="50" selection-start="120" selection-end="120" vertical-scroll-proportion="0.067567565" vertical-offset="0" max-vertical-offset="444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/registrations_controller_decorator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="44" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="7" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.0" vertical-offset="1107" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
@@ -1973,20 +1979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="250" selection-end="250" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindextable.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="12" selection-start="392" selection-end="477" vertical-scroll-proportion="0.5061425" vertical-offset="94" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="15" selection-start="392" selection-end="392" vertical-scroll-proportion="0.13953489" vertical-offset="75" max-vertical-offset="915">
@@ -1994,30 +1986,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="353" selection-end="476" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/portfolios_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="382" selection-end="382" vertical-scroll-proportion="0.4488778" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/_role_fields.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="421">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="327" selection-end="327" vertical-scroll-proportion="0.31007752" vertical-offset="0" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
@@ -2071,13 +2042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/portfolios/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1905">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140825012418_change_prtdesc_to_text.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="48" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
@@ -2085,9 +2049,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/portfolios_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.0" vertical-offset="1240" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sources/_sourceindexgrid.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="590" selection-end="590" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140825020050_add_tiercost_to_portfolios.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="49" selection-start="169" selection-end="169" vertical-scroll-proportion="0.11904762" vertical-offset="0" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sources/_sourceindextable.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="63" selection-start="465" selection-end="465" vertical-scroll-proportion="-10.0" vertical-offset="60" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/portfolio.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="39" selection-start="2050" selection-end="2050" vertical-scroll-proportion="0.24817519" vertical-offset="1038" max-vertical-offset="1515">
+        <state line="3" column="62" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindexgrid.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="85" selection-start="327" selection-end="327" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/_portfolioindextable.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="760" selection-end="760" vertical-scroll-proportion="-8.583333" vertical-offset="229" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="76" selection-start="2481" selection-end="2481" vertical-scroll-proportion="-5.625" vertical-offset="795" max-vertical-offset="1965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140824190711_add_default_value_to_prtdemo.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="74" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140825020643_add_default_value_to_prttiercost.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="78" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/portfolios/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="55" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.48387095" vertical-offset="300" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>

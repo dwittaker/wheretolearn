@@ -94,6 +94,16 @@ def boolyesno(bool)
   end
 end
 
+  def readdhttp(lnk)
+    if lnk.include? "http://" or lnk.include? "https://"
+      #lnk.gsub!("http://","")
+      lnk
+    else
+      "http://#{lnk}"
+    end
+
+  end
+
 
 
 end

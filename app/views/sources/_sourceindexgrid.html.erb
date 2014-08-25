@@ -7,7 +7,7 @@
 
         <h4><%= link_to source.name, source,:class => "gridlink" %></h4>
         <p><strong>Description</strong>: <%= truncate(source.description, length: 100) %></p>
-        <p><strong>URL</strong>: <%= link_to truncate(source.weburl, :length => 20), "http://#{source.weburl}", :class => "gridlink", :target => "_blank" %></p>
+        <p><strong>URL</strong>: <%= link_to truncate(source.weburl, :length => 20), readdhttp(source.weburl), :class => "gridlink", :target => "_blank" %></p>
         <p><strong>Type</strong>: <%= source.sourcetype.stdesc %></p>
         <p><strong>Methods</strong>:<br>
           <% if (source.usedmethods.length > 0) %>

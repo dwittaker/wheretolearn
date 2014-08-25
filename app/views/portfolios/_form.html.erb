@@ -57,14 +57,18 @@
       </div>
     </div>
     <div class="control-group">
-      <%= f.label 'Demo Available:', :class => 'control-label' %>
+      <%= f.label 'Tiered Costs:', :class => 'control-label' %>
       <div class="controls">
-        <%=hidden_field_tag 'portfolio[prtdemo]', '0'%>
-        <%=check_box_tag 'portfolio[prtdemo]', 1, @portfolio.prtdemo %>
+        <%=hidden_field_tag 'portfolio[prttiercost]', '0'%>
+        <%=check_box_tag 'portfolio[prttiercost]', 1, @portfolio.prttiercost %>
+      </div>
+    </div>
 
-
-
-
+    <div class="control-group">
+      <%= f.label 'Free Trial:', :class => 'control-label' %>
+      <div class="controls">
+        <%=hidden_field_tag 'portfolio[prttrial]', '0'%>
+        <%=check_box_tag 'portfolio[prttrial]', 1, @portfolio.prttrial %>
       </div>
     </div>
 

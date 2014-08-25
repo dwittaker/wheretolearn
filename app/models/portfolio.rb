@@ -1,7 +1,7 @@
 class Portfolio < ActiveRecord::Base
   attr_accessible :cost, :currency, :enddate, :physaddress,
                   :pweburl, :schedtype_id, :source_id, :startdate, :subject_id, :subject_module_id, :costtype_id, :slug,
-                  :prttitle, :prtdesc, :prtdemo
+                  :prttitle, :prtdesc, :prttrial, :prttiercost
 
   belongs_to :source, :inverse_of => :portfolios
     delegate :srcname, :to => :source

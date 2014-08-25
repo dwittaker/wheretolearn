@@ -20,7 +20,7 @@
       <tr>
         <td><%= link_to portfolio.prttitle , portfolio_path(portfolio), :class => "tablelink"  %></td>
 
-        <td><%= portfolio.prtdesc %></td>
+        <td><%= truncate(portfolio.prtdesc, length: 100) %></td>
 
         <td><%= portfolio.subject_module.subjtitle %></td>
         <td><%= portfolio.source.name %></td>

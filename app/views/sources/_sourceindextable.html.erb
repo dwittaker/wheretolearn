@@ -18,7 +18,7 @@
 
         <td width="100"><%= link_to source.name, source, :class => "tablelink"  %></td>
         <td width="200"><%= truncate(source.description, length: 100) %></td>
-        <td><%= link_to source.weburl, "http://#{source.weburl}", :class => "gridlink", :target => "_blank" %></td>
+        <td><%= link_to source.weburl, readdhttp(source.weburl), :class => "gridlink", :target => "_blank" %></td>
         <td><%= source.physaddress %></td>
         <td><%= source.sourcetype.stdesc %></td>
         <td>
