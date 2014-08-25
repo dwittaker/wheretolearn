@@ -74,7 +74,7 @@ end
   validates :prtdesc,
             :presence => false,
 
-            :length => { :maximum => 300, :minimum => 3 }
+            :length => { :maximum => 1000, :minimum => 3 }
 
 
 
