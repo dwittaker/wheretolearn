@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140825020643) do
+ActiveRecord::Schema.define(:version => 20140825035148) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -150,6 +150,7 @@ ActiveRecord::Schema.define(:version => 20140825020643) do
     t.text     "prtdesc"
     t.boolean  "prttrial"
     t.boolean  "prttiercost"
+    t.string   "author"
   end
 
   add_index "portfolios", ["created_by_id"], :name => "index_portfolios_on_created_by_id"

@@ -75,3 +75,5 @@ gem 'google-analytics-rails'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 
+
+gem 'whenever', :require => false
