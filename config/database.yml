@@ -43,6 +43,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: wheretolearn_prod
+  host: localhost
   pool: 5
   username: rails
   password:
