@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b90ead-5266-458b-85f6-b0e20a0b2f08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/errors/error_404.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/errors/error_500.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/errors.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/errors.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/errors_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/errors_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/errors_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/errors_helper_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/errors/error_404.html.erb" afterPath="$PROJECT_DIR$/app/views/errors/error_404.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wheretolearn.iws" />
@@ -53,7 +44,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="220" column="2" selection-start="4391" selection-end="4391" vertical-scroll-proportion="0.74655646" vertical-offset="3029" max-vertical-offset="3435">
+            <state line="221" column="2" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.7878788" vertical-offset="3029" max-vertical-offset="3435">
               <folding />
             </state>
           </provider>
@@ -101,7 +92,7 @@
       <file leaf-file-name="error_404.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/errors/error_404.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="106" selection-end="173" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="330">
+            <state line="1" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -237,8 +228,8 @@
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/controllers/errors_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/errors/error_500.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/errors/error_404.html.erb" />
         <option value="$PROJECT_DIR$/app/views/errors/error_500.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/errors/error_404.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
@@ -1745,7 +1736,11 @@
       <created>1410239486357</created>
       <updated>1410239486358</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="404 and 500 error pages">
+      <created>1410261553152</created>
+      <updated>1410261553152</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1826,7 +1821,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Removed ruby debug ide. Problems encountered. Was unable to install and unable to start unicorn as a result" />
     <MESSAGE value="Increase source description validation to 600 instead of 300" />
     <MESSAGE value="Increase source description validation to 700&#10;" />
     <MESSAGE value="Truncate description and link target" />
@@ -1851,7 +1845,8 @@
     <MESSAGE value="truncated text plus new column for tier cost" />
     <MESSAGE value="cron stuff for sitemap" />
     <MESSAGE value="cron stuff for sitemap&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="cron stuff for sitemap&#10;" />
+    <MESSAGE value="404 and 500 error pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="404 and 500 error pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2215,16 +2210,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/errors/error_404.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/errors/error_500.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="106" selection-end="173" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="330">
+        <state line="7" column="6" selection-start="194" selection-end="194" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="195">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/errors/error_500.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/errors/error_404.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="194" selection-end="194" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="195">
+        <state line="1" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="285">
           <folding />
         </state>
       </provider>
@@ -2238,7 +2233,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="2" selection-start="4391" selection-end="4391" vertical-scroll-proportion="0.74655646" vertical-offset="3029" max-vertical-offset="3435">
+        <state line="221" column="2" selection-start="4438" selection-end="4438" vertical-scroll-proportion="0.7878788" vertical-offset="3029" max-vertical-offset="3435">
           <folding />
         </state>
       </provider>
