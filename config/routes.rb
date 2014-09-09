@@ -217,7 +217,7 @@ match  ':controller/:action.:format'
 
 
 
-  #unless Rails.application.config.consider_all_requests_local
+  unless Rails.application.config.consider_all_requests_local
     match '*not_found', to: 'errors#error_404'
-  #end
+  end
 end
