@@ -2,7 +2,6 @@ Wheretolearn::Application.routes.draw do
 
 
 
-
 =begin
   get "users/index"
 
@@ -213,4 +212,12 @@ match  ':controller/:action.:format'
 
   get 'subject_tags/:tag', to: 'subjects#index', as: :subject_tag
   get 'source_tags/:tag', to: 'sources#index', as: :source_tag
+
+
+
+
+
+  #unless Rails.application.config.consider_all_requests_local
+    match '*not_found', to: 'errors#error_404'
+  #end
 end
